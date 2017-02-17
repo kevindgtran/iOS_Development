@@ -209,7 +209,8 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="59" id="Waa-Yu-ztG"/>
                                 </constraints>
-                                <string key="text">California State University East Bay, 2011Bachelor of Science (BS) in Business Administration and Management</string>
+                                <string key="text">California State University East Bay, 2011
+Bachelor of Science (BS) in Business Administration and Management</string>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -220,7 +221,10 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="88" id="BRW-Sc-eET"/>
                                 </constraints>
-                                <string key="text">Languages: Javascript, HTML, CSS, RubyFrontend: Angular, JQuery, Bootstrap, MaterializeBackend: MongoDB/Mongoose, Node, Express, Ruby on RailsTools: Git/Github, Heroku</string>
+                                <string key="text">Languages: Javascript, HTML, CSS, Ruby
+Frontend: Angular, JQuery, Bootstrap, Materialize
+Backend: MongoDB/Mongoose, Node, Express, Ruby on Rails
+Tools: Git/Github, Heroku</string>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -291,7 +295,10 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="117" id="yAq-8j-pp7"/>
                                 </constraints>
-                                <string key="text">- Worked closely with Marketing, Engineering and recruiting to develop HTML/CSS email campaigns- Managed the 2015 Grace Hopper applicant tracking system, ATS- Designed and built the 2016 Front End Engineering Summit website  http://unbouncepages.com/frontend-summit-2016/</string>
+                                <string key="text">- Worked closely with Marketing, Engineering and recruiting to develop HTML/CSS email campaigns
+- Managed the 2015 Grace Hopper applicant tracking system, ATS
+- Designed and built the 2016 Front End Engineering Summit website
+  http://unbouncepages.com/frontend-summit-2016/</string>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1094,6 +1101,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="kdA-T4-pqm" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="zkV-Tb-hz9">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
