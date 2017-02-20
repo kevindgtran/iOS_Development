@@ -12,7 +12,8 @@ import UIKit
 //TEN - update table view controller to also be a UISearchResultsUpdating
 class ObjectTableViewController: UITableViewController, UISearchResultsUpdating {
 //ONE - create array of elements for table view
-        var objects = ["Slider", "Switch", "Stepper", "AVKit Player View Controller", "Segmented Control", "Date Picker", "Picker View", "Map Kit View", "Tap Gesture", "Pinch Gesture Recognizer", "Rotation Gesture Recognizer", "Swipe Gesture Recognizer", "Pan Gesture Recognizer", "Screen Edge Pan Gesture", "Long Press Gesture Recognizer"]
+        var objects = ["AVKit Player View Controller", "Date Picker", "Long Press Gesture Recognizer", "Map Kit View", "Pan Gesture Recognizer", "Picker View", "Pinch Gesture Recognizer", "Rotation Gesture Recognizer", "Screen Edge Pan Gesture", "Segmented Control", "Slider", "Stepper", "Swipe Gesture Recognizer", "Switch", "Tap Gesture"]
+    
 //THIRTEEN - create an emtpy array for filtered objects
         var filteredObjects = [String]()
     
