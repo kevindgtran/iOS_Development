@@ -120,6 +120,125 @@ var str = "Hello, playground"
 
 
 
+////////////////////////////////////////////////////////CONSTANTS AND VARIABLES
+//var str = "Hello, playground"
+//let maxNumOfLoginAttempts = 10
+//var currentLoginAttempt = 0
+//var x = 0, y = 2, w = "hello"
+//print(w)
+//var age = 99
+//let name = "Kevin Tran"
+//age = 29
+//print(name)
+//var time = "10:59am"; print(time)
+//let heart = "\u{2665}"
+//var isHungry = true
+
+////////////////////////////////////////////////////////MATH AND ARITHMATIC
+//let numThree = 3
+//let pointOneFour = 0.1415
+//let numPi = Double(numThree) + pointOneFour
+//let heatherMilesPerHour = 60.8
+//let hoursInWeek = 168
+//let heatherTraveledinOneWeek = heatherMilesPerHour * Double(hoursInWeek)
+//var timePerCust = 1.66666667
+//let onethousandCust = 1000 * timePerCust
+//let totalPeapodsPickedADay = (6 * 2400) * 9
+
+////////////////////////////////////////////////////////TYPE OF
+//typeof operator
+//type(of:age)
+//type(of:numThree)
+//type(of:time)
+//type(of:heart)
+//type(of:sfWeather)
+//type(of:isHungry)
+
+////////////////////////////////////////////////////////TERNARY OPERATOR
+//var weather = 45
+//weather < 50 ? "Its cold!" : "Its confortable"
+//sfWeather < 60 ? "Its cold in the city... thats normal" : "its warm in san francisco"
+//nycWeather > 80 ? "It's hot in New York" : "its chilly in new york city :)"
+//londonWeather == 87 ? "the weather is peachy!" : "weather is not well"
+//let balance = 3000
+//balance >= 3500 ? "new shoes!" : "can't buy those shoes"
+
+////////////////////////////////////////////////////////FOR LOOPS
+//let seriesOfCharacters = "A series of characters"
+//for element in seriesOfCharacters.characters {
+//    print(element)
+//}
+//let randomLetters = "uekwjno8207 kadmj9374"
+//for spot in randomLetters.characters {
+//    print(spot)
+//}
+//let zeroToTen = 0...10
+//for numberz in zeroToTen {
+//    print(numberz)
+//}
+//for eachCharacter in "Marlene".characters {
+//    print(eachCharacter)
+//}
+//for keypad in "keyboard".characters {
+//    if (keypad == "e") {
+//        print(keypad)
+//        break
+//    }
+//}
+
+////////////////////////////////////////////////////////WHILE LOOPS
+//var number = 1
+//while(number <= 500) {
+//    print(number)
+//    number += 1
+//}
+//var number = 500
+//while(number >= 0) {
+//    print(number)
+//    number -= 1
+//}
+//var starting = 1
+//
+//repeat {
+//    print("Kevin")
+//    starting += 1
+//} while starting <= 777
+//var startingPoint = 1
+//while startingPoint <= 10000 {
+//  if (startingPoint % 2 != 0) {
+//    print(startingPoint)
+//    }
+//  startingPoint += 1
+//}
+//for divisibleByThree in 1...10000 {
+//    if (divisibleByThree % 3 == 0) {
+//        print(divisibleByThree)
+//    }
+//}
+//var startingPoint = 1
+//while (startingPoint <= 10000) {
+//    if (startingPoint % 3 == 0) {
+//        print(startingPoint)
+//    }
+//startingPoint += 1
+//}
+//let birthdayMonth = "October"
+//var birthdayDay = 1
+//
+//while (birthdayDay <= 31) {
+//    if (birthdayDay == 1 || birthdayDay == 21) {
+//        print("\(birthdayMonth), \(birthdayDay)st")
+//    } else if (birthdayDay == 3 || birthdayDay == 23) {
+//        print("\(birthdayMonth), \(birthdayDay)rd")
+//    } else if (birthdayDay == 2 || birthdayDay == 22) {
+//        print("\(birthdayMonth), \(birthdayDay)nd")
+//    } else {
+//        print("\(birthdayMonth), \(birthdayDay)th")
+//    }
+//    birthdayDay += 1
+//}
+
+
 
 
 
