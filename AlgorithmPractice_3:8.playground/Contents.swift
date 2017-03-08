@@ -95,6 +95,71 @@ func printListInRectangle(_ list: [String]) {
     }
     print(asteriskRow)
 }
-
-
 printListInRectangle(testArrayOne)
+
+////////////////////////////////////////////////////////////////////////////////
+
+//find the number of sequences in DNA
+
+//func repeatDNASequence(s: String) ->String{
+//    //length of the subsquence
+//    let k = 10
+//    
+//    //create dictionary to hold substring
+//    var substringCount = [String: Int]()
+//    
+//    //count every subsequence
+//    for i in 0...s.characters.count - k {
+//        //figure out the subsequence
+//        let startIndex = s.index(s.startIndex, offsetBy: i)
+//        let endIndex = s.index(s.startIndex, offsetBy: i+10)
+//        let substring = s[startIndex..<endIndex]
+//        
+//        if let value = substringCount[substring] {
+//            substringCount[substring] = value + 1
+//        } else {
+//            substringCount[substring] = 1
+//        }
+//    }
+//    
+//    //filter out the substrings that we only saw once
+//    let repeatedSubString = substringCount.filter { (key, value) -> Bool in
+//        return value > 1
+//       //dump the count of the remaining substrings
+//        }.map { (key, value) -> String in
+//            return key
+//        }
+//    
+//    let sortedRepeatedSubstrings = repeatedSubString.sorted()
+//    
+//    return sortedRepeatedSubstrings
+//    
+//}
+
+////////////////////////////////////////////////////////////////////////////////
+
+//isAnagram
+//var word1 = "name"
+//var word2 = "Mean"
+//
+//word1.lowercased().characters.sorted() == word2.lowercased().characters.sorted() ? "yup, is an anagram" : "nope, not an anagram"
+
+////////////////////////////////////////////////////////////////////////////////
+
+//sort an array
+//var array = [5, 10, 1, 3, 8, 7, 16]
+//
+//func sortInPlace(_ array: inout [Int]) {
+//    if array.count < 2 { return }
+//    for i in 1..<array.count {
+//        for j in 0..<i {
+//            if array[i] < array[j] {
+//                swap(&array[i], &array[j])
+//            }
+//        }
+//    }
+//}
+//
+//sortInPlace(&array)
+
+
