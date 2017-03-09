@@ -162,4 +162,56 @@ printListInRectangle(testArrayOne)
 //
 //sortInPlace(&array)
 
+////////////////////////////////////////////////////////////////////////////////
+
+//reverse string
+
+//func reverseWord (_ word: String) -> String {
+//    var reversedWord = ""
+//    for letter in word.characters {
+//        reversedWord = "\(letter)" + reversedWord
+//    }
+//    return reversedWord
+//}
+//
+//reverseWord("Kevin")
+//reverseWord("hello world")
+
+////////////////////////////////////////////////////////////////////////////////
+
+//reverse vowels algorithm
+//func reverseVowels(_ word: String) -> String {
+//    var lowerCasedWord = word.lowercased()
+//    var reversedWord = ""
+//    var wordVowels = ""
+//
+//    for character in lowerCasedWord.characters {
+//        if character == "a" ||
+//           character == "e" ||
+//           character == "i" ||
+//           character == "o" ||
+//           character == "u" {
+//            wordVowels.append(character)
+//        }
+//    }
+//    var reversedVowels = String(wordVowels.characters.reversed())
+//
+//    for letter in lowerCasedWord.characters {
+//        if letter == "a" ||
+//            letter == "e" ||
+//            letter == "i" ||
+//            letter == "o" ||
+//            letter == "u" {
+//            reversedWord.append(reversedVowels[reversedVowels.startIndex])
+//            reversedVowels.remove(at: reversedVowels.startIndex)
+//        } else {
+//            reversedWord.append(letter)
+//        }
+//    }
+//    return reversedWord
+//}
+//
+//reverseVowels("I need more coffee!")
+//reverseVowels("Kevin")
+//reverseVowels("Scotty Blades of fire!")
 
