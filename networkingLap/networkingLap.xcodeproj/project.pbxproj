@@ -7,25 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		656052731E71FE3E00284B9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656052721E71FE3E00284B9C /* AppDelegate.swift */; };
-		656052751E71FE3E00284B9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656052741E71FE3E00284B9C /* ViewController.swift */; };
-		656052781E71FE3E00284B9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 656052761E71FE3E00284B9C /* Main.storyboard */; };
-		6560527A1E71FE3E00284B9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 656052791E71FE3E00284B9C /* Assets.xcassets */; };
-		6560527D1E71FE3E00284B9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6560527B1E71FE3E00284B9C /* LaunchScreen.storyboard */; };
+		656052AF1E72166700284B9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656052AE1E72166700284B9C /* AppDelegate.swift */; };
+		656052B41E72166700284B9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 656052B21E72166700284B9C /* Main.storyboard */; };
+		656052B61E72166700284B9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 656052B51E72166700284B9C /* Assets.xcassets */; };
+		656052B91E72166700284B9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 656052B71E72166700284B9C /* LaunchScreen.storyboard */; };
+		656052C51E721D8200284B9C /* JSONViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656052C41E721D8200284B9C /* JSONViewController.swift */; };
+		656052CB1E72727100284B9C /* GoogleBooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656052CA1E72727100284B9C /* GoogleBooksViewController.swift */; };
+		656052CD1E72728600284B9C /* GoogleMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656052CC1E72728600284B9C /* GoogleMapsViewController.swift */; };
+		656052CF1E7272A100284B9C /* RedditAPIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656052CE1E7272A100284B9C /* RedditAPIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6560526F1E71FE3E00284B9C /* Tip Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tip Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		656052721E71FE3E00284B9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		656052741E71FE3E00284B9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		656052771E71FE3E00284B9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		656052791E71FE3E00284B9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6560527C1E71FE3E00284B9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6560527E1E71FE3E00284B9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		656052AB1E72166700284B9C /* networkingLap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = networkingLap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		656052AE1E72166700284B9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		656052B31E72166700284B9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		656052B51E72166700284B9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		656052B81E72166700284B9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		656052BA1E72166700284B9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		656052C41E721D8200284B9C /* JSONViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONViewController.swift; sourceTree = "<group>"; };
+		656052CA1E72727100284B9C /* GoogleBooksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleBooksViewController.swift; sourceTree = "<group>"; };
+		656052CC1E72728600284B9C /* GoogleMapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleMapsViewController.swift; sourceTree = "<group>"; };
+		656052CE1E7272A100284B9C /* RedditAPIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditAPIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6560526C1E71FE3E00284B9C /* Frameworks */ = {
+		656052A81E72166700284B9C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,73 +41,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		656052661E71FE3E00284B9C = {
+		656052A21E72166700284B9C = {
 			isa = PBXGroup;
 			children = (
-				656052711E71FE3E00284B9C /* Tip Calculator */,
-				656052701E71FE3E00284B9C /* Products */,
+				656052AD1E72166700284B9C /* networkingLap */,
+				656052AC1E72166700284B9C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		656052701E71FE3E00284B9C /* Products */ = {
+		656052AC1E72166700284B9C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6560526F1E71FE3E00284B9C /* Tip Calculator.app */,
+				656052AB1E72166700284B9C /* networkingLap.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		656052711E71FE3E00284B9C /* Tip Calculator */ = {
+		656052AD1E72166700284B9C /* networkingLap */ = {
 			isa = PBXGroup;
 			children = (
-				656052721E71FE3E00284B9C /* AppDelegate.swift */,
-				656052741E71FE3E00284B9C /* ViewController.swift */,
-				656052761E71FE3E00284B9C /* Main.storyboard */,
-				656052791E71FE3E00284B9C /* Assets.xcassets */,
-				6560527B1E71FE3E00284B9C /* LaunchScreen.storyboard */,
-				6560527E1E71FE3E00284B9C /* Info.plist */,
+				656052AE1E72166700284B9C /* AppDelegate.swift */,
+				656052CA1E72727100284B9C /* GoogleBooksViewController.swift */,
+				656052B21E72166700284B9C /* Main.storyboard */,
+				656052CE1E7272A100284B9C /* RedditAPIViewController.swift */,
+				656052CC1E72728600284B9C /* GoogleMapsViewController.swift */,
+				656052C41E721D8200284B9C /* JSONViewController.swift */,
+				656052B51E72166700284B9C /* Assets.xcassets */,
+				656052B71E72166700284B9C /* LaunchScreen.storyboard */,
+				656052BA1E72166700284B9C /* Info.plist */,
 			);
-			path = "Tip Calculator";
+			path = networkingLap;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6560526E1E71FE3E00284B9C /* Tip Calculator */ = {
+		656052AA1E72166700284B9C /* networkingLap */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 656052811E71FE3E00284B9C /* Build configuration list for PBXNativeTarget "Tip Calculator" */;
+			buildConfigurationList = 656052BD1E72166700284B9C /* Build configuration list for PBXNativeTarget "networkingLap" */;
 			buildPhases = (
-				6560526B1E71FE3E00284B9C /* Sources */,
-				6560526C1E71FE3E00284B9C /* Frameworks */,
-				6560526D1E71FE3E00284B9C /* Resources */,
+				656052A71E72166700284B9C /* Sources */,
+				656052A81E72166700284B9C /* Frameworks */,
+				656052A91E72166700284B9C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Tip Calculator";
-			productName = "Tip Calculator";
-			productReference = 6560526F1E71FE3E00284B9C /* Tip Calculator.app */;
+			name = networkingLap;
+			productName = networkingLap;
+			productReference = 656052AB1E72166700284B9C /* networkingLap.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		656052671E71FE3E00284B9C /* Project object */ = {
+		656052A31E72166700284B9C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = com.example;
 				TargetAttributes = {
-					6560526E1E71FE3E00284B9C = {
+					656052AA1E72166700284B9C = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = WC2JB3CT65;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 6560526A1E71FE3E00284B9C /* Build configuration list for PBXProject "Tip Calculator" */;
+			buildConfigurationList = 656052A61E72166700284B9C /* Build configuration list for PBXProject "networkingLap" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -109,54 +118,57 @@
 				en,
 				Base,
 			);
-			mainGroup = 656052661E71FE3E00284B9C;
-			productRefGroup = 656052701E71FE3E00284B9C /* Products */;
+			mainGroup = 656052A21E72166700284B9C;
+			productRefGroup = 656052AC1E72166700284B9C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6560526E1E71FE3E00284B9C /* Tip Calculator */,
+				656052AA1E72166700284B9C /* networkingLap */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6560526D1E71FE3E00284B9C /* Resources */ = {
+		656052A91E72166700284B9C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6560527D1E71FE3E00284B9C /* LaunchScreen.storyboard in Resources */,
-				6560527A1E71FE3E00284B9C /* Assets.xcassets in Resources */,
-				656052781E71FE3E00284B9C /* Main.storyboard in Resources */,
+				656052B91E72166700284B9C /* LaunchScreen.storyboard in Resources */,
+				656052B61E72166700284B9C /* Assets.xcassets in Resources */,
+				656052B41E72166700284B9C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6560526B1E71FE3E00284B9C /* Sources */ = {
+		656052A71E72166700284B9C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				656052751E71FE3E00284B9C /* ViewController.swift in Sources */,
-				656052731E71FE3E00284B9C /* AppDelegate.swift in Sources */,
+				656052C51E721D8200284B9C /* JSONViewController.swift in Sources */,
+				656052AF1E72166700284B9C /* AppDelegate.swift in Sources */,
+				656052CF1E7272A100284B9C /* RedditAPIViewController.swift in Sources */,
+				656052CD1E72728600284B9C /* GoogleMapsViewController.swift in Sources */,
+				656052CB1E72727100284B9C /* GoogleBooksViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		656052761E71FE3E00284B9C /* Main.storyboard */ = {
+		656052B21E72166700284B9C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				656052771E71FE3E00284B9C /* Base */,
+				656052B31E72166700284B9C /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		6560527B1E71FE3E00284B9C /* LaunchScreen.storyboard */ = {
+		656052B71E72166700284B9C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6560527C1E71FE3E00284B9C /* Base */,
+				656052B81E72166700284B9C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -164,7 +176,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		6560527F1E71FE3E00284B9C /* Debug */ = {
+		656052BB1E72166700284B9C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -214,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		656052801E71FE3E00284B9C /* Release */ = {
+		656052BC1E72166700284B9C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -257,27 +269,27 @@
 			};
 			name = Release;
 		};
-		656052821E71FE3E00284B9C /* Debug */ = {
+		656052BE1E72166700284B9C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WC2JB3CT65;
-				INFOPLIST_FILE = "Tip Calculator/Info.plist";
+				INFOPLIST_FILE = networkingLap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Tip-Calculator";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.networkingLap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		656052831E71FE3E00284B9C /* Release */ = {
+		656052BF1E72166700284B9C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WC2JB3CT65;
-				INFOPLIST_FILE = "Tip Calculator/Info.plist";
+				INFOPLIST_FILE = networkingLap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Tip-Calculator";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.networkingLap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -286,25 +298,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6560526A1E71FE3E00284B9C /* Build configuration list for PBXProject "Tip Calculator" */ = {
+		656052A61E72166700284B9C /* Build configuration list for PBXProject "networkingLap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6560527F1E71FE3E00284B9C /* Debug */,
-				656052801E71FE3E00284B9C /* Release */,
+				656052BB1E72166700284B9C /* Debug */,
+				656052BC1E72166700284B9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		656052811E71FE3E00284B9C /* Build configuration list for PBXNativeTarget "Tip Calculator" */ = {
+		656052BD1E72166700284B9C /* Build configuration list for PBXNativeTarget "networkingLap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				656052821E71FE3E00284B9C /* Debug */,
-				656052831E71FE3E00284B9C /* Release */,
+				656052BE1E72166700284B9C /* Debug */,
+				656052BF1E72166700284B9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 656052671E71FE3E00284B9C /* Project object */;
+	rootObject = 656052A31E72166700284B9C /* Project object */;
 }
