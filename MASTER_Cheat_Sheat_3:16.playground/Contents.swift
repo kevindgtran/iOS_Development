@@ -1080,7 +1080,6 @@ import UIKit
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////INHERITANCE
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////INITIALIZERS
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////PROTOCALS
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////ENUMERATIONS
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////ALGORITHMS
 
@@ -1377,6 +1376,116 @@ import UIKit
 //    }
 //}
 //isEmpty(phrase: "has characters")
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////ENUMERATIONS
+
+//swift built in types (Strings, Bool, Dictionaries, etc.
+//enums let us create a new type instance, which is a defined list of cases
+
+//create an enum
+//enum Alignments {
+//    //possible values of the enum
+//    case left
+//    case center
+//    case right
+//}
+//
+//var style: Alignments
+//var word: String
+//var arrayList: [String] = ["one", "two"]
+//
+////new instance of newly created enum
+//var format: Alignments = Alignments.left
+//print(format)
+
+/////////////////////////////////////////////////EXAMPLE 1
+//create enum of seasons
+//enum Season {
+//    case spring
+//    case winter
+//    case fall
+//    case summer
+//}
+//create new variable using custom enum type instance
+//var bbqWeather: Season = Season.summer
+//var hotChocolateWeather = Season.winter //using type inference
+//print(bbqWeather)
+//var coldWeather = Season.fall
+//coldWeather = .winter //infering the enum
+//print(coldWeather)
+//coldWeather == .winter ? "bring a jacket" : "bring a hat"
+
+//use switch statement to handle possible enum type, values
+//var currentWeather = Season.summer
+//switch currentWeather {
+//case .fall :
+//    print("leaves are changing colors")
+//case .winter :
+//    print("it is cold")
+//case .spring :
+//    print("look at all the plants!")
+//case .summer :
+//    print("lets bbq!")
+//    //DO NOT ADD default in switch statement going through a enum values. This is because we want the switch statement run through all possible enum cases, having a default lets the compiler run without telling us we're missing an enum case value
+//}
+
+/////////////////////////////////////////////////EXAMPLE 2
+//enum LightBulb {
+//    case on
+//    case off
+//    
+//    func surfaceTemperature(_ ambient: Double) -> String {
+//        switch self {   //use self as the switch statement needs to check on LightBulb aka it "self"
+//        case .on :
+//            return "Because the bulb's ON its \(ambient) degrees"
+//        case .off :
+//            return "the lights off... so its cold"
+//        }
+//    }
+//}
+//create variable with new enum type, set ambient temp
+//var roomLights: LightBulb = LightBulb.off
+//var ambient = 65.0
+
+//create new variable set to new enum variable, method and pass in ambient value
+//var roomTemp = roomLights.surfaceTemperature(ambient)
+//print(roomTemp)
+
+/////////////////////////////////////////////////EXAMPLE 3
+//create enum for directions
+//enum Directions {
+//    case north, east, west, south
+//    
+//    func move(_ direction: String) -> String {
+//        switch self {
+//        case .east :
+//            return "east siiide lets go!"
+//        case .west :
+//            return "west coast cruising!"
+//        case .north :
+//            return "to the north pole!"
+//        case .south :
+//            return "going downtown!"
+//        }
+//    }
+//}
+//
+//var drivingDirection: Directions = Directions.north
+//var direction = "north"
+//var roadTrip = drivingDirection.move(direction)
+//print(roadTrip)
+
+/////////////////////////////////////////////////EXAMPLE 4
+//coins
+
+
+
+/////////////////////////////////////////////////EXAMPLE 5
+//rating system
+
+
 
 ////////////////////////////////////////REVERSED WORD
 //func reverse(word: String) -> String{
