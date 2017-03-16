@@ -215,3 +215,94 @@ printListInRectangle(testArrayOne)
 //reverseVowels("Kevin")
 //reverseVowels("Scotty Blades of fire!")
 
+
+
+//using .map in functional programming
+//map an array [1,18,32,6]
+//even numbers are true , odd are false
+
+//var array1 = [1,18,32,6]
+
+//let newArray = array1.map { number -> Bool in
+//    number % 2 == 0
+//}
+
+//let newArray = array1.map { $0 % 2 == 0 }
+//print(newArray)
+
+
+//hackerrank - print the fraction of the number of Ints in the are: Positive, Negative, Zero
+let array = [-4,3,-9,0,4,1]
+let arrayCount = Float(array.count)
+var totalPositive: Float = 0
+var totalNegative: Float = 0
+var totalZero: Float = 0
+
+if array.count == 0 {
+    print("empty array")
+} else {
+    for number in array {
+        if number > 0 {
+            totalPositive += 1
+        } else if number == 0 {
+            totalZero += 1
+        } else {
+            totalNegative += 1
+        }
+    }
+    let formatter = NumberFormatter()
+    formatter.minimumFractionDigits = 4
+    formatter.maximumFractionDigits = 4
+    print("Positive: \(formatter.string(for: totalPositive/arrayCount)!)")
+    print("Zero: \(totalZero/arrayCount)")
+    print("Negative: \(totalNegative/arrayCount)")
+}
+
+
+
+
+//sort function
+var array1 = [2,4,1,3,5]
+var sortedArray = [Int]()
+var firstNum = array1[0]
+
+
+for number in array1 {
+    if number > firstNum {
+        sortedArray.append(number)
+    } else {
+        sortedArray.insert(number, at: 0)
+    }
+}
+print(sortedArray)
+
+
+var listOfNumbers = [1, 2, 3, 10, 100]
+
+var nElements = listOfNumbers.count
+
+var didSwap = true
+
+while didSwap {
+    didSwap = false
+    
+    for i in 0..<nElements - 1 {
+        if listOfNumbers[i] < listOfNumbers[i+1] {
+            var tmp = listOfNumbers[i]
+            listOfNumbers[i] = listOfNumbers[i+1]
+            listOfNumbers[i+1] = tmp
+            didSwap = true
+        }
+    }
+}
+
+print(listOfNumbers)
+
+
+
+
+
+
+
+
+
