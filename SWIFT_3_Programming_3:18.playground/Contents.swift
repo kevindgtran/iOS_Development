@@ -3,22 +3,6 @@
 import UIKit
 
 
-/*:
- 
- # Master Pla
- 
- */
-
-// write code here
-
-
-/*:
- 
- # Master Playground
- 
- */
-
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////VARIABLES, CONSTANTS, TYPES
 //Definition: variables and constants store data in the application, to later be passed around your application
 //Syntax:
@@ -231,6 +215,157 @@ import UIKit
 //String(-23478596)
 //String(12435.987)
 //String(099283475)
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////STRINGS
+////10 examples if creating, adding and using unicode scholars, counting
+//var customerOne = "John Doe"
+//var customerOneLetterCount = customerOne.characters.count
+//customerOne += " was our first customer! \u{2665}"
+
+//var tonightsWine = "Pinot Noir"
+//var serverQueston = "Would you care for tonights wine, \(tonightsWine)🍷"
+//var lettersInServerQuestion = serverQueston.characters.count
+
+//var typeOfWood = "Cedar"
+//var flooringTypes: String = "We carry all types of \(typeOfWood) floors"
+//flooringTypes += ", ON SALE!"
+
+//var price: Double
+//price = 4.99
+//var coffeeSignage: String = "Come grab a cup of joe for only $\(price)"
+//coffeeSignage += " - all sizes!"
+
+//var typeOfBread = "Wheat"
+//var typeOfMeat = "Chicken"
+//var dailyBurgerSpecial = "Today we have locally grown \(typeOfMeat) on \(typeOfBread), for \(price)"
+
+////10 examples of subscripting a single value out of a string
+//var currentlyReading = "Outliers By Malcom Gladwell"
+//var startingSpace = currentlyReading.characters.startIndex
+//var offSetSpace = currentlyReading.index(startingSpace, offsetBy: 5)
+
+//var bottledWaterBrand: String
+//bottledWaterBrand = "ArrowHead"
+//bottledWaterBrand.lowercased()
+//var startingHike = bottledWaterBrand.startIndex
+//var offsetByHike = bottledWaterBrand.index(startingHike, offsetBy: 5)
+
+//var teethWhiteningProduct = "Crest Whitening 3D White Strips, professional level treatment"
+//var firstTooth = teethWhiteningProduct.startIndex
+//var favoriteTooth = teethWhiteningProduct.index(firstTooth, offsetBy: 44)
+
+//var hotDogCondiment = "Yellow Mustard"
+//var firstSnack = hotDogCondiment.startIndex
+//var snackTime = hotDogCondiment.index(firstSnack, offsetBy: 2)
+
+//var favoriteFruitJuice: String
+//favoriteFruitJuice = "Orange Juice"
+//var orangeBag = favoriteFruitJuice.startIndex
+//var specificOrange = favoriteFruitJuice.index(orangeBag, offsetBy: 0)
+
+//var newHeadPhones = "Beats Solo 2 Wireless Headphones"
+//var firstSound = newHeadPhones.startIndex
+//var rightHeadPhone = newHeadPhones.index(firstSound, offsetBy: 5)
+
+//var tomorrowsForecast = "windy"
+//var firstRainDrop = tomorrowsForecast.startIndex
+//var snowFlake = tomorrowsForecast.index(firstRainDrop, offsetBy: 0)
+
+//var birthdayMonth = "October"
+//var firstOfTheMonth = birthdayMonth.startIndex
+//var specificBirthDay = birthdayMonth.index(firstOfTheMonth, offsetBy: 0)
+
+//var relaxingActivity = "reading"
+//var firstBook = relaxingActivity.startIndex
+//var pageNumber = relaxingActivity.index(firstBook, offsetBy: 0)
+
+//var greatMovie = "I am Legand"
+//var firstMovieTickets = greatMovie.startIndex
+//var firstScene = greatMovie.index(firstMovieTickets, offsetBy: 5)
+
+//var mansBestFriend = "Dogs"
+//var firstPet = mansBestFriend.startIndex
+//var nextPet = mansBestFriend.index(firstPet, offsetBy: 0)
+
+//bottledWaterBrand[offsetByHike]
+//currentlyReading[offSetSpace]
+//teethWhiteningProduct[favoriteTooth]
+//hotDogCondiment[snackTime]
+//favoriteFruitJuice.lowercased()[specificOrange]
+//newHeadPhones[rightHeadPhone]
+//tomorrowsForecast.uppercased()[snowFlake]
+//birthdayMonth.lowercased()[specificBirthDay]
+//relaxingActivity[pageNumber]
+//greatMovie.lowercased()[firstScene]
+//mansBestFriend.lowercased()[nextPet]
+
+//10 examples of subscripting a range in string
+//var newExamples = "new Example!"
+//var firstExample = newExamples.startIndex
+//var lastExample = newExamples.index(firstExample, offsetBy: 2)
+//var exampleRange = firstExample...lastExample
+//var partExample = newExamples[exampleRange]
+
+//var morningStatus = "need coffee this morning or someone is going to die!!!!"
+//var morningStatusCount = morningStatus.characters.count
+//var startMorningStatus = morningStatus.startIndex
+//var lastMorningStatus = morningStatus.index(startMorningStatus, offsetBy: 11)
+//var rangeOfMorningStatus = morningStatus[startMorningStatus...lastMorningStatus]
+
+//var playerOneStatus = "Welcome, please login to start"
+//var startPlayerOneStatus = playerOneStatus.startIndex
+//var endPlayOneStatus = playerOneStatus.index(startPlayerOneStatus, offsetBy: 6)
+//var playOneStatusRange = playerOneStatus[startPlayerOneStatus...endPlayOneStatus]
+
+//var gaGreetingSign = "Hello we were hoping you might stop by"
+//var startgaGreetingSign = gaGreetingSign.startIndex
+//var indexOfgaGreetingSign = gaGreetingSign.index(startgaGreetingSign, offsetBy: 4)
+//var portionOfgaGreetingSign = gaGreetingSign[startgaGreetingSign...indexOfgaGreetingSign]
+
+//var morningGreeting = "Good morning everyone!"
+//var startIndexMorningGreeting = morningGreeting.startIndex
+//var specificMorningGreetingIndex = morningGreeting.index(startIndexMorningGreeting, offsetBy: 11)
+//var morningGreetingRange = morningGreeting[startIndexMorningGreeting...specificMorningGreetingIndex]
+
+//var fruitList = "bananas, apples, strawberries"
+//var startIndexFruitList = fruitList.startIndex
+//var specificIndexFruitList = fruitList.index(startIndexFruitList, offsetBy: 6)
+//var oneFruitItem = fruitList[startIndexFruitList...specificIndexFruitList]
+
+//var randomWordOfCharacters = "oiwlHello!a;oidnv;aihlAND;OAISJDF;OANRFA"
+//var startRandomWordOfCharacters = randomWordOfCharacters.startIndex
+//var indexStartOfRandomWordOfCharacters = randomWordOfCharacters.index(startRandomWordOfCharacters, offsetBy: 4)
+//var indexEndOfRandomWordOfCharacters = randomWordOfCharacters.index(indexStartOfRandomWordOfCharacters, offsetBy: 5)
+//var newRandomWordOfCharacters = randomWordOfCharacters[indexStartOfRandomWordOfCharacters...indexEndOfRandomWordOfCharacters]
+
+//var studentsNames = "***Kevin***David***Joy***"
+//var beginningOfStudentsNames = studentsNames.startIndex
+//var kevinCharacterStart = studentsNames.index(beginningOfStudentsNames, offsetBy: 3)
+//var kevinCharacterEnd = studentsNames.index(kevinCharacterStart, offsetBy: 4)
+//var davidsCharacterStart = studentsNames.index(kevinCharacterEnd, offsetBy: 4)
+//var davidsCharacterEnd = studentsNames.index(davidsCharacterStart, offsetBy: 4)
+//var joysCharacterStart = studentsNames.index(davidsCharacterEnd, offsetBy: 4)
+//var joysCharacterEnd = studentsNames.index(joysCharacterStart, offsetBy: 2)
+//var kevinsName = studentsNames[kevinCharacterStart...kevinCharacterEnd]
+//var davidsName = studentsNames[davidsCharacterStart...davidsCharacterEnd]
+//var joysName = studentsNames[joysCharacterStart...joysCharacterEnd]
+
+////2 more examples iterating and getting index of string
+//var weekendProject = "Build API!!!"
+//for (index,character) in weekendProject.characters.enumerated() {
+//    print("letter \(character) is at index \(index)")
+//}
+
+//var fundamentalPractice = "String subscripting indexing and looping"
+//let newFundamentalPractice = fundamentalPractice.replacingOccurrences(of: " ", with: "-")
+//var numberOfDashesInWord = Int()
+//for (index, character) in newFundamentalPractice.characters.enumerated() {
+//    if character == "-" {
+//        numberOfDashesInWord += 1
+//    }
+//}
+//let lastStringExample = "There are \(numberOfDashesInWord) dashes in \"\(newFundamentalPractice)\""
+//print(lastStringExample)
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////(LOGIC) SWITCH STATEMENTS
 //Definition: controls the flow of your program based on conditions matching specific conditions
@@ -990,6 +1125,23 @@ import UIKit
 //wrongPassword = "secretpassword"
 //let pass = wrongPassword ?? ""
 
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////CLASSES
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////TUPLES
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////IF STATEMENT
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////CLOSURES
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////PROPERTIES
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////INHERITANCE
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////INITIALIZERS
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////PROTOCALS
+
+//Definition:
+//Syntax:
+//Examples: 30
+
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////STRUCTURES
 //Definition: a newly created type, a grouping of specific data in memory, used as a template/ mold for new instances of that struct
 //Syntax:
@@ -1057,35 +1209,6 @@ import UIKit
 
 //ex 3
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////CLASSES
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////STRING
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////TUPLES
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////IF STATEMENT
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////CLOSURES
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////PROPERTIES
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////INHERITANCE
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////INITIALIZERS
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////PROTOCALS
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////ALGORITHMS
-
-//Definition:
-//Syntax:
-//Examples: 30
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////ARRAYS
 //declared variable of an array that holds strings
@@ -2035,146 +2158,5 @@ import UIKit
 //    print("I give \(key), a \(value) rating")
 //}
 
-////////////////////////////////////////////////////////STRINGS
-//iterating through strings
-//var exampleString = "Marlene"
-//for letter in exampleString.characters {
-//    print(letter)
-//}
 
-//convert string to int
-//var oneTwoThree: String = "123"
-//print(Int(oneTwoThree)!)
-
-//line breaks
-//var exampleOfLineBreaks = "this is one line \n this is another line \n"
-//print(exampleOfLineBreaks)
-
-//seperating by " "
-//var someLongSentence = "this is a really long sentence"
-//var wordsInLongSentence = someLongSentence.components(separatedBy: " ")
-
-//count number of spaces in string
-//var stringSpace = "hello there Kevin"
-//func spaceCount(phrase: String) -> Int {
-//    var counter = 0
-//    for space in stringSpace.characters {
-//        if space == " " {
-//            counter += 1
-//        }
-//    }
-//    return counter
-//}
-//spaceCount(phrase: stringSpace)
-
-///////////////////////////////////////////////////////////////////////ALGORITHMS
-
-//BUBBLE SORT
-//iterates through the list
-//compares element with one on right
-//if element is larger then swap
-//else dont swap
-//add one to iterator
-
-//PRIME - print all primes up to n
-//iterate each number from 1 to 20
-//set each number to true
-//check if each number has a multiple
-//if number does have multiple set number to false
-//print true numbers
-
-//var isPrime = true
-//for number in 2...2000 {
-//    isPrime = true
-//    for multiple in 2..<number {
-//        if(number % multiple == 0) {
-//            isPrime = false
-//        }
-//    }
-//    if(isPrime == true){
-//        print(number)
-//    }
-//}
-
-//declare a numberCounter to true
-//iterate through each number
-//set numberCounter to true
-//check if number has multiple (remainder)
-//if number does have a multiple set numberCounter to false
-//if numberCounter is true
-//print numberCounter
-//
-//var primeNum = true
-//for number in 2...20 {
-//    primeNum = true
-//    for multiple in 2..<number {
-//        if(number % multiple == 0){
-//            primeNum = false
-//        }
-//    }
-//    if(primeNum == true) {
-//        print(number)
-//    }
-//}
-
-//HARMONIC series formula
-//var sum = 1.0
-//for harmonic in 2...5000 {
-//    var math = (Double(1)/Double(harmonic))
-//    sum += math
-//}
-//print(sum)
-
-//Use a loop to multiply two numbers 234 and 3643 using only addition.
-//declare a sumValue = 0
-//iterate x number of times
-//each iteration update and add y value to sumValue
-//print sumValue
-
-//var sumValue = 0
-//for x in 1...243 {
-//    sumValue += 3643
-//}
-//print(sumValue)
-
-//FIZZBUZZ
-//for fbNumbers in 1...100 {
-//    if (fbNumbers % 3 == 0 && fbNumbers % 5 == 0) {
-//        print("\(fbNumbers) = FizzBuzz!")
-//    } else if (fbNumbers % 3 == 0) {
-//        print("\(fbNumbers)...Fizz")
-//    } else if (fbNumbers % 5 == 0) {
-//        print("\(fbNumbers)...Buzz")
-//    } else {
-//        print(fbNumbers)
-//    }
-//}
-
-////////////////////////////////CALCULATE FACTORIAL!
-//var factorialSum = 1
-//var n = 15
-//while(n >= 1){
-//    factorialSum = factorialSum * n
-//    n -= 1
-//}
-//print(factorialSum)
-
-////////////////////////////////PRINT 10 BY 10 CHECKERED BOARD
-//for box in 1...110 {
-//    if (box % 11 == 0) {
-//        print()
-//    } else if(box % 2 != 0){
-//        print("\u{2B1B}", terminator:"")
-//    } else {
-//        print("\u{2B1C}", terminator:"")
-//    }
-//}
-
-////////////////////////////////AIRPLANE SEATING
-//Print an Airplane seating arrangement (1a through 1h) for 26 rows of seats
-//iterate through x to 26
-//print the seating arrangement for each row, iterpolating in x
-//for seat in 1...26 {
-//    print("\(seat)a \(seat)b \(seat)c \(seat)d \(seat)e \(seat)f \(seat)g \(seat)h")
-//}
 
