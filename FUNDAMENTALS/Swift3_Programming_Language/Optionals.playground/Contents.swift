@@ -41,3 +41,268 @@ import UIKit
 //    print("\(firstOptional) \(secondOptional)")
 //}
 //returnOptionals(firstOptional: "hello", secondOptional: "world")
+
+//30 EXAMPLES
+//check if the optional has a value then set to a constant
+//if name != nil {
+//    let realName = name!
+//    print(realName)
+//}
+
+//optional binding syntax
+//if let temperaryConstant = optionalVariable {
+//execute code with temperaryConstant
+//} else {
+//    no value for optionalVariable, thus it is nil
+//}
+
+//updating an optional in place
+//var city: String?
+//city = "San Francisco"
+//city?.append("!")
+//print(city!)
+
+//nil default optional
+//var error: String?
+//error = "404 not found"
+//let anError = error ?? "no error at this time"
+
+//if let example
+//var userResponse: String?
+//userResponse = "kevin@gmail.com"
+//if let someResponse = userResponse {
+//    print("Welcome \(someResponse)")
+//} else {
+//    print("no user response")
+//}
+
+//var errorCode: String?
+//errorCode = "404"
+//if let code = errorCode {
+//    print("\(code) - error")
+//} else {
+//    print("no error at this time")
+//}
+
+//Examples: 30
+
+//var optionalString: String?
+//var optionalInt: Int?
+//var optionalBool: Bool?
+//var optionalArray: Array<String>?
+//var optionalArray2: [String]?
+//var optionalArrayOfInts: [Int]?
+//var optionalString: String?
+//var optionalArray: [Int]?
+//var optionalArray2: [Int?] = []
+//var optionalDictionary: (String, Int)?
+//var optionalDictionary2: (String?, Int?)
+//var optionString: String?
+//print(optionString == "")
+//print(optionString == nil)
+//optionString = "Wes"
+//var optionalBool: Bool?
+//print(optionalBool == false)
+//print(optionalBool == nil)
+
+//var book: String?
+//book = "Swift Programming"
+//if book != nil {
+//    let bookValue = book!
+//    print(bookValue)
+//} else {
+//    print("no book value yet")
+//}
+
+//var drink: String?
+//drink = "H2O"
+//if drink != nil {
+//    let hydrate = drink!
+//    print("drink plenty of \(hydrate)")
+//} else {
+//    print("no drink chosen yet")
+//}
+
+//var design: String?
+//design = "stripes"
+//if design != nil {
+//    let realDesign = design!
+//    print("the design pattern is \(realDesign)!")
+//} else {
+//    print("design not yet chosen")
+//}
+
+//var email: String?
+//email = "tom@gmail.com"
+//if email != nil {
+//    let userEmail = email!
+//    print("your password was sent to \(userEmail)")
+//} else {
+//    print("please enter valid email")
+//}
+
+//var creditCard: Int?
+//creditCard = 1234567890123456
+//if creditCard != nil {
+//    let userCreditCard = creditCard!
+//    print("please review purchase credit card on file - \(userCreditCard)")
+//} else {
+//    print("please enter valid credit card number")
+//}
+
+//var hasWine: Bool?
+//hasWine = true
+//if hasWine != nil {
+//    let wine = hasWine!
+//    print("Yes we have wine!")
+//} else {
+//    print("no wine yet...😩")
+//}
+
+//var shoppingList: [String]?
+//shoppingList = ["eggs", "milk", "coffee"]
+//if shoppingList != nil {
+//    let list = shoppingList!
+//    print("need to get groceries!")
+//} else {
+//    print("dont need groceries yet")
+//}
+
+//var savings: Int?
+//savings = 3000
+//if savings != nil {
+//    let investments = savings!
+//    print("time to invest some savings!")
+//} else {
+//    print("need to refactor budget & expenses to save more.")
+//}
+
+//var numWatts: Int?
+//numWatts = 100
+//if let power = numWatts {
+//    print("the bulb is \(power) watts")
+//} else {
+//    print("how many watts do we need?")
+//}
+
+//var dessert: String?
+//dessert = "vanilla ice cream"
+//if let treat = dessert {
+//    print("mmmm \(treat)")
+//} else {
+//    print("which dessert would you like?")
+//}
+
+//var height: Double?
+//height = 6.3
+//if let size = height {
+//    print("you are \(size)ft tall")
+//} else {
+//    print("please enter height")
+//}
+
+//var reservation: Bool?
+//var time: String = "7:30pm"
+//reservation = true
+//if let booked = reservation {
+//    print("Confirmed, your reservation is at \(time)")
+//} else {
+//    print("no tables available at that time, please try again")
+//}
+
+//var vacationDays: Int?
+//vacationDays = 3
+//if let trip = vacationDays {
+//    print("vacation balance is \(trip)")
+//} else {
+//    print("vacation balance: 0")
+//}
+
+//var meeting: Bool?
+//meeting = true
+//if let time = meeting {
+//    print("yes there's a meeting today")
+//} else {
+//    print("no meetings scheduled at this time")
+//}
+
+//var allergies: String?
+//allergies = "nuts"
+//if let safety = allergies {
+//    print("known allergies: \(safety)")
+//} else {
+//    print("no known allergies")
+//}
+
+//var seatPref: String?
+//seatPref = "Window"
+//if let seat = seatPref {
+//    print("confirm: \(seat) seat preferred")
+//} else {
+//    print("please choose a perferred seat")
+//}
+
+//var practice: String?
+//practice = "programming"
+//practice?.append(" is kool!")
+//print(practice!)
+
+//var actor: String?
+//actor = "Will"
+//actor?.append(" Smith")
+//print(actor!)
+
+//var phoneNum: String?
+//phoneNum = "123"
+//phoneNum?.append("-4567")
+//print(phoneNum!)
+
+//var show: String?
+//show = "friend"
+//show?.append("s")
+//print(show!)
+
+//var food: String?
+//food = "tacos"
+//food?.append(" tacos! TACOS!!!")
+//print(food!)
+
+//var gymStuff: [String]?
+//gymStuff = ["water bottle", "shorts", "left shoe"]
+//gymStuff?.append("right shoe")
+//print(gymStuff!)
+
+//var weights: String?
+//weights = "25"
+//type(of: weights)
+//weights?.append("lb")
+//print("where are the \(weights!) dumbbells?")
+
+//var errorMessage: String?
+//errorMessage = "404 not found"
+//let error = errorMessage ?? "no error at this time"
+
+//var isHot: Bool?
+//isHot = true
+//let hot = isHot ?? false
+
+//var laundry: Int?
+//laundry = 2
+//let clothes = laundry ?? 0
+
+//var exercise: String?
+//exercise = "Yoga"
+//let strength = exercise ?? "need to excersice"
+
+//var status: String?
+//status = "train is late"
+//let train = status ?? "no delays at this time"
+
+//var dishesNeeded: String?
+//dishesNeeded = "coffee cups"
+//let dish = dishesNeeded ?? "no dishes needed at this time"
+//print(dish)
+
+//var wrongPassword: String?
+//wrongPassword = "secretpassword"
+//let pass = wrongPassword ?? ""
