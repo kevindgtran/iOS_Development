@@ -13,6 +13,7 @@
 		652EE9931E93182800ACB022 /* KeyBoardShortcuts.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = KeyBoardShortcuts.playground; sourceTree = "<group>"; };
 		652EE9941E931DE500ACB022 /* Loops.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Loops.playground; sourceTree = "<group>"; };
 		652EE9951E93269D00ACB022 /* Switch_Statements.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Switch_Statements.playground; sourceTree = "<group>"; };
+		654065011E935053002D1A13 /* Optionals.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Optionals.playground; sourceTree = "<group>"; };
 		65F020531E8E03180039C972 /* Swift3_Programming_Language.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift3_Programming_Language.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F020681E8E034B0039C972 /* Closures.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Closures.playground; sourceTree = "<group>"; };
 		65F020691E8E0C2B0039C972 /* Functions.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Functions.playground; sourceTree = "<group>"; };
@@ -34,6 +35,7 @@
 		65F0204A1E8E03180039C972 = {
 			isa = PBXGroup;
 			children = (
+				654065011E935053002D1A13 /* Optionals.playground */,
 				652EE9951E93269D00ACB022 /* Switch_Statements.playground */,
 				652EE9941E931DE500ACB022 /* Loops.playground */,
 				652EE9931E93182800ACB022 /* KeyBoardShortcuts.playground */,

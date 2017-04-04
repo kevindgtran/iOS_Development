@@ -30,6 +30,33 @@ import UIKit
 //var result = checkDrinkingAge(name: "Billy", age: 30)
 //print(result)
 
+//FUNCTION WITH UNDERSCORE AND LABELS
+//func exampleLabels(_ name: String, andLast last: String) -> String {
+//    return "\(name) \(last)"
+//}
+//exampleLabels("john", andLast: "smith")
+
+//FUNCTION THATS CALLED 5 TIMES
+//for _ in 0...4 {
+//    func sayHi() {
+//        print("hi")
+//    }
+//    sayHi()
+//}
+
+//FUNCTION RETURNS TRUE IF NUMBER IS EVEN
+//func isEven(number: Int) -> Bool {
+//    return number % 2 == 0
+//}
+//isEven(number: 9)
+
+//FUNCTION THAT RETURNS STATEMENT X NUMBER OF TIMES
+//func hiMom(phrase: String, numberOfTimes times: Int){
+//    for _ in 1...times {
+//        print(phrase)
+//    }
+//}
+//hiMom(phrase: "hi mom!", numberOfTimes: 10)
 
 //30 EXAMPLES
 //func totalTravel(min: Int, speed: Int) -> String {
