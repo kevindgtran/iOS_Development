@@ -306,3 +306,45 @@ import UIKit
 //var wrongPassword: String?
 //wrongPassword = "secretpassword"
 //let pass = wrongPassword ?? ""
+
+//let age: Int?
+//age = 29
+//func checkDrinkingAge(number: Int?) -> String {
+//    guard let newNumber = number else { return "no number found" }
+//    if newNumber >= 21 {
+//        return "you can drink"
+//    } else {
+//        return "you can't drink"
+//    }
+//}
+//checkDrinkingAge(number: age)
+
+//let userResponse: String?
+//userResponse = "hello world"
+//func checkUserResponse(answer: String?) -> Bool {
+//    guard let aResponse = userResponse else { return false }
+//    switch aResponse.lowercased() {
+//    case "hello world":
+//        return true
+//    default:
+//        return false
+//    }
+//}
+//checkUserResponse(answer: userResponse)
+
+//var breakfast: String?
+//breakfast = "oatmeal"
+//
+//if let breakfast = breakfast {
+//    switch breakfast.lowercased() {
+//    case "oatmeal":
+//        print("breakfast of champions!")
+//    default:
+//        print("some other breakfast")
+//    }
+//}
+
+
+
+
+
