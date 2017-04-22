@@ -344,7 +344,29 @@ import UIKit
 //    }
 //}
 
+//var name: String?
+//name = "Kevin"
 
+//if let name = name {
+//    print("my name is \(name)")
+//}
 
+//func checkName(name: String?) -> String {
+//    
+//    guard let name = name else { return "no name" }
+//    return "my name is \(name)"
+//}
+//
+//checkName(name: "Kevin")
 
+//func checkAge(age: Int?) -> String {
+//    guard let age = age else { return "no age entered"}
+//    if age >= 21 {
+//        return "you can drink"
+//    } else {
+//        return "sorry you can't drink"
+//    }
+//}
+//
+//checkAge(age: 18)
 

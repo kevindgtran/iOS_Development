@@ -215,3 +215,21 @@ import UIKit
 //}
 //print(planetSizesKeysToArray)
 //print(planetSizesValuesToArray)
+
+var bucketList: [String]?
+bucketList = ["build house"]
+bucketList?.append("summit a mountain")
+bucketList?[1] += "new thing!"
+
+
+if let bucketList = bucketList {
+    print(bucketList.joined(separator: ""))
+}
+
+
+
+
+
+
+
+
