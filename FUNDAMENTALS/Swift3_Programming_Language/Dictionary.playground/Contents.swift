@@ -1,5 +1,34 @@
 import UIKit
 
+//NOTES: dctionaries return an optional
+
+//create empty dictionary
+//var newDictionary: [String : Int]?
+//newDictionary = ["Ray" : 200, "Kevin" : 150, "Richard" : 180]
+
+//access the keys value
+//if let newDictionary = newDictionary {
+//    print(newDictionary["Kevin"]!)
+//}
+
+//update and add a key/value
+//func addToDictionary(word: [String: Int]?) {
+//    guard var word = word else { return }
+//        word["Peter"] = 0
+//        print(word)
+//}
+//addToDictionary(word: newDictionary)
+
+//iterate through, print all then only the keys
+//func loopThroughDictionary(word: [String : Int]?) {
+//    guard let word = word else { return }
+//        for (key, value) in word {
+//            print("\(key) : \(value)")
+//        }
+//}
+//loopThroughDictionary(word: newDictionary)
+
+
 //var someDictionary: [String: String]?
 //someDictionary = ["name" : "Bob"]
 //if let someDictionary = someDictionary {
@@ -49,28 +78,24 @@ import UIKit
 
 
 //print just the keys of a dictionary
-var newDictionary: [String: String]?
-newDictionary = [
-    "userName" : "Bob123",
-    "password" : "password",
-    "address" : "123 pine st",
-    "image" : "urlimage.pdf"
-]
-
-var pumpkin = [String]()
-func returnKeysOfDictionary(someDictionary: [String: String]?) -> [String] {
-    guard let thisDictionary = someDictionary else { return ["no dictionary entered"] }
-    for keyValue in thisDictionary.keys {
-      pumpkin.append(keyValue)
-    }
-    return pumpkin
-}
-
-returnKeysOfDictionary(someDictionary: newDictionary)
-
-
-
-
+//var newDictionary: [String: String]?
+//newDictionary = [
+//    "userName" : "Bob123",
+//    "password" : "password",
+//    "address" : "123 pine st",
+//    "image" : "urlimage.pdf"
+//]
+//
+//var pumpkin = [String]()
+//func returnKeysOfDictionary(someDictionary: [String: String]?) -> [String] {
+//    guard let thisDictionary = someDictionary else { return ["no dictionary entered"] }
+//    for keyValue in thisDictionary.keys {
+//      pumpkin.append(keyValue)
+//    }
+//    return pumpkin
+//}
+//
+//returnKeysOfDictionary(someDictionary: newDictionary)
 
 
 //var newDictionary = ["ticket1" : 1,
