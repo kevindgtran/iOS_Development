@@ -253,6 +253,115 @@ import UIKit
 //}
 
 
+//for loop with where
+//for i in 1...10 where i == 7 {
+//    print(i)
+//}
+
+//while loop
+//var counter: Int = 0
+//while counter < 5 {
+//    print("\(counter)")
+//    counter += 1
+//}
+
+//repeat while loop
+//var newCounter: Int = 0
+//
+//repeat {
+//    print(newCounter)
+//    newCounter += 1
+//} while newCounter < 5
+//    print(newCounter)
 
 
+//control transfer statements, all
+//continue, break, fallthrough
 
+//fizzbuzz (if/else, swtich)
+//for i in 1...100 {
+//    if i % 3 == 0 {
+//        print("fizz")
+//        continue
+//    }
+//    
+//    if i % 5 == 0 {
+//        print("buzz")
+//        continue
+//    }
+//    
+//    if i % 15 == 0 {
+//        print("fizzbuzz")
+//        continue
+//    }
+//    print(i)
+//}
+
+//for i in 1...100 {
+//    switch i {
+//    case _ where i % 15 == 0:
+//        print("fizzbuzz")
+//    case _ where i % 3 == 0:
+//        print("fizz")
+//    case _ where i % 5 == 0:
+//        print("buzz")
+//    default:
+//        print(i)
+//    }
+//}
+
+//loop through string
+//let name: String = "Mochi"
+//for letter in name.characters {
+//    print(letter)
+//}
+
+//check if a string is empty
+//let maybeWord: String = ""
+//if maybeWord.isEmpty {
+//    print("emtpy word")
+//} else {
+//    print(maybeWord)
+//}
+//
+//maybeWord.isEmpty ? print("empty word") : print(maybeWord)
+
+//unicode scholar string
+//var dollarSign: String = "\u{24}"
+//print(dollarSign)
+
+
+//declare an optional, check if !nil
+//var userImage: String?
+//userImage = "photo.jpeg"
+//
+//if userImage != nil {
+//    let hasPicture = userImage!
+//    print("\(hasPicture) is a nice picture")
+//}
+
+//optional binding
+//var favoritesList: String?
+//favoritesList = "apples"
+//
+//if let hasFavoritesList = favoritesList {
+//    print(" \(hasFavoritesList) are his favorite")
+//}
+
+//optional binding multiple optionals and converting type
+//var errorCode: String? = "404"
+//
+//if let theErrorCode = errorCode, let theErrorCodeInt = Int(theErrorCode) {
+//    print(theErrorCodeInt)
+//}
+
+//implicit unwrapping, optional chaining
+//var value: String?
+//value = "value"
+//value!.uppercased()
+//print(value!)
+
+//nill coelescent operator
+//var accountBalance: String?
+//let realAccountBalance = accountBalance ?? "no balance"
+//print(realAccountBalance)
