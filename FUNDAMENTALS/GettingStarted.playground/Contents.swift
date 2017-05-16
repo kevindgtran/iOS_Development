@@ -365,3 +365,56 @@ import UIKit
 //var accountBalance: String?
 //let realAccountBalance = accountBalance ?? "no balance"
 //print(realAccountBalance)
+
+////new array
+//var newArray: [String] = ["oranges", "carrots", "ginger"]
+//
+////adding to array, count
+//newArray.append("cucumber")
+//newArray.count
+//print(newArray)
+//
+////removing from an array
+//newArray += ["lemons"]
+//print(newArray)
+//newArray.remove(at: 2)
+//print(newArray)
+//
+////subscript to add new items
+//newArray[2] += "s"
+//print(newArray)
+//
+////replacing an array item
+//newArray[0] = "tangerines"
+//print(newArray)
+//
+////loop through array
+//for fruit in newArray {
+//    print(fruit)
+//}
+//
+////add 2 arrays together
+//var otherArray: [String] = [
+//    "apples",
+//    "H20",
+//    "ice"
+//]
+//
+//newArray += otherArray
+//print(newArray)
+//
+////find var in array documentation to tell wether an array contains elements
+//newArray.contains("H20")
+//
+////reverse the order of an array
+//newArray.reverse()
+//print(newArray)
+//
+////return index of specific item in array AND the item in the array
+//if let indexOfH20 = newArray.index(of: "H20") {
+//    print("\(newArray[1]) is at index: \(indexOfH20)")
+//}
+
+
+
+
