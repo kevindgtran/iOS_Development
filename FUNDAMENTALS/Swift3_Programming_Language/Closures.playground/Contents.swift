@@ -1,4 +1,109 @@
-import UIKit
+//import UIKit
+
+//Functions are named closures. All functions are closures. Closures are "un-named" functions
+
+//syntax:
+//{(parameters) -> return type in
+//    return code
+//}
+
+
+//example - passing a function as a method parameter
+//let volunteerCounts = [1, 3, 40, 32, 2, 53, 77, 13]
+
+//func sortAscending(_ i: Int, _ j: Int) -> Bool {
+//    return i < j
+//}
+
+//func sortDescending(_ k: Int, _ m: Int) -> Bool {
+//    return k > m
+//}
+
+//let sortedAscendingVolunteerCounts = volunteerCounts.sorted(by: sortAscending)
+//let sortedDescendingVolunteerCounts = volunteerCounts.sorted(by: sortDescending)
+
+
+
+//example - closure inline for above example
+//let volunteerCounts = [1, 3, 40, 32, 2, 53, 77, 13]
+
+//let sortedDescendingVolunteerCounts = volunteerCounts.sorted { (i, j) -> Bool in
+//    return i > j
+//}
+
+//let sortedAscendingVolunteerCounts = volunteerCounts.sorted(by: { (_ c: Int, _ b: Int) -> Bool in
+//    c < b
+//})
+
+
+
+//example - closure type inference for example above
+//let volunteerCounts = [1, 3, 40, 32, 2, 53, 77, 13]
+
+//let volunteerSorted = volunteerCounts.sorted(by: {i, j in i < j })
+
+//let ascending = volunteerCounts.sorted(by: {(_ i: Int, _ j: Int) -> Bool in
+//    return i < j
+//})
+
+
+//functions as return types
+//func makeTownGrand() -> (Int, Int) -> Int {
+    
+//    func buildRoads(byAddingLights lights: Int, toExistingLights existingLights: Int) -> Int {
+//        return lights + existingLights
+//    }
+    
+//    return buildRoads(byAddingLights:toExistingLights:)
+//}
+
+//let willMakeTownGreat = makeTownGrand()
+//willMakeTownGreat(4, 4)
+
+
+//functions are arguments
+//func makeTownGrand(withBudget budget: Int, condition: (Int) -> Bool) -> ((Int, Int) -> Int)? {
+//    if condition(budget) {
+//        func buildRoads
+//    }
+//}
+
+
+//examples
+
+//let greet = { (name: String) -> Void in
+//    print("hello \(name)")
+//}
+//greet("kevin")
+
+//let multiplyClosure = {(num1: Int, num2: Int) -> Int in
+//    return num1 * num2
+//}
+
+//multiplyClosure(2, 3)
+
+//let someNumbers: [Int] = [1, 5, 2, 42, 90, 5, 32]
+
+//someNumbers.sorted(by: { (_ i: Int, _ j: Int) -> Bool in
+//    return i < j })
+
+//let personsAge = { (name: String) -> Int in
+//    switch name.lowercased() {
+//    case "kevin":
+//        return 29
+//    default:
+//        return 0
+//    }
+//}
+//personsAge("Kevin")
+
+
+
+
+
+
+
+
 
 //closures are advanced functions, which help us write functions with less code
 //syntax #1:
