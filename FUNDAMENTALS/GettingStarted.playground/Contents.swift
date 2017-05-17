@@ -415,6 +415,174 @@ import UIKit
 //    print("\(newArray[1]) is at index: \(indexOfH20)")
 //}
 
+//dictionary documentation, create new instance, explicit dictionary, count
+//var newDictionary = [String: Double]()
+//var anotherDictionary: [String: Double] = ["small" : 3.00, "medium" : 5.00, "large" : 8.00]
+//anotherDictionary.count
 
+//Read from dictionary, option click, modify value for key - printing value
+//print(anotherDictionary)
+//anotherDictionary["large"] = 10.00
+//print(anotherDictionary["large"])
+//if let largePrice = anotherDictionary["large"] {
+//    print(largePrice)
+//}
+
+//adding a value, removing a value
+//anotherDictionary.updateValue(12, forKey: "extra large")
+//print(anotherDictionary)
+
+//anotherDictionary["kids"] = 1.00
+//print(anotherDictionary)
+
+//looping - print both key & value, just keys
+//for (key, value) in anotherDictionary {
+//   print("A \(key) is $\(value)")
+//}
+
+//for item in anotherDictionary.keys {
+//    print("we have \(item) size")
+//}
+
+//converting dictionary keys to an array
+//var dictionaryKeysToArray = [String]()
+//for thing in anotherDictionary.keys {
+//    dictionaryKeysToArray.append(thing)
+//}
+//print(dictionaryKeysToArray)
+
+//let dictionaryKeysToArray2 = Array(anotherDictionary.keys)
+//print(dictionaryKeysToArray2)
+
+//create dictionary of state and 5 zip codes
+//let zips: [String:[Int]] = [
+//    "california" : [12345, 567891, 98547],
+//    "arizona" : [54876, 54876, 83154]
+//]
+
+//print(zips)
+
+//set declaration and empty initialization
+//let newSet = Set<String>()
+
+//create explicit set, loop through set, contains a value
+//let explicitSet: Set<String> = ["hello", "world"]
+
+
+
+//declare and initialize an empty set
+//let emptySet = Set<String>()
+
+//create explicit set, documentation, contains a value
+//var newSet: Set<String> = ["water", "coffee", "tea"]
+//newSet.contains("coffee")
+
+//loop through set
+//for drink in newSet {
+//    print("we offer \(newSet.count) drinks, \(drink)")
+//}
+
+//basic function
+//func basicFunction() {
+//    print("some function")
+//}
+//basicFunction()
+
+//function with one parameter
+//func OneParameter(number: Int) {
+//    print("\(number) items")
+//}
+//OneParameter(number: 12)
+
+//function with multiple parameters
+//func addition(firstNum: Int, secondNum: Int) {
+//    let answer = firstNum + secondNum
+//    print(answer)
+//}
+//addition(firstNum: 3, secondNum: 2)
+
+//explicit parameter names
+//func explicitParameters(word favoriteColor: String) {
+//    print("his favorite color is \(favoriteColor)")
+//}
+//explicitParameters(word: "blue")
+
+//variadic parameters
+//func greetEveryone(person name: String...) {
+//    for individual in name {
+//        print("hello \(individual)!")
+//    }
+//}
+//greetEveryone(person: "Kevin", "Marlene", "Mochi")
+
+//default parameter and modify one output
+//func goodMorning(person name: String, punctuation: String = ".") {
+//    print("Good morning \(name)\(punctuation)")
+//}
+//goodMorning(person: "Kevin")
+//goodMorning(person: "Marlene", punctuation: "!")
+
+//function with _, return function
+//func withUnderScore(_ word1: String) {
+//    print("\(word1)")
+//}
+//withUnderScore("Hello world")
+
+//nested function call
+//func someMath(first: Int, second: Int) {
+//    let addition = first + second
+    
+//    func add10(number: Int) {
+//        print(number + 10)
+//    }
+    
+//    add10(number: addition)
+//}
+
+//someMath(first: 1, second: 2)
+
+//function with multiple returns
+//func returnMultipleNums(num1: Int, num2: Int, num3: Int, num4: Int) -> (Int, Int) {
+//    let firstNumberAdded = num1 + num2
+//    let secondNumberAdded = num3 + num4
+//
+//    return (firstNumberAdded, secondNumberAdded)
+//}
+//returnMultipleNums(num1: 2, num2: 2, num3: 3, num4: 3)
+
+//function with optional parameter and return type
+//func sayMiddleName(first: String, middle: String?, last: String) -> String? {
+//    if let middleName = middle {
+//        return "\(middleName)"
+//    }
+//    return "no middle name"
+//}
+
+//sayMiddleName(first: "Kevin", middle: nil, last: "Tran")
+
+//guard statement in function - return middle name
+//func sayMiddleName(first: String, middle: String?, last: String) -> String? {
+//    guard let hasMiddleName = middle else {
+//        print("no middle name found")
+//        return "no middle name found"
+//    }
+    
+//    return "your middle name is \(hasMiddleName)"
+//}
+//sayMiddleName(first: "Kevin", middle: nil, last: "Tran")
+
+
+//function, void and empty (typealiase)
+//func greet(){
+//    print("hello")
+//}
+
+//func greet2() -> Void {
+//    print("hello")
+//}
+
+//func greet3() -> () {
+//    print("hello")
+//}
 
 
