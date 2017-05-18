@@ -19,6 +19,7 @@
 		654065011E935053002D1A13 /* Optionals.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Optionals.playground; sourceTree = "<group>"; };
 		654BD8841EAD4DC1002A4163 /* Inheritance.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Inheritance.playground; sourceTree = "<group>"; };
 		654BD8851EAD68E2002A4163 /* Initializers.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Initializers.playground; sourceTree = "<group>"; };
+		65D60F191ECE3DE800107277 /* Enumerators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Enumerators.playground; sourceTree = "<group>"; };
 		65E30C391EA71A7F00C1C84C /* Dictionary.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Dictionary.playground; sourceTree = "<group>"; };
 		65F020531E8E03180039C972 /* Swift3_Programming_Language.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift3_Programming_Language.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F020681E8E034B0039C972 /* Closures.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Closures.playground; sourceTree = "<group>"; };
@@ -42,6 +43,7 @@
 		65F0204A1E8E03180039C972 = {
 			isa = PBXGroup;
 			children = (
+				65D60F191ECE3DE800107277 /* Enumerators.playground */,
 				65F8D1681EAD7931006B68F4 /* Protocols.playground */,
 				654BD8851EAD68E2002A4163 /* Initializers.playground */,
 				654BD8841EAD4DC1002A4163 /* Inheritance.playground */,
