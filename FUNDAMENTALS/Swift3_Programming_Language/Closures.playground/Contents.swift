@@ -68,8 +68,19 @@
 //    }
 //}
 
-
 //examples
+
+
+
+
+
+
+
+
+
+
+
+
 
 //let greet = { (name: String) -> Void in
 //    print("hello \(name)")
