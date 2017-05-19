@@ -1,5 +1,26 @@
 import UIKit
 
+//book example
+var meter1Reading: Int?
+var meter2Reading: Int?
+var meter3Reading: Int?
+
+meter1Reading = 10
+meter3Reading = 8
+//meter2Reading = 8
+
+
+//get average of all meter readings
+ if let m1 = meter1Reading,
+    let m2 = meter2Reading,
+    let m3 = meter3Reading {
+    let result = (m1 + m2 + m3) / 3
+    print(result)
+ } else {
+    print("missing a meter reading")
+}
+
+
 //DEFINITION: Optionals allow us to work with variables that may have nil values (nil == no value)
 
 //NOTES: Because SWIFT is a type safe language, every variable must have a type and value. Optional variables are helpful when retrieving data that may or may not have values such as bank account info, user details, JSON, etc.
