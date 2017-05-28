@@ -1,8 +1,8 @@
 {
   "properties" : {
-    "duration" : 15,
+    "duration" : 4,
     "duration-type" : "fps",
-    "repetitions" : 0
+    "repetitions" : 2
   },
   "info" : {
     "version" : 1,
@@ -10,13 +10,13 @@
   },
   "frames" : [
     {
-      "filename" : "frame.png"
+      "filename" : "FingerOne.png"
     },
     {
-      "filename" : "frame.png"
+      "filename" : "FingerTwo.png"
     },
     {
-      "filename" : "Three fingers.png"
+      "filename" : "FingerThree.png"
     }
   ]
 }
