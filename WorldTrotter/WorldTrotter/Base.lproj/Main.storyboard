@@ -94,18 +94,23 @@
             <point key="canvasLocation" x="660" y="464"/>
         </scene>
         <!--Map-->
-        <scene sceneID="fUT-bq-EM6">
+        <scene sceneID="RtD-5H-taX">
             <objects>
-                <viewController id="dVg-07-hkd" customClass="MapViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
-                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="2ZN-8k-O3H">
+                <viewController id="Ipw-Dd-w1Y" customClass="MapViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5JN-mR-ep1"/>
+                        <viewControllerLayoutGuide type="bottom" id="JOU-z7-Dmc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d9R-IW-JYM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </mapView>
-                    <tabBarItem key="tabBarItem" title="Map" image="MapIcon" id="aff-15-tfe"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="MapIcon" id="a7U-OC-Lkv"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MKo-U7-ptk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bnw-w0-UaF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1457" y="464"/>
+            <point key="canvasLocation" x="1524" y="464"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Zzk-md-iqW">
@@ -113,12 +118,13 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="MHu-r4-HIB" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="ZA2-8v-8xe">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="059-Vx-my5"/>
-                        <segue destination="dVg-07-hkd" kind="relationship" relationship="viewControllers" id="KXS-Rl-Up6"/>
+                        <segue destination="Ipw-Dd-w1Y" kind="relationship" relationship="viewControllers" id="WXh-VA-fTq"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hsK-7N-fxP" userLabel="First Responder" sceneMemberID="firstResponder"/>
