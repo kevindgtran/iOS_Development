@@ -25,8 +25,11 @@ class MapViewController: UIViewController {
         //set view to instance of MKMapView
         view = mapView
         
-        //new instance of UISegmentedControl
-        let segmentedControl = UISegmentedControl(items: ["Standard", "Hybrid", "Satellite"])
+        //new instance of UISegmentedControl ... setup string table
+        let standardString = NSLocalizedString("Standard", comment: "Standard map view")
+        let satelliteString = NSLocalizedString("Satellite", comment: "Satellite map view")
+        let hybridString = NSLocalizedString("Hybrid", comment: "Hybrid map view")
+        let segmentedControl = UISegmentedControl(items: [standardString, satelliteString, hybridString])
         
         //UISegmentedControl background color, alpha
         segmentedControl.backgroundColor = UIColor.white.withAlphaComponent(0.5)
@@ -55,6 +58,7 @@ class MapViewController: UIViewController {
         topConstraint.isActive = true
         leadingConstraint.isActive = true
         trailingConstraint.isActive = true
+
         
     }//end of loadView function
     
