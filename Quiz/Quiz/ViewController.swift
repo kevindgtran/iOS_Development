@@ -15,80 +15,84 @@ class ViewController: UIViewController {
     @IBOutlet var nextQuestionLabel: UILabel!
     @IBOutlet var answerLabel: UILabel!
     
-    //MODEL
-    let questions: [String] = [
-        "What is 7 + 7?",
-        "What is the capital of Vernmont?",
-        "What is cognac made of?"
-    ]
+    //create outlets for the constraints
+    @IBOutlet var currentQuestionLabelCenterXConstraint: NSLayoutConstraint!
+    @IBOutlet var nextQuestionLabelCenterXConstraint: NSLayoutConstraint!
     
-    let answers: [String] = [
+    let questions = [
+        "From what is cognac made?",
+        "What is 7+7?",
+        "What is the capital of Vermont?"
+    ]
+    let answers = [
+        "Grapes",
         "14",
-        "Montpelier",
-        "Grapes"
+        "Montpelier"
     ]
     
-    //CONTROLLER
-    //create currentQuestion counter
-    var currentQuestionIndex: Int = 0
-    
-    //before each view will appear, set the questionLabel's alpha to 0
-    override func viewWillAppear(_ animated: Bool) {
-        nextQuestionLabel.alpha = 0
-    }//end of viewWillAppear
+    var currentQuestionIndex = 0
     
     override func viewDidLoad() {
-        currentQuestionLabel.text = questions[currentQuestionIndex]
-    }//end of viewDidLoad
-    
-    @IBAction func showNextQuestion(_ sender: UIButton) {
-        //add 1 to currentQuestionIndex
-        currentQuestionIndex += 1
+        super.viewDidLoad()
         
-        //check if currentQuestionIndex == questions.count then reset currentQuestionIndex to 0
+        currentQuestionLabel.text = questions[currentQuestionIndex]
+        updateOffScreenLabel()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Set the label's initial alpha
+        nextQuestionLabel.alpha = 0
+    }
+    
+    func animateLabelTransitions() {
+        
+        view.layoutIfNeeded()
+        
+        let screenWidth = view.frame.width
+        self.nextQuestionLabelCenterXConstraint.constant = 0
+        self.currentQuestionLabelCenterXConstraint.constant += screenWidth
+        
+        UIView.animate(withDuration: 0.5,
+                       delay: 0,
+                       options: [.curveLinear],
+                       animations: {
+                        self.currentQuestionLabel.alpha = 0
+                        self.nextQuestionLabel.alpha = 1
+                        
+                        self.view.layoutIfNeeded()
+        },
+                       completion: { _ in
+                        swap(&self.currentQuestionLabel, &self.nextQuestionLabel)
+                        swap(&self.currentQuestionLabelCenterXConstraint, &self.nextQuestionLabelCenterXConstraint)
+                        
+                        self.updateOffScreenLabel()
+        })
+    }
+    
+    func updateOffScreenLabel() {
+        let screenWidth = view.frame.width
+        nextQuestionLabelCenterXConstraint.constant = -screenWidth
+    }
+    
+    @IBAction func showNextQuestion(_ sender: AnyObject) {
+        currentQuestionIndex += 1
         if currentQuestionIndex == questions.count {
             currentQuestionIndex = 0
         }
         
-        //create new variable = index questions with currentQuestionIndex counter
-        let question: String = questions[currentQuestionIndex]
-        
-        //update questionLabel with new variable
+        let question = questions[currentQuestionIndex]
         nextQuestionLabel.text = question
-        
-        //set answerLabel to ???
         answerLabel.text = "???"
         
-        //call the animateLabelTransitions function
         animateLabelTransitions()
-    }//end of showNextQuestion action
+    }
     
-    @IBAction func showAnswer(_ sender: UIButton) {
-        //new constant = subscripting answers
-        let currentAnswer = answers[currentQuestionIndex]
-        
-        //assign new constant to answerlabel
-        answerLabel.text = currentAnswer
-    }//end of showAnswer action
-    
-    //create function to animate label
-    func animateLabelTransitions() {
-        //declare closure constant that takes/ returns no values
-        //let animationClosure = { () -> Void in
-        //self.questionLabel.alpha = 1
-        //}//end of animationClosure
-        
-        //animate the alpha of the questionLabel
-        UIView.animate(withDuration: 0.5, delay: 0, options: [], animations: { 
-            self.currentQuestionLabel.alpha = 0
-            self.nextQuestionLabel.alpha = 1
-        }, completion: { _ in
-            swap(&self.currentQuestionLabel, &self.nextQuestionLabel)
-        })//end of UIView animate 
-        
-        
-    }//end of animationClosure function
-    
+    @IBAction func showAnswer(_ sender: AnyObject) {
+        let answer = answers[currentQuestionIndex]
+        answerLabel.text = answer
+    }
     
     
 }//end of ViewController
