@@ -9,12 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     //MARK: - Properties
-    @IBOutlet var questionLabel: UILabel!
+    @IBOutlet var currentQuestionLabel: UILabel!
+    @IBOutlet var nextQuestionLabel: UILabel!
     @IBOutlet var answerLabel: UILabel!
     
-    //Model
+    //MODEL
     let questions: [String] = [
         "What is 7 + 7?",
         "What is the capital of Vernmont?",
@@ -27,12 +28,18 @@ class ViewController: UIViewController {
         "Grapes"
     ]
     
-    //Controller
+    //CONTROLLER
+    //create currentQuestion counter
     var currentQuestionIndex: Int = 0
     
+    //before each view will appear, set the questionLabel's alpha to 0
+    override func viewWillAppear(_ animated: Bool) {
+        nextQuestionLabel.alpha = 0
+    }//end of viewWillAppear
+    
     override func viewDidLoad() {
-        questionLabel.text = questions[currentQuestionIndex]
-    }
+        currentQuestionLabel.text = questions[currentQuestionIndex]
+    }//end of viewDidLoad
     
     @IBAction func showNextQuestion(_ sender: UIButton) {
         //add 1 to currentQuestionIndex
@@ -44,14 +51,17 @@ class ViewController: UIViewController {
         }
         
         //create new variable = index questions with currentQuestionIndex counter
-        let currentQuestion = questions[currentQuestionIndex]
+        let question: String = questions[currentQuestionIndex]
         
         //update questionLabel with new variable
-        questionLabel.text = currentQuestion
+        nextQuestionLabel.text = question
         
         //set answerLabel to ???
         answerLabel.text = "???"
-    }
+        
+        //call the animateLabelTransitions function
+        animateLabelTransitions()
+    }//end of showNextQuestion action
     
     @IBAction func showAnswer(_ sender: UIButton) {
         //new constant = subscripting answers
@@ -59,8 +69,27 @@ class ViewController: UIViewController {
         
         //assign new constant to answerlabel
         answerLabel.text = currentAnswer
+    }//end of showAnswer action
     
-    }
-
-}
+    //create function to animate label
+    func animateLabelTransitions() {
+        //declare closure constant that takes/ returns no values
+        //let animationClosure = { () -> Void in
+        //self.questionLabel.alpha = 1
+        //}//end of animationClosure
+        
+        //animate the alpha of the questionLabel
+        UIView.animate(withDuration: 0.5, delay: 0, options: [], animations: { 
+            self.currentQuestionLabel.alpha = 0
+            self.nextQuestionLabel.alpha = 1
+        }, completion: { _ in
+            swap(&self.currentQuestionLabel, &self.nextQuestionLabel)
+        })//end of UIView animate 
+        
+        
+    }//end of animationClosure function
+    
+    
+    
+}//end of ViewController
 
