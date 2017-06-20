@@ -12,4 +12,21 @@ class ItemStore {
    
     var allItems = [Item]()
     
-}
+    @discardableResult func createItem() -> Item {
+        let newItem = Item(random: true)
+        
+        allItems.append(newItem)
+        
+        return newItem
+    }//end of createItem method
+
+    
+    init() {
+        for _ in 0..<5 {
+            createItem()
+        }
+    }//end of create initializer
+    
+    
+    
+}//end of ItemStore class
