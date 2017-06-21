@@ -62,6 +62,10 @@ class ItemsViewController: UITableViewController {
         tableView.contentInset = insets
         tableView.scrollIndicatorInsets = insets
         
+        //compute cell height based on constraints
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 65
+        
     }
     
     //UITableView required method for UITableViewDataSource protocol
@@ -74,8 +78,8 @@ class ItemsViewController: UITableViewController {
         //create an instance of UITableViewCell with a style of value1
         //let cell = UITableViewCell(style: .value1, reuseIdentifier: "UITableViewCell")
         
-        //create an instance if tableView with reusable cells with the given unique identifier
-        let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
+        //create an instance if tableView with reusable cells with the custom cell's unique identifier, cast as custom cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell", for: indexPath) as! ItemCell
         
         //set the item at the nth index path, where the n in the row
         //set the cells label text with the item name (at that index path's row)
@@ -84,8 +88,10 @@ class ItemsViewController: UITableViewController {
         
         let item = itemStore.allItems[indexPath.row]
         
-        cell.textLabel?.text = item.name
-        cell.detailTextLabel?.text = "$\(item.valueInDollars)"
+        //configure cell labels
+        cell.nameLabel.text = item.name
+        cell.serialNumberLabel.text = item.serialNumber
+        cell.valueLabel.text = "$\(item.valueInDollars)"
         
         return cell
     }//end of cellForRowAt method
@@ -133,7 +139,23 @@ class ItemsViewController: UITableViewController {
     
     }//end of moveRowAt method
     
-    
+    //create prepare(for: sender:) method
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //if triggered segue is the correct "showItem" segue identifier
+        switch segue.identifier {
+        case "showItem"?:
+            //first find the tapped row
+            if let row = tableView.indexPathForSelectedRow?.row {
+                //get item with this row and pass it along
+                let item = itemStore.allItems[row]
+                
+                let detailViewController = segue.destination as! DetailViewController
+                detailViewController.item = item
+            }
+        default:
+            preconditionFailure("Unexpected segue identifier.")
+        }//end of switch statement
+    }//end of prepare for segue function
     
     
     
