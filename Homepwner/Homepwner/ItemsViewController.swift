@@ -13,9 +13,15 @@ class ItemsViewController: UITableViewController {
     //add property for an ItemStore - giving the controller access to the ItemStore class
     var itemStore: ItemStore!
     
+    //setup the leftBarButton to editButtonItem
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        navigationItem.leftBarButtonItem = editButtonItem
+    }//end of aDecoder init function
     
     //MARK: - Actions
-    @IBAction func addNewItem(_ sender: UIButton){
+    @IBAction func addNewItem(_ sender: UIBarButtonItem){
         
         //create a new item and add it to the store
         let newItem = itemStore.createItem()
@@ -30,37 +36,15 @@ class ItemsViewController: UITableViewController {
         }
     }//end of addNewItem
     
-    @IBAction func toggleEditingMode(_ sender: UIButton) {
+    //when navigation calls viewWillAppear, reload table data
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
-        //if isEditing is true
-        if isEditing {
-            //change button text to editing, to inform user of state
-            sender.setTitle("Edit", for: .normal)
-            
-            //turn off editing mode
-            setEditing(false, animated: true)
-        } else {
-            //change button text to Done, to inform user of state
-            sender.setTitle("Done", for: .normal)
-            
-            //enter editing mode
-            setEditing(true, animated: true)
-        }
-    }//end of toggleEditingMode action
+        tableView.reloadData()
+        
+    }//end of viewWillAppear
     
     override func viewDidLoad() {
-        
-        //fix tableview from underlapping the status bar
-        //set the status bar height to a constant
-        let statusBarHeight = UIApplication.shared.statusBarFrame.height
-        
-        //set the UIEdgeInsets of the top to the status bar height
-        let insets = UIEdgeInsets(top: statusBarHeight, left: 0, bottom: 0, right: 0)
-        
-        //set the tableView insets to the newly declared insets
-        //set the scrollIndicatorInsets to the newly declared insets
-        tableView.contentInset = insets
-        tableView.scrollIndicatorInsets = insets
         
         //compute cell height based on constraints
         tableView.rowHeight = UITableViewAutomaticDimension
