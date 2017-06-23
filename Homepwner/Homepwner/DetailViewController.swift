@@ -25,6 +25,9 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
         }
     }
     
+    //create instance of ImageStore
+    var imageStore: ImageStore!
+    
     //create number & date formatters instead of string interpolation
     let numberFormatter: NumberFormatter = {
         let formatter = NumberFormatter()
@@ -49,6 +52,14 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
         serialNumberField.text = item.serialNumber
         valueField.text = numberFormatter.string(from: NSNumber(value: item.valueInDollars))
         dateLabel.text = dateFormatter.string(from: item.dateCreated)
+        
+        //get the item key
+        let key = item.itemKey
+        
+        //if there's an image associated with that item then display the image on the image view
+        let imageToDisplay = imageStore.image(forKey: key)
+        imageView.image = imageToDisplay
+        
     }//end of viewWillAppear
     
     //when navigationController called viewWillDisappear
@@ -105,6 +116,9 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         //get picked image from info dictionay, then cast as UIImage
         let image = info[UIImagePickerControllerOriginalImage] as! UIImage
+        
+        //store the image into the ItemStore
+        imageStore.setImage(image, forKey: item.itemKey)
         
         //put selected image on view screen
         imageView.image = image

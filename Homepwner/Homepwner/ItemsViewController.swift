@@ -12,6 +12,7 @@ class ItemsViewController: UITableViewController {
     
     //add property for an ItemStore - giving the controller access to the ItemStore class
     var itemStore: ItemStore!
+    var imageStore: ImageStore!
     
     //setup the leftBarButton to editButtonItem
     required init?(coder aDecoder: NSCoder) {
@@ -106,6 +107,9 @@ class ItemsViewController: UITableViewController {
                 //remove the item from the store (model)
                 self.itemStore.removeItem(item)
                 
+                //remove the image from the ImageStore
+                self.imageStore.deleteImage(forKey: item.itemKey)
+                
                 //then remove item from the tableview
                 self.tableView.deleteRows(at: [indexPath], with: .automatic)
             })
@@ -135,6 +139,9 @@ class ItemsViewController: UITableViewController {
                 
                 let detailViewController = segue.destination as! DetailViewController
                 detailViewController.item = item
+                
+                //set the imageStore property on DetailViewController
+                detailViewController.imageStore = imageStore
             }
         default:
             preconditionFailure("Unexpected segue identifier.")
