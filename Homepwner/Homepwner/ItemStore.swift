@@ -12,6 +12,13 @@ class ItemStore {
    
     var allItems = [Item]()
     
+    //create URL so ItemStore can reach sandbox with archived data
+    let itemArchiveURL: URL = {
+        let documentsDirectories = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let documentDirectory = documentsDirectories.first!
+        return documentDirectory.appendingPathComponent("items.archive")
+    }()
+    
     @discardableResult func createItem() -> Item {
         let newItem = Item(random: true)
         
