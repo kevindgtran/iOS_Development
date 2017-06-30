@@ -424,28 +424,77 @@ import Foundation
 //
 //squareOrSquareRoot([4, 3])
 
+//
+//func sortedArray(_ num: Int) -> [Int] {
+//    let stringNum = "\(num)"
+//    var stringArray = [String]()
+//    var intArray = [Int]()
+//    
+//    for letter in stringNum.characters {
+//        stringArray.append("\(letter)")
+//    }
+//    
+//    for i in stringArray {
+//        intArray.append(Int(i)!)
+//    }
+//    
+//    return intArray.reversed()
+//
+//}
+//
+//sortedArray(123)
+
+//
+//func Stringy(_ size: Int) -> String {
+//    var alternatingString = String()
+//    for i in 0..<size {
+//        if i % 2 == 0 {
+//            alternatingString.append("1")
+//        } else {
+//            alternatingString.append("0")
+//        }
+//    }
+//        return alternatingString
+//}
+//
+//func findDigit(_ num: Int, _ nth: Int) -> Int {
+//    var finalNumber = Int()
+//    
+//    if nth <= 0 {
+//        return -1
+//    } else {
+//        let numString = String(num)
+//        
+//        if numString.characters.count < nth {
+//            return 0
+//        } else {
+//            let reversedNumString = String(numString.characters.reversed())
+//            
+//            for (index, letter) in reversedNumString.characters.enumerated() {
+//                if index == (nth - 1){
+//                  finalNumber = Int(String(letter))!
+//                  
+//                }
+//            }
+//        }
+//    }
+//    return finalNumber
+//}
 
 
 
-func sortedArray(_ num: Int) -> [Int] {
-    let stringNum = "\(num)"
-    var stringArray = [String]()
-    var intArray = [Int]()
-    
-    for letter in stringNum.characters {
-        stringArray.append("\(letter)")
-    }
-    
-    for i in stringArray {
-        intArray.append(Int(i)!)
-    }
-    
-    return intArray.reversed()
-
-}
 
 
-sortedArray(123)
+
+
+
+
+
+
+
+
+
+
 
 
 
