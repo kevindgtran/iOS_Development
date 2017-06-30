@@ -481,8 +481,53 @@ import Foundation
 //    return finalNumber
 //}
 
+//var number: Int?
+//number = 12
+
+//if let number = number {
+//    print(number * 2)
+//} else {
+//    print("no value")
+//}
+
+//var answer: Int?
+//answer = 12
+//
+//func multiplyNum(_ num: Int?) {
+//guard let number = num else {
+//    print("no value")
+//    return
+//    }
+//    print(number * 2)
+//}
+//
+//multiplyNum(answer)
+
+//
+//func formatMoney(_ val: Double) -> String {
+//    var finalNumString = String()
+//    
+//    if floor(val) == val {
+//        finalNumString.append("$\(val)0")
+//    } else {
+//        let newNumString = "$\(Double(round(100 * val) / 100))"
+//        
+//        if newNumString.characters.count < 5 {
+//            finalNumString = "\(newNumString)0"
+//        } else {
+//            finalNumString = newNumString
+//        }
+//    }
+//    return finalNumString
+//}
+//
+//formatMoney(3.76789)
 
 
+var someNum: Double = 3.1
+
+(100 * someNum)
+round(100 * someNum) / 100
 
 
 
