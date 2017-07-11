@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  passingDataTutorial
+//  Photorama
 //
-//  Created by Kevin Tran on 5/17/17.
+//  Created by Kevin Tran on 7/10/17.
 //  Copyright © 2017 com.example. All rights reserved.
 //
 

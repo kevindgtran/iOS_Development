@@ -524,16 +524,32 @@ import Foundation
 //formatMoney(3.76789)
 
 
-var someNum: Double = 3.1
-
-(100 * someNum)
-round(100 * someNum) / 100
-
-
+//var someNum: Double = 3.1
+//
+//(100 * someNum)
+//round(100 * someNum) / 100
 
 
+let correctAnswers: [String: Bool] = [
+    "1": true,
+    "one": true,
+    "2": true,
+    "two": true,
+    "3": true,
+    "three": true
+]
+
+correctAnswers["1"]
 
 
+
+// if button clicked [subscripted answer == true], alert random congratulations, show animal, increment gamecounter to next question
+// else, alert random try again message
+
+
+//Saturday - Get game flow (questions, answers, correctly showing animal parts / full animal / next animal, congratulations at end)
+//Sunday - Intro as modal, modal alerts, sounds, animations, 
+//Monday - size classes, finalize questions / answers, submit!
 
 
 

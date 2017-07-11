@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>passingDataTutorial.xcscheme</key>
+		<key>Photorama.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>65D60E871ECCCDBA00107277</key>
+		<key>65F7FB521F14238A0090CF69</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>65F7FB661F14238A0090CF69</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>65F7FB711F14238A0090CF69</key>
 		<dict>
 			<key>primary</key>
 			<true/>

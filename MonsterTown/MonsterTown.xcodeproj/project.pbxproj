@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65795D871F0BE84E00FDA2D6 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65795D861F0BE84E00FDA2D6 /* Questions.swift */; };
+		65795D891F0BE9C000FDA2D6 /* LupitaQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65795D881F0BE9C000FDA2D6 /* LupitaQuestions.swift */; };
+		65795D8B1F0BF1F300FDA2D6 /* SamQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65795D8A1F0BF1F300FDA2D6 /* SamQuestions.swift */; };
 		65C2A7941ED1356D00002889 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C2A7931ED1356D00002889 /* Monster.swift */; };
 		65C2A7961ED154BF00002889 /* Zombie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C2A7951ED154BF00002889 /* Zombie.swift */; };
 		65FB709C1ED0D94300A4E701 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FB709B1ED0D94300A4E701 /* main.swift */; };
@@ -26,6 +29,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		65795D861F0BE84E00FDA2D6 /* Questions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
+		65795D881F0BE9C000FDA2D6 /* LupitaQuestions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LupitaQuestions.swift; sourceTree = "<group>"; };
+		65795D8A1F0BF1F300FDA2D6 /* SamQuestions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SamQuestions.swift; sourceTree = "<group>"; };
 		65C2A7931ED1356D00002889 /* Monster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
 		65C2A7951ED154BF00002889 /* Zombie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zombie.swift; sourceTree = "<group>"; };
 		65FB70981ED0D94300A4E701 /* MonsterTown */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MonsterTown; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +73,9 @@
 				65C2A7951ED154BF00002889 /* Zombie.swift */,
 				65FB70A21ED0DA3800A4E701 /* Town.swift */,
 				65C2A7931ED1356D00002889 /* Monster.swift */,
+				65795D861F0BE84E00FDA2D6 /* Questions.swift */,
+				65795D881F0BE9C000FDA2D6 /* LupitaQuestions.swift */,
+				65795D8A1F0BF1F300FDA2D6 /* SamQuestions.swift */,
 			);
 			path = MonsterTown;
 			sourceTree = "<group>";
@@ -130,9 +139,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65795D871F0BE84E00FDA2D6 /* Questions.swift in Sources */,
 				65FB709C1ED0D94300A4E701 /* main.swift in Sources */,
 				65C2A7961ED154BF00002889 /* Zombie.swift in Sources */,
 				65C2A7941ED1356D00002889 /* Monster.swift in Sources */,
+				65795D891F0BE9C000FDA2D6 /* LupitaQuestions.swift in Sources */,
+				65795D8B1F0BF1F300FDA2D6 /* SamQuestions.swift in Sources */,
 				65FB70A31ED0DA3800A4E701 /* Town.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

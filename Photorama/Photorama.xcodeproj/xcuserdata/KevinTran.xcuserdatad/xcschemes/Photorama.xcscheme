@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "65D60E871ECCCDBA00107277"
-               BuildableName = "passingDataTutorial.app"
-               BlueprintName = "passingDataTutorial"
-               ReferencedContainer = "container:passingDataTutorial.xcodeproj">
+               BlueprintIdentifier = "65F7FB521F14238A0090CF69"
+               BuildableName = "Photorama.app"
+               BlueprintName = "Photorama"
+               ReferencedContainer = "container:Photorama.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,14 +28,34 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "65F7FB661F14238A0090CF69"
+               BuildableName = "PhotoramaTests.xctest"
+               BlueprintName = "PhotoramaTests"
+               ReferencedContainer = "container:Photorama.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "65F7FB711F14238A0090CF69"
+               BuildableName = "PhotoramaUITests.xctest"
+               BlueprintName = "PhotoramaUITests"
+               ReferencedContainer = "container:Photorama.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "65D60E871ECCCDBA00107277"
-            BuildableName = "passingDataTutorial.app"
-            BlueprintName = "passingDataTutorial"
-            ReferencedContainer = "container:passingDataTutorial.xcodeproj">
+            BlueprintIdentifier = "65F7FB521F14238A0090CF69"
+            BuildableName = "Photorama.app"
+            BlueprintName = "Photorama"
+            ReferencedContainer = "container:Photorama.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +75,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "65D60E871ECCCDBA00107277"
-            BuildableName = "passingDataTutorial.app"
-            BlueprintName = "passingDataTutorial"
-            ReferencedContainer = "container:passingDataTutorial.xcodeproj">
+            BlueprintIdentifier = "65F7FB521F14238A0090CF69"
+            BuildableName = "Photorama.app"
+            BlueprintName = "Photorama"
+            ReferencedContainer = "container:Photorama.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +94,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "65D60E871ECCCDBA00107277"
-            BuildableName = "passingDataTutorial.app"
-            BlueprintName = "passingDataTutorial"
-            ReferencedContainer = "container:passingDataTutorial.xcodeproj">
+            BlueprintIdentifier = "65F7FB521F14238A0090CF69"
+            BuildableName = "Photorama.app"
+            BlueprintName = "Photorama"
+            ReferencedContainer = "container:Photorama.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

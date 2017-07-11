@@ -10,20 +10,20 @@
 import Foundation
 
 //create new struct type, properties, methods and mutating methods
-struct Town {
-    
-    //properties
-    var population: Int = 5_422
-    var numberOfStopLights: Int = 4
-    
-    //methods
-    func printDescription() -> Void {
-        print("Town population: \(myTown.population) and number of stop lights is \(myTown.numberOfStopLights)")
-    }
-    
-    //mutating method - update property
-    mutating func changePopulation(by amount: Int) -> () {
-        population += amount
-    }
-    
-}
+//struct Town {
+//    
+//    //properties
+//    var population: Int = 5_422
+//    var numberOfStopLights: Int = 4
+//    
+//    //methods
+//    func printDescription() -> Void {
+//        print("Town population: \(myTown.population) and number of stop lights is \(myTown.numberOfStopLights)")
+//    }
+//    
+//    //mutating method - update property
+//    mutating func changePopulation(by amount: Int) -> () {
+//        population += amount
+//    }
+//    
+//}
