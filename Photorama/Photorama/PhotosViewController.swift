@@ -13,5 +13,7 @@ class PhotosViewController: UIViewController {
     //MARK: - Properties
     @IBOutlet var imageView: UIImageView!
     
+    var store: PhotoStore!
+    
     
 }
