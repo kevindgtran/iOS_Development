@@ -7,6 +7,17 @@
 //
 
 import Foundation
+import UIKit
+
+//create enums for the result of downloading the image
+enum ImageResult {
+    case success(UIImage)
+    case failure(Error)
+}
+
+enum PhotoError: Error {
+    case imageCreationError
+}
 
 //create an enum for both success and failures of JSON parsing
 enum PhotosResult {
@@ -58,7 +69,9 @@ class PhotoStore {
             
             
             let result = self.processPhotosRequest(data: data, error: error)
-            completion(result)
+            OperationQueue.main.addOperation {
+                completion(result)
+            }
             
           }//end of task
         
@@ -75,7 +88,39 @@ class PhotoStore {
         return FlickrAPI.photos(fromJson: jsonData)
     }
     
+    func fetchImage(for photo: Photo, completion: @escaping (ImageResult) -> Void) {
+        
+        let photoURL = photo.remoteURL
+        let request = URLRequest(url: photoURL)
+        
+        let task = session.dataTask(with: request) {
+            (data, response, error) -> Void in
+            
+            let result = self.processImageRequest(data: data, error: error)
+            OperationQueue.main.addOperation {
+                completion(result)
+            }
     
+        }
+        task.resume()
+    }
+    
+    //method to process data from web service request into an image, if possible
+    private func processImageRequest(data: Data?, error: Error?) -> ImageResult {
+        guard
+            let imageData = data,
+            let image = UIImage(data: imageData) else {
+                
+                //couldnt create an image
+                if data == nil {
+                    return .failure(error!)
+                } else {
+                    return .failure(PhotoError.imageCreationError)
+                }
+        }
+        
+        return .success(image)
+    }
     
     
 
