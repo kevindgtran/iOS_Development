@@ -7,27 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6577CA221F33A8CA00D664C3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6577CA211F33A8CA00D664C3 /* SecondViewController.swift */; };
-		65A158BA1EFEE0450084EA64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A158B91EFEE0450084EA64 /* AppDelegate.swift */; };
-		65A158BC1EFEE0450084EA64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A158BB1EFEE0450084EA64 /* ViewController.swift */; };
-		65A158BF1EFEE0450084EA64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65A158BD1EFEE0450084EA64 /* Main.storyboard */; };
-		65A158C11EFEE0450084EA64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65A158C01EFEE0450084EA64 /* Assets.xcassets */; };
-		65A158C41EFEE0450084EA64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65A158C21EFEE0450084EA64 /* LaunchScreen.storyboard */; };
+		6516BFDA1F37BB6700D5D6EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6516BFD91F37BB6700D5D6EA /* AppDelegate.swift */; };
+		6516BFDC1F37BB6700D5D6EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6516BFDB1F37BB6700D5D6EA /* ViewController.swift */; };
+		6516BFDF1F37BB6700D5D6EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6516BFDD1F37BB6700D5D6EA /* Main.storyboard */; };
+		6516BFE11F37BB6700D5D6EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6516BFE01F37BB6700D5D6EA /* Assets.xcassets */; };
+		6516BFE41F37BB6700D5D6EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6516BFE21F37BB6700D5D6EA /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6577CA211F33A8CA00D664C3 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		65A158B61EFEE0450084EA64 /* keyboardPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = keyboardPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		65A158B91EFEE0450084EA64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		65A158BB1EFEE0450084EA64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		65A158BE1EFEE0450084EA64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		65A158C01EFEE0450084EA64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		65A158C31EFEE0450084EA64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		65A158C51EFEE0450084EA64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6516BFD61F37BB6700D5D6EA /* Animations_Ex1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animations_Ex1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6516BFD91F37BB6700D5D6EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6516BFDB1F37BB6700D5D6EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6516BFDE1F37BB6700D5D6EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6516BFE01F37BB6700D5D6EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6516BFE31F37BB6700D5D6EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6516BFE51F37BB6700D5D6EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		65A158B31EFEE0450084EA64 /* Frameworks */ = {
+		6516BFD31F37BB6700D5D6EA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,74 +35,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		65A158AD1EFEE0450084EA64 = {
+		6516BFCD1F37BB6700D5D6EA = {
 			isa = PBXGroup;
 			children = (
-				65A158B81EFEE0450084EA64 /* keyboardPractice */,
-				65A158B71EFEE0450084EA64 /* Products */,
+				6516BFD81F37BB6700D5D6EA /* Animations_Ex1 */,
+				6516BFD71F37BB6700D5D6EA /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		65A158B71EFEE0450084EA64 /* Products */ = {
+		6516BFD71F37BB6700D5D6EA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				65A158B61EFEE0450084EA64 /* keyboardPractice.app */,
+				6516BFD61F37BB6700D5D6EA /* Animations_Ex1.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		65A158B81EFEE0450084EA64 /* keyboardPractice */ = {
+		6516BFD81F37BB6700D5D6EA /* Animations_Ex1 */ = {
 			isa = PBXGroup;
 			children = (
-				65A158B91EFEE0450084EA64 /* AppDelegate.swift */,
-				65A158BB1EFEE0450084EA64 /* ViewController.swift */,
-				65A158BD1EFEE0450084EA64 /* Main.storyboard */,
-				6577CA211F33A8CA00D664C3 /* SecondViewController.swift */,
-				65A158C01EFEE0450084EA64 /* Assets.xcassets */,
-				65A158C21EFEE0450084EA64 /* LaunchScreen.storyboard */,
-				65A158C51EFEE0450084EA64 /* Info.plist */,
+				6516BFD91F37BB6700D5D6EA /* AppDelegate.swift */,
+				6516BFDB1F37BB6700D5D6EA /* ViewController.swift */,
+				6516BFDD1F37BB6700D5D6EA /* Main.storyboard */,
+				6516BFE01F37BB6700D5D6EA /* Assets.xcassets */,
+				6516BFE21F37BB6700D5D6EA /* LaunchScreen.storyboard */,
+				6516BFE51F37BB6700D5D6EA /* Info.plist */,
 			);
-			path = keyboardPractice;
+			path = Animations_Ex1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		65A158B51EFEE0450084EA64 /* keyboardPractice */ = {
+		6516BFD51F37BB6700D5D6EA /* Animations_Ex1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 65A158C81EFEE0450084EA64 /* Build configuration list for PBXNativeTarget "keyboardPractice" */;
+			buildConfigurationList = 6516BFE81F37BB6700D5D6EA /* Build configuration list for PBXNativeTarget "Animations_Ex1" */;
 			buildPhases = (
-				65A158B21EFEE0450084EA64 /* Sources */,
-				65A158B31EFEE0450084EA64 /* Frameworks */,
-				65A158B41EFEE0450084EA64 /* Resources */,
+				6516BFD21F37BB6700D5D6EA /* Sources */,
+				6516BFD31F37BB6700D5D6EA /* Frameworks */,
+				6516BFD41F37BB6700D5D6EA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = keyboardPractice;
-			productName = keyboardPractice;
-			productReference = 65A158B61EFEE0450084EA64 /* keyboardPractice.app */;
+			name = Animations_Ex1;
+			productName = Animations_Ex1;
+			productReference = 6516BFD61F37BB6700D5D6EA /* Animations_Ex1.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		65A158AE1EFEE0450084EA64 /* Project object */ = {
+		6516BFCE1F37BB6700D5D6EA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = com.example;
 				TargetAttributes = {
-					65A158B51EFEE0450084EA64 = {
+					6516BFD51F37BB6700D5D6EA = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = WC2JB3CT65;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 65A158B11EFEE0450084EA64 /* Build configuration list for PBXProject "keyboardPractice" */;
+			buildConfigurationList = 6516BFD11F37BB6700D5D6EA /* Build configuration list for PBXProject "Animations_Ex1" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -112,55 +109,54 @@
 				en,
 				Base,
 			);
-			mainGroup = 65A158AD1EFEE0450084EA64;
-			productRefGroup = 65A158B71EFEE0450084EA64 /* Products */;
+			mainGroup = 6516BFCD1F37BB6700D5D6EA;
+			productRefGroup = 6516BFD71F37BB6700D5D6EA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				65A158B51EFEE0450084EA64 /* keyboardPractice */,
+				6516BFD51F37BB6700D5D6EA /* Animations_Ex1 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		65A158B41EFEE0450084EA64 /* Resources */ = {
+		6516BFD41F37BB6700D5D6EA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65A158C41EFEE0450084EA64 /* LaunchScreen.storyboard in Resources */,
-				65A158C11EFEE0450084EA64 /* Assets.xcassets in Resources */,
-				65A158BF1EFEE0450084EA64 /* Main.storyboard in Resources */,
+				6516BFE41F37BB6700D5D6EA /* LaunchScreen.storyboard in Resources */,
+				6516BFE11F37BB6700D5D6EA /* Assets.xcassets in Resources */,
+				6516BFDF1F37BB6700D5D6EA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		65A158B21EFEE0450084EA64 /* Sources */ = {
+		6516BFD21F37BB6700D5D6EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6577CA221F33A8CA00D664C3 /* SecondViewController.swift in Sources */,
-				65A158BC1EFEE0450084EA64 /* ViewController.swift in Sources */,
-				65A158BA1EFEE0450084EA64 /* AppDelegate.swift in Sources */,
+				6516BFDC1F37BB6700D5D6EA /* ViewController.swift in Sources */,
+				6516BFDA1F37BB6700D5D6EA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		65A158BD1EFEE0450084EA64 /* Main.storyboard */ = {
+		6516BFDD1F37BB6700D5D6EA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				65A158BE1EFEE0450084EA64 /* Base */,
+				6516BFDE1F37BB6700D5D6EA /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		65A158C21EFEE0450084EA64 /* LaunchScreen.storyboard */ = {
+		6516BFE21F37BB6700D5D6EA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				65A158C31EFEE0450084EA64 /* Base */,
+				6516BFE31F37BB6700D5D6EA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -168,7 +164,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		65A158C61EFEE0450084EA64 /* Debug */ = {
+		6516BFE61F37BB6700D5D6EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -219,7 +215,7 @@
 			};
 			name = Debug;
 		};
-		65A158C71EFEE0450084EA64 /* Release */ = {
+		6516BFE71F37BB6700D5D6EA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -263,27 +259,27 @@
 			};
 			name = Release;
 		};
-		65A158C91EFEE0450084EA64 /* Debug */ = {
+		6516BFE91F37BB6700D5D6EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WC2JB3CT65;
-				INFOPLIST_FILE = keyboardPractice/Info.plist;
+				INFOPLIST_FILE = Animations_Ex1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.keyboardPractice;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Animations-Ex1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		65A158CA1EFEE0450084EA64 /* Release */ = {
+		6516BFEA1F37BB6700D5D6EA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WC2JB3CT65;
-				INFOPLIST_FILE = keyboardPractice/Info.plist;
+				INFOPLIST_FILE = Animations_Ex1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.keyboardPractice;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Animations-Ex1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -292,25 +288,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		65A158B11EFEE0450084EA64 /* Build configuration list for PBXProject "keyboardPractice" */ = {
+		6516BFD11F37BB6700D5D6EA /* Build configuration list for PBXProject "Animations_Ex1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				65A158C61EFEE0450084EA64 /* Debug */,
-				65A158C71EFEE0450084EA64 /* Release */,
+				6516BFE61F37BB6700D5D6EA /* Debug */,
+				6516BFE71F37BB6700D5D6EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		65A158C81EFEE0450084EA64 /* Build configuration list for PBXNativeTarget "keyboardPractice" */ = {
+		6516BFE81F37BB6700D5D6EA /* Build configuration list for PBXNativeTarget "Animations_Ex1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				65A158C91EFEE0450084EA64 /* Debug */,
-				65A158CA1EFEE0450084EA64 /* Release */,
+				6516BFE91F37BB6700D5D6EA /* Debug */,
+				6516BFEA1F37BB6700D5D6EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 65A158AE1EFEE0450084EA64 /* Project object */;
+	rootObject = 6516BFCE1F37BB6700D5D6EA /* Project object */;
 }
