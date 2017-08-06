@@ -26,7 +26,7 @@ class ViewController: UIViewController {
 
     //MARK: - Functions
     func animateLabelTransitions() {
-        //anonomous closure
+        //ANIMATE FUNCTION - ANONOMOUS CLOSURE
         UIView.animate(withDuration: 0.5) { 
             self.questionLabel.alpha = 1.0
         }
@@ -34,13 +34,12 @@ class ViewController: UIViewController {
     }
     
     func unanimateLabelTransitions() {
-        
-        //assign closure to constant
+        //assign closure to constant and reference in animate method
         let dissolveAnimationClosure = { () -> Void in
             self.questionLabel.alpha = 0
         }
         
-        //animation completion
+        //ANIMATION COMPLETION
         UIView.animate(withDuration: 0.5, delay: 0, options: [], animations: dissolveAnimationClosure, completion: {
              _ in
             self.showQButton.backgroundColor = UIColor.green
