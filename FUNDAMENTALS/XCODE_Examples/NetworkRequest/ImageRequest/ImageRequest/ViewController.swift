@@ -21,24 +21,24 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //create instance of url - this takes a url string and converts it to a url in our code
-        let imageURL = URL(string: "https://s-media-cache-ak0.pinimg.com/736x/d7/ab/5b/d7ab5b40b79f98006959e3ffba358a71--puppies-labradoodle-labradoodle-australian.jpg")
+        //setup a network request to retrieve an image and populate the imageView property
         
-        //use urlsession to make a request - manage network request on our behalf, we can use
-        let task = URLSession.shared.dataTask(with: imageURL!) { (data, response, error) in
+        //setup the URL class
+        let url = URL(string: "https://i.redd.it/qh713wbo4r8y.jpg")
+        
+        //setup the URLSessionDataTask class
+        let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             
-            //if the error is nil then the data and response was successful
             if error == nil {
-                //initialize an image with UIImage initializer passing in the response data
-                let downLoadedImage = UIImage(data: data!)
+                let downloadedImage = UIImage(data: data!)
                 
-                //set the downloaded image to the imageView property
-                self.imageView.image = downLoadedImage
+                self.imageView.image = downloadedImage
             }
         }
         
-        //start the task
+        //start URLSessionDataTask
         task.resume()
-        
     }
 }
+
+
