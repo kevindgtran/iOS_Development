@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         //setup a network request to retrieve an image and populate the imageView property
         
         //setup the URL class
-        let url = URL(string: "https://i.redd.it/qh713wbo4r8y.jpg")
+        let url = URL(string: "http://img00.deviantart.net/e20c/i/2013/012/a/4/cute_cat_by_reasondinn-d5r8hde.jpg")
         
         //setup the URLSessionDataTask class
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
@@ -32,7 +32,11 @@ class ViewController: UIViewController {
             if error == nil {
                 let downloadedImage = UIImage(data: data!)
                 
-                self.imageView.image = downloadedImage
+                //perform UI updates on main
+                performUIUpdatesOnMain {
+                    self.imageView.image = downloadedImage
+                }
+                
             }
         }
         
