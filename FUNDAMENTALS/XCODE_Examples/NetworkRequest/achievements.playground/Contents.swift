@@ -26,15 +26,63 @@ func parseJSONAsDictionary(_ dictionary: NSDictionary) {
     var totalAchievementPoints = Float()
     var numberOfAchievements = Float()
     var categoryDictionary = [String: Double]()
+    var categoryChildrenList = [Double]()
+    var belongToMatchMaking = 0
     
+   //loop through all achievements, subscript key "categoryId" cast as Double, assign categoryID value to a tempCategoryID, then loop through categories, subscript key "title" cast as an array of [String: AnyObjects], loop through array and subscript for "title" and cast as String, if value == "MatchMaking", subscript "children" cast as an array of [[String: AnyObject]], subscript "categoryID" cast as Double, if value == tempCategoryID, then add 1 to belongToMatchMaking variable
     
-    //loop through categories, subscript "title" cast as String: AnyObject, if title == "Matchmaking", subscript "children" cast as [[String: AnyObject]], loop through and append each object to the categoryDictionary variable
-    
-    //loop through all achievements, subscript key "categoryId" cast as Double, check if value
-    
-    
-    
-    
+//    guard let parsedCategories = dictionary["categories"] as? [[String: AnyObject]] else {
+//            print("error with parsedCategories")
+//            return
+//        }
+//        
+//        for categories in parsedCategories {
+//            
+//            guard let parsedCategoriesTitle = categories["title"] as? String else {
+//                print("error with parsedCategoriesTitle")
+//                return
+//            }
+//            
+//            if parsedCategoriesTitle == "Matchmaking" {
+//                
+//                guard let matchmakingChildren = categories["children"] as? [[String: AnyObject]] else {
+//                    print("error with matchmakingChildren")
+//                    return
+//                }
+//                
+//                for child in matchmakingChildren {
+//                
+//                guard let childrenCategoryId = child["categoryId"] as? Double else {
+//                    print("error with childrenCategoryId")
+//                    return
+//                }
+//                
+//                categoryChildrenList.append(childrenCategoryId)
+//
+//                }
+//            }
+//        }
+//    
+//    guard let parsedAchievements = dictionary["achievements"] as? [[String: AnyObject]] else {
+//        print("error with parsed Achievements")
+//        return
+//    }
+//    
+//    for achievement in parsedAchievements {
+//        
+//        guard let parsedAchievementCategoryID = achievement["categoryId"] as? Double else {
+//            print("error with parsedAchievementCategoryID")
+//            return
+//        }
+//        let tempAchievementCategoryId = parsedAchievementCategoryID
+//        
+//        for x in categoryChildrenList {
+//            if tempAchievementCategoryId == x {
+//                belongToMatchMaking += 1
+//            }
+//        }
+//    }//end of achievement loop
+//    print(belongToMatchMaking)
     
     
 //    guard let parsedData = dictionary["achievements"] as? [[String: AnyObject]] else {
