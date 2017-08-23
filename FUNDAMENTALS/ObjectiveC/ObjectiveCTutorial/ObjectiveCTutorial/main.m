@@ -16,18 +16,28 @@ int main(int argc, const char * argv[]) {//function called on app launch
         
         //create an empty string pointer, nil == nonexistant object in memory
         //NSString *nothing = nil;
-        //NSLog(@"nothing is located at %p", nothing);
+        //NSLog(@"nothing is at location: %p", nothing);
         
         //create a pointer to a string in memory
-        //NSString *quote = @"dogs have masters while cats have staff.";
-        //log the quotes length using the NSString length method
-        //NSLog(@"The quote length is: %d", (int)[quote length]);
+        //NSString *quote = @"lifes like a box of chocolates";
+        //NSLog(@"%@", quote);
+        //log the length of the newly created NSString
+        //NSLog(@"The quote is %d characters long", (int)[quote length]);
+       
+        //log the character at index 7
+        //NSLog(@"The character at index 7 is: %c", (char)[quote characterAtIndex:7]);
         
-        //log the character at index 5
-        //NSString *newQuote = @"dogs rule and cats drool";
-        //log the 5th indece with the correct string formatter (%_)
-        //NSLog(@"The newQuotes character at index 5 is: %c", (char)[newQuote characterAtIndex:5]);
+        //create 3 strings and see if they're equal
+        //NSString *firstString = @"Hello World";
+        //NSString *secondString = @"Hello World";
+        //NSString *thirdString = @"Hello there";
+        //BOOL isFirstAndSecondEqual = [firstString isEqualToString:secondString];
+        //NSLog(@"The first and second string are equal: %d", isFirstAndSecondEqual);
+        //BOOL isSecondAndThirdEqual = [secondString isEqualToString:thirdString];
+        //NSLog(@"The second and third string are equal: %d", isSecondAndThirdEqual);
+        //NSLog(@"The third and first string are equal: %d", [thirdString isEqualToString:firstString]);
         
+        //convert NSString into string - nested messages
         
         
     }
