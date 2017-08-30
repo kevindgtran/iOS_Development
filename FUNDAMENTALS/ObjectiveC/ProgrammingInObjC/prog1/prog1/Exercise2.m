@@ -8,23 +8,22 @@
 
 #import <Foundation/Foundation.h>
 
-//declare a class called XYPoint (interface section)
+//interface section
 @interface XYPoint : NSObject
 
--(void) setXValue;
--(void) setYValue;
 -(int) xValue;
 -(int) yValue;
+-(void) setXValue;
+-(void) setYValue;
 -(void) print;
 
 @end
 
-//define the class functions (implementation section)
+//implementation section
 @implementation XYPoint
 {
     int xValue;
     int yValue;
-    
 }
 
 -(void) setXValue: (int) x
@@ -54,23 +53,20 @@
 
 @end
 
-
-//create main method, set and retrieve the values (program section)
-
+//program section
 int main (int argc, char * argv[])
 {
     @autoreleasepool {
         
-        XYPoint *thePoints = [[XYPoint alloc] init];
+        //create class instance
+        XYPoint *MyCurrentPoint = [[XYPoint alloc] init];
         
-        [thePoints setYValue: 3];
-        [thePoints setXValue: 5];
+        [MyCurrentPoint setYValue: 4];
+        [MyCurrentPoint setXValue: 5];
         
-        [thePoints print];
-        NSLog(@"My coordinates are (%i, %i)", [thePoints xValue], [thePoints yValue]);
+        [MyCurrentPoint print];
         
     }
-
+    
     return 0;
 }
-
