@@ -6,11 +6,11 @@
 //  Copyright © 2017 com.example. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+//#import <Foundation/Foundation.h>
 
-int main(int argc, const char * argv[]) {
-    @autoreleasepool {
- 
+//int main(int argc, const char * argv[]) {
+//    @autoreleasepool {
+
 //        NSLog(@"Programming is fun!");
 //        NSLog(@"Programming in Objective-C is even more fun!");
         
@@ -55,6 +55,8 @@ int main(int argc, const char * argv[]) {
 //        NSLog(@"The result is %i", result + 5);
         
         
-    }
-    return 0;
-}
+        
+        
+//    }
+//    return 0;
+//}
