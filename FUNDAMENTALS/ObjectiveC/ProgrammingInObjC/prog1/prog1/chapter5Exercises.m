@@ -27,6 +27,40 @@ int main (int argc, char * argv [])
 //            NSLog(@"%4i", triangularNum);
 //        }
         
+//        //Build an algorithm that takes returns 10 factorial aka 10!
+//        //Factorial = the product of all values consecutively descending from n, ie 3! = 3 * 2 * 1
+//        //loop through descending order from 10, each value of our iteration is multiplied and add to our factorialTotal variable, return factorialTotal
+//        int n = 10;
+//        int factorialTotal = 1;
+//        
+//        while (n >= 1) {
+//            factorialTotal *= n;
+//            --n;
+//        }
+//        NSLog(@"%i", factorialTotal);
+
+        int n;
+        int userResponse;
+        
+        NSLog(@"Please enter the number for the triangular");
+        scanf("%i", &userResponse);
+        
+        for (n = 1; n <= userResponse; ++n) {
+            //within each loop, ask user for a number and provide its values sums,
+            //create for loop, enter in usersNumber and update userTotalSum
+            int m;
+            int userNumber;
+            int userTotalSum = 0;
+
+            NSLog(@"please enter a number");
+            scanf("%i", &userNumber);
+
+            for (m = 1; m <= userNumber; ++m) {
+                userTotalSum += m;
+            }
+            
+            NSLog(@"Sum is: %i", userTotalSum);
+        }
         
         
     }
