@@ -70,6 +70,29 @@ int main (int argc, char * argv[])
 //            NSLog(@"Sum is: %i", userTotalSum);
 //        }
         
+//     //build a program that counts down from 10 to one, using a while loop
+//        int n = 10;
+//        while (n > 0) {
+//            NSLog(@"%2i", n);
+//            --n;
+//        }
+        
+//        //Build a program that asks the user for a number, returns the number characters in reverse order, ie 1234 == 4321
+//        //ask user for number
+//        int usersNumber;
+//        int lastDigit;
+//        
+//        NSLog(@"Please enter a big number");
+//        scanf("%i", &usersNumber);
+//        
+//        //iterate and reverse order
+//        while (usersNumber != 0){
+//            lastDigit = usersNumber % 10;
+//            NSLog(@"%i", lastDigit);
+//            usersNumber /= 10;
+//        }
+
+        
         
         
         
