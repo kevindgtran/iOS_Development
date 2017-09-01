@@ -6,12 +6,12 @@
 //  Copyright © 2017 com.example. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+//#import <Foundation/Foundation.h>
+//
+//int main (int argc, char * argv[])
+//{
+//    @autoreleasepool {
 
-int main (int argc, char * argv[])
-{
-    @autoreleasepool {
-        
 //        //create program that is the sum of all values up to 200, using a for loop
 //        int n;
 //        int result = 0;
@@ -92,11 +92,7 @@ int main (int argc, char * argv[])
 //            usersNumber /= 10;
 //        }
 
-        
-        
-        
-        
-    }//end of autoreleasepool
-    
-    return 0;
-}
+//    }//end of autoreleasepool
+//    
+//    return 0;
+//}
