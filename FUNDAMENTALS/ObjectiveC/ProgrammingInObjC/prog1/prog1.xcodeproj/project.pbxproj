@@ -10,6 +10,7 @@
 		652A08501F5724C200813D73 /* exercise2.m in Sources */ = {isa = PBXBuildFile; fileRef = 652A084F1F5724C200813D73 /* exercise2.m */; };
 		652A08521F577F7500813D73 /* chapter4Examples.m in Sources */ = {isa = PBXBuildFile; fileRef = 652A08511F577F7500813D73 /* chapter4Examples.m */; };
 		652A08541F58C8B800813D73 /* chapter4Exercises.m in Sources */ = {isa = PBXBuildFile; fileRef = 652A08531F58C8B800813D73 /* chapter4Exercises.m */; };
+		652A08561F58DBA700813D73 /* chapter5Examples.m in Sources */ = {isa = PBXBuildFile; fileRef = 652A08551F58DBA700813D73 /* chapter5Examples.m */; };
 		65796D5F1F5507180080D529 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65796D5E1F5507180080D529 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		652A084F1F5724C200813D73 /* exercise2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = exercise2.m; sourceTree = "<group>"; };
 		652A08511F577F7500813D73 /* chapter4Examples.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chapter4Examples.m; sourceTree = "<group>"; };
 		652A08531F58C8B800813D73 /* chapter4Exercises.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chapter4Exercises.m; sourceTree = "<group>"; };
+		652A08551F58DBA700813D73 /* chapter5Examples.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chapter5Examples.m; sourceTree = "<group>"; };
 		65796D5B1F5507180080D529 /* prog1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = prog1; sourceTree = BUILT_PRODUCTS_DIR; };
 		65796D5E1F5507180080D529 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +69,7 @@
 				652A084F1F5724C200813D73 /* exercise2.m */,
 				652A08511F577F7500813D73 /* chapter4Examples.m */,
 				652A08531F58C8B800813D73 /* chapter4Exercises.m */,
+				652A08551F58DBA700813D73 /* chapter5Examples.m */,
 			);
 			path = prog1;
 			sourceTree = "<group>";
@@ -132,6 +135,7 @@
 				652A08541F58C8B800813D73 /* chapter4Exercises.m in Sources */,
 				652A08521F577F7500813D73 /* chapter4Examples.m in Sources */,
 				652A08501F5724C200813D73 /* exercise2.m in Sources */,
+				652A08561F58DBA700813D73 /* chapter5Examples.m in Sources */,
 				65796D5F1F5507180080D529 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
