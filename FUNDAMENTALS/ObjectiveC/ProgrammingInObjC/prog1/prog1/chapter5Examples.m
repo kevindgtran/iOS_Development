@@ -50,11 +50,30 @@ int main (int argc, char * argv[])
 //        
 //        NSLog(@"You chose %i, all the numbers added up to %i equals: %i", userNumber, userNumber, total);
         
+//        //Build a program that asks the user 5 times, to enter and number and return that values sum of all previous values
+//        int n;
+//        
+//        for (n = 1; n <= 5; ++n) {
+//            //within each loop, ask user for a number and provide its values sums,
+//            //create for loop, enter in usersNumber and update userTotalSum
+//            int m;
+//            int userNumber;
+//            int userTotalSum = 0;
+//            
+//            NSLog(@"please enter a number");
+//            scanf("%i", &userNumber);
+//            
+//            for (m = 1; m <= userNumber; ++m) {
+//                userTotalSum += m;
+//            }
+//            
+//            NSLog(@"Sum is: %i", userTotalSum);
+//        }
         
         
         
         
-    }
+    }//end of autoreleasepool
     
     return 0;
 }
