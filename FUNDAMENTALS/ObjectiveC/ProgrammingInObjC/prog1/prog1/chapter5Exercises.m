@@ -39,30 +39,54 @@ int main (int argc, char * argv [])
 //        }
 //        NSLog(@"%i", factorialTotal);
 
-        int n;
-        int userResponse;
+//        int n;
+//        int userResponse;
+//        
+//        NSLog(@"Please enter the number for the triangular");
+//        scanf("%i", &userResponse);
+//        
+//        for (n = 1; n <= userResponse; ++n) {
+//            //within each loop, ask user for a number and provide its values sums,
+//            //create for loop, enter in usersNumber and update userTotalSum
+//            int m;
+//            int userNumber;
+//            int userTotalSum = 0;
+//
+//            NSLog(@"please enter a number");
+//            scanf("%i", &userNumber);
+//
+//            for (m = 1; m <= userNumber; ++m) {
+//                userTotalSum += m;
+//            }
+//            
+//            NSLog(@"Sum is: %i", userTotalSum);
+//        }
         
-        NSLog(@"Please enter the number for the triangular");
-        scanf("%i", &userResponse);
-        
-        for (n = 1; n <= userResponse; ++n) {
-            //within each loop, ask user for a number and provide its values sums,
-            //create for loop, enter in usersNumber and update userTotalSum
-            int m;
-            int userNumber;
-            int userTotalSum = 0;
+//        //review the modulus sign
+//        int ten = 3;
+//        int five = 5;
+//        int sum = ten % five;
+//        
+//        NSLog(@"%i", sum);
 
-            NSLog(@"please enter a number");
-            scanf("%i", &userNumber);
-
-            for (m = 1; m <= userNumber; ++m) {
-                userTotalSum += m;
-            }
-            
-            NSLog(@"Sum is: %i", userTotalSum);
-        }
+//        float f1 = 123.125, f2;
+//        int i1, i2 = -150;
+//        
+//        i1 = f1;
+//        NSLog(@"%f assigned to an int produces %i", f1, i1);
+//        
+//        f1 = i2;
+//        NSLog(@"%i assigned to a float produces %f", i2, f1);
+//        
         
         
-    }
+        
+        
+        
+        
+        
+        
+        
+    }//end of autorepleasepool
     return 0;
 }
