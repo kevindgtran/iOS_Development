@@ -6,12 +6,12 @@
 //  Copyright © 2017 com.example. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+//#import <Foundation/Foundation.h>
+//
+//int main (int argc, char * argv [])
+//{
+//    @autoreleasepool {
 
-int main (int argc, char * argv [])
-{
-    @autoreleasepool {
-        
 //        //Write a program that displays a table of n and n*2, of n ranging from 1 to 10
 //        NSLog(@" n      n * 2  ");
 //        NSLog(@"---  -----------");
@@ -78,15 +78,7 @@ int main (int argc, char * argv [])
 //        f1 = i2;
 //        NSLog(@"%i assigned to a float produces %f", i2, f1);
 //        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    }//end of autorepleasepool
-    return 0;
-}
+//          
+//    }//end of autorepleasepool
+//    return 0;
+//}
