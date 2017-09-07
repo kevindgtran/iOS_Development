@@ -28,7 +28,13 @@
 //
 //-(void) print
 //{
-//    NSLog(@"%i/%i", numerator, denominator);
+//    if (denominator == 1) {
+//        NSLog(@"%i", numerator);
+//    } else if (numerator == 0) {
+//        NSLog(@"zero");
+//    } else {
+//        NSLog(@"%i/%i", numerator, denominator);
+//    }
 //}
 //
 //-(void) setNumerator:(int) n
@@ -69,10 +75,10 @@
 //    
 //        Fraction *MyFraction = [[Fraction alloc] init];
 //        
-//        [MyFraction setNumerator: 1];
-//        [MyFraction setDenominator:0];
+//        [MyFraction setNumerator: 3];
+//        [MyFraction setDenominator:1];
 //        [MyFraction print];
-//        NSLog(@"%f", [MyFraction convertToNum]);
+//        //NSLog(@"%f", [MyFraction convertToNum]);
 //     
 //    }
 //    return 0;
