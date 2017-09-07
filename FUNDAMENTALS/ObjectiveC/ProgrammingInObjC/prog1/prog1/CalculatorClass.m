@@ -70,25 +70,39 @@
 //int main (int argc, char * argv[])
 //{
 //    @autoreleasepool {
+//    
+//        double value1, value2;
+//        char operator;
 //        
 //        Calculator *MyCalculator;
 //        MyCalculator = [[Calculator alloc] init];
 //        
-//        [MyCalculator setAccumulator:5];
-//        NSLog(@"%f", [MyCalculator accumulator]);
+//        NSLog(@"type in your expression");
+//        scanf("%lf %c %lf", &value1, &operator, &value2);
 //        
-//        [MyCalculator add: 10];
-//        NSLog(@"%f", [MyCalculator accumulator]);
+//        [MyCalculator setAccumulator: value1];
 //        
-//        [MyCalculator multiply: 2];
-//        NSLog(@"%f", [MyCalculator accumulator]);
-//        
-//        [MyCalculator divide: 3];
-//        NSLog(@"%f", [MyCalculator accumulator]);
-//        
-//        [MyCalculator clear];
-//        NSLog(@"%f", [MyCalculator accumulator]);
-//        
+//        switch (operator) {
+//            case '+':
+//                NSLog(@"%lf", value1 + value2);
+//                break;
+//            case '-':
+//                NSLog(@"%lf", value1 - value2);
+//                break;
+//            case '*':
+//                NSLog(@"%lf", value1 * value2);
+//                break;
+//            case '/':
+//                if (value2 != 0){
+//                    NSLog(@"%lf", value1 / value2);
+//                } else {
+//                    NSLog(@"Unable to divide by zero");
+//                }
+//                break;
+//            default:
+//                NSLog(@"invalid arithmatic operation");
+//                break;
+//        }
 //    }
 //    return 0;
 //}
