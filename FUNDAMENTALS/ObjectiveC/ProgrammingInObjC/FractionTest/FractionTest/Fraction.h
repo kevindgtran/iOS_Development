@@ -12,7 +12,14 @@
 @interface Fraction : NSObject
 
 @property int numerator, denominator;
--(void) print;
+
+-(void) print: (BOOL) b;
+-(void) setTo: (int) n over: (int) d;
+-(Fraction *) add: (Fraction *) f; //add method that takes a Fraction class as an argument
+-(Fraction *) subtract: (Fraction *) f;
+-(Fraction *) multiply: (Fraction *) f;
+-(Fraction *) divide: (Fraction *) f;
+-(void) reduce;
 -(double) convertToNum;
 
 @end

@@ -13,16 +13,25 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
 
-        Fraction *myFraction = [[Fraction alloc] init];
+        Fraction *aFraction = [[Fraction alloc] init];
+        Fraction *bFraction = [[Fraction alloc] init];
         
-        //set fraction to 1/3
-        myFraction.numerator = 1;
-        myFraction.denominator = 3;
+        Fraction *resultFraction;
         
-        //display the fraction
-        NSLog(@"The value of myFraction is: %i/%i", myFraction.numerator, myFraction.denominator);
+        //set two fractions to 1/4 and 1/2 and add them together
+        [aFraction setTo:1 over:4];
+        [bFraction setTo:1 over:2];
+    
+        [aFraction print];
+        NSLog(@"/");
+        [bFraction print];
+        NSLog(@"=");
         
-
+        resultFraction = [aFraction divide: bFraction];
+        [resultFraction print];
+        
+        
+     
     }
     return 0;
 }
