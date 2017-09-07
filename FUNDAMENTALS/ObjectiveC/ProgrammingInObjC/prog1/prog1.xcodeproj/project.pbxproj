@@ -16,6 +16,7 @@
 		6598B48E1F60842400F0E269 /* chapter6Examples.m in Sources */ = {isa = PBXBuildFile; fileRef = 6598B48D1F60842400F0E269 /* chapter6Examples.m */; };
 		6598B4901F60887400F0E269 /* FractionClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 6598B48F1F60887400F0E269 /* FractionClass.m */; };
 		6598B4921F60CD3700F0E269 /* chapter6Exercises.m in Sources */ = {isa = PBXBuildFile; fileRef = 6598B4911F60CD3700F0E269 /* chapter6Exercises.m */; };
+		65E26B211F62030C00345166 /* ClassA.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E26B201F62030C00345166 /* ClassA.m */; };
 		65FA1B431F5A0F1D0017C99F /* chapter5Exercises.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FA1B421F5A0F1D0017C99F /* chapter5Exercises.m */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		6598B48D1F60842400F0E269 /* chapter6Examples.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chapter6Examples.m; sourceTree = "<group>"; };
 		6598B48F1F60887400F0E269 /* FractionClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FractionClass.m; sourceTree = "<group>"; };
 		6598B4911F60CD3700F0E269 /* chapter6Exercises.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chapter6Exercises.m; sourceTree = "<group>"; };
+		65E26B201F62030C00345166 /* ClassA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassA.m; sourceTree = "<group>"; };
 		65FA1B421F5A0F1D0017C99F /* chapter5Exercises.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chapter5Exercises.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +87,7 @@
 				6598B48D1F60842400F0E269 /* chapter6Examples.m */,
 				6598B48F1F60887400F0E269 /* FractionClass.m */,
 				6598B4911F60CD3700F0E269 /* chapter6Exercises.m */,
+				65E26B201F62030C00345166 /* ClassA.m */,
 			);
 			path = prog1;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65E26B211F62030C00345166 /* ClassA.m in Sources */,
 				657D2B011F5F75C70032F807 /* CalculatorClass.m in Sources */,
 				6598B48E1F60842400F0E269 /* chapter6Examples.m in Sources */,
 				652A08541F58C8B800813D73 /* chapter4Exercises.m in Sources */,
