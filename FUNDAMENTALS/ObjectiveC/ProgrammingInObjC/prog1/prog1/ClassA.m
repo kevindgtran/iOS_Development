@@ -14,6 +14,7 @@
     int x; //public variable & method declarations - will be inherited by all subclasses
 }
 -(void) initVar;
+-(void) printVar;
 
 @end
 
@@ -22,7 +23,14 @@
 {
     x = 100;
 }
+
+-(void) printVar
+{
+    NSLog(@"x = %i", x);
+}
 @end
+
+
 
 //ClassB declaration and definition
 @interface ClassB : ClassA
@@ -36,17 +44,32 @@
     NSLog(@"x = %i", x);
 }
 
+-(void) initVar
+{
+    x = 500;
+}
+
 @end
 
 int main (int argc, char * argv[])
 {
     @autoreleasepool {
         
-        ClassB *myClass = [[ClassB alloc] init];
+//        ClassB *myClass = [[ClassB alloc] init];
+//        
+//        [myClass initVar];
+//        
+//        //print the new overrided initVar method
+//        [myClass printVar];
         
-        [myClass initVar];
-        [myClass printVar];
+        ClassA *classA = [[ClassA alloc] init];
+        ClassB *classB = [[ClassB alloc] init];
         
+        [classA initVar];
+        [classA printVar];
+        
+        [classB initVar];
+        [classB printVar];
         
     }
     return 0;
