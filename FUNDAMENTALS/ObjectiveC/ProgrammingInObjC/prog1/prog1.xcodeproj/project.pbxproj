@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		652A08501F5724C200813D73 /* exercise2.m in Sources */ = {isa = PBXBuildFile; fileRef = 652A084F1F5724C200813D73 /* exercise2.m */; };
+		652A08501F5724C200813D73 /* chapter3Exercises.m in Sources */ = {isa = PBXBuildFile; fileRef = 652A084F1F5724C200813D73 /* chapter3Exercises.m */; };
 		652A08521F577F7500813D73 /* chapter4Examples.m in Sources */ = {isa = PBXBuildFile; fileRef = 652A08511F577F7500813D73 /* chapter4Examples.m */; };
 		652A08541F58C8B800813D73 /* chapter4Exercises.m in Sources */ = {isa = PBXBuildFile; fileRef = 652A08531F58C8B800813D73 /* chapter4Exercises.m */; };
 		652A08561F58DBA700813D73 /* chapter5Examples.m in Sources */ = {isa = PBXBuildFile; fileRef = 652A08551F58DBA700813D73 /* chapter5Examples.m */; };
@@ -33,7 +33,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		652A084F1F5724C200813D73 /* exercise2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = exercise2.m; sourceTree = "<group>"; };
+		652A084F1F5724C200813D73 /* chapter3Exercises.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chapter3Exercises.m; sourceTree = "<group>"; };
 		652A08511F577F7500813D73 /* chapter4Examples.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chapter4Examples.m; sourceTree = "<group>"; };
 		652A08531F58C8B800813D73 /* chapter4Exercises.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chapter4Exercises.m; sourceTree = "<group>"; };
 		652A08551F58DBA700813D73 /* chapter5Examples.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chapter5Examples.m; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				65796D5E1F5507180080D529 /* main.m */,
-				652A084F1F5724C200813D73 /* exercise2.m */,
+				652A084F1F5724C200813D73 /* chapter3Exercises.m */,
 				652A08511F577F7500813D73 /* chapter4Examples.m */,
 				652A08531F58C8B800813D73 /* chapter4Exercises.m */,
 				657D2B001F5F75C70032F807 /* CalculatorClass.m */,
@@ -156,7 +156,7 @@
 				652A08541F58C8B800813D73 /* chapter4Exercises.m in Sources */,
 				652A08521F577F7500813D73 /* chapter4Examples.m in Sources */,
 				6598B4901F60887400F0E269 /* FractionClass.m in Sources */,
-				652A08501F5724C200813D73 /* exercise2.m in Sources */,
+				652A08501F5724C200813D73 /* chapter3Exercises.m in Sources */,
 				6598B4921F60CD3700F0E269 /* chapter6Exercises.m in Sources */,
 				652A08561F58DBA700813D73 /* chapter5Examples.m in Sources */,
 				65796D5F1F5507180080D529 /* main.m in Sources */,

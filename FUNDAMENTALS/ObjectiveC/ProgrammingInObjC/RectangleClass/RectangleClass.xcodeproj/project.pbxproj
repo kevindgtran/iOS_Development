@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		659171011F636FD400005181 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 659171001F636FD400005181 /* main.m */; };
 		659171091F64870700005181 /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 659171081F64870700005181 /* Rectangle.m */; };
+		6591710B1F64B9F700005181 /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = 6591710A1F64B9F700005181 /* Square.m */; };
+		6591710D1F66148400005181 /* XYPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 6591710C1F66148400005181 /* XYPoint.m */; };
+		659171111F66249500005181 /* Time.m in Sources */ = {isa = PBXBuildFile; fileRef = 659171101F66249500005181 /* Time.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +31,11 @@
 		659171001F636FD400005181 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		659171071F636FE300005181 /* Rectangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
 		659171081F64870700005181 /* Rectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rectangle.m; sourceTree = "<group>"; };
+		6591710A1F64B9F700005181 /* Square.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Square.m; sourceTree = "<group>"; };
+		6591710C1F66148400005181 /* XYPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPoint.m; sourceTree = "<group>"; };
+		6591710E1F661F7A00005181 /* XYPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYPoint.h; sourceTree = "<group>"; };
+		6591710F1F66245400005181 /* Time.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Time.h; sourceTree = "<group>"; };
+		659171101F66249500005181 /* Time.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Time.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,11 @@
 				659171071F636FE300005181 /* Rectangle.h */,
 				659171081F64870700005181 /* Rectangle.m */,
 				659171001F636FD400005181 /* main.m */,
+				6591710A1F64B9F700005181 /* Square.m */,
+				6591710E1F661F7A00005181 /* XYPoint.h */,
+				6591710C1F66148400005181 /* XYPoint.m */,
+				6591710F1F66245400005181 /* Time.h */,
+				659171101F66249500005181 /* Time.m */,
 			);
 			path = RectangleClass;
 			sourceTree = "<group>";
@@ -125,8 +138,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				659171111F66249500005181 /* Time.m in Sources */,
+				6591710B1F64B9F700005181 /* Square.m in Sources */,
 				659171011F636FD400005181 /* main.m in Sources */,
 				659171091F64870700005181 /* Rectangle.m in Sources */,
+				6591710D1F66148400005181 /* XYPoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

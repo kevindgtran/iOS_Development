@@ -8,10 +8,24 @@
 
 #import <Foundation/Foundation.h>
 #import "Rectangle.h"
+#import "XYPoint.h"
 
 @implementation Rectangle
+{
+    XYPoint *origin;
+}
 
 @synthesize width, height;
+
+-(void) setOrigin:(XYPoint *) pt
+{
+    origin = pt;
+}
+
+-(XYPoint *) origin
+{
+    return origin;
+}
 
 -(int) area
 {
