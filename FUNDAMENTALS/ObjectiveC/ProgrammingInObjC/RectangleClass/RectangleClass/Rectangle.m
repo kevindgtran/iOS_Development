@@ -27,17 +27,17 @@
     return origin;
 }
 
--(int) area
+-(float) area
 {
     return width * height;
 }
 
--(int) perimeter
+-(float) perimeter
 {
     return (width + height) * 2;
 }
 
--(void) setWidth:(int)w setHeight:(int)h
+-(void) setWidth:(float)w setHeight:(float)h
 {
     width = w;
     height = h;

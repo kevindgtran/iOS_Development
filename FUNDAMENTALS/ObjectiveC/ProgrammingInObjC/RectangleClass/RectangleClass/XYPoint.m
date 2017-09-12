@@ -15,7 +15,7 @@
 
 @synthesize x, y;
 
--(void) setX:(int)xVal setY:(int)yVal
+-(void) setX:(float)xVal setY:(float)yVal
 {
     x = xVal;
     y = yVal;
@@ -57,13 +57,13 @@ int main (int argc, char * argv[])
         myRect.origin = myPoint; //set myRect's origin to myPoint's X and Y's location
         
         //print myRect's origin
-        NSLog(@"myRect's origin is located at X: %i, Y: %i", myRect.origin.x, myRect.origin.y);
+        NSLog(@"myRect's origin is located at X: %f, Y: %f", myRect.origin.x, myRect.origin.y);
         
         //update the myPoint's origin X and Y
         [myPoint setX:50 setY:50];
         
         //print the points new location
-        NSLog(@"The Points new location is X: %i, Y: %i", myPoint.x, myPoint.y);
+        NSLog(@"The Points new location is X: %f, Y: %f", myPoint.x, myPoint.y);
         
     }
     return 0;

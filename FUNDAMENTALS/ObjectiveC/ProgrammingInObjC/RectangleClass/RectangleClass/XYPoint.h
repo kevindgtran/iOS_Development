@@ -11,8 +11,8 @@
 //interface section - class declaration
 @interface XYPoint : NSObject
 
-@property int x, y;
+@property float x, y;
 
--(void) setX: (int) xVal setY: (int) yVal;
+-(void) setX: (float) xVal setY: (float) yVal;
 
 @end

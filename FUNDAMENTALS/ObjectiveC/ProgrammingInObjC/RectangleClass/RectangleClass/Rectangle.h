@@ -8,14 +8,14 @@
 @class XYPoint;
 @interface Rectangle: NSObject
 
-@property int width, height;
+@property float width, height;
 
 -(XYPoint *) origin;
 -(void) setOrigin: (XYPoint *) pt;
--(int) width;
--(int) height;
--(int) area;
--(int) perimeter;
--(void) setWidth: (int) w setHeight: (int) h;
+-(float) width;
+-(float) height;
+-(float) area;
+-(float) perimeter;
+-(void) setWidth: (float) w setHeight: (float) h;
 
 @end

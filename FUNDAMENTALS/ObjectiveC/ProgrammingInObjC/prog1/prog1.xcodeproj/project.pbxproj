@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65092E301F677C5B00393F51 /* chapter8Exercises.m in Sources */ = {isa = PBXBuildFile; fileRef = 65092E2F1F677C5B00393F51 /* chapter8Exercises.m */; };
 		652A08501F5724C200813D73 /* chapter3Exercises.m in Sources */ = {isa = PBXBuildFile; fileRef = 652A084F1F5724C200813D73 /* chapter3Exercises.m */; };
 		652A08521F577F7500813D73 /* chapter4Examples.m in Sources */ = {isa = PBXBuildFile; fileRef = 652A08511F577F7500813D73 /* chapter4Examples.m */; };
 		652A08541F58C8B800813D73 /* chapter4Exercises.m in Sources */ = {isa = PBXBuildFile; fileRef = 652A08531F58C8B800813D73 /* chapter4Exercises.m */; };
@@ -33,6 +34,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		65092E2F1F677C5B00393F51 /* chapter8Exercises.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chapter8Exercises.m; sourceTree = "<group>"; };
 		652A084F1F5724C200813D73 /* chapter3Exercises.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chapter3Exercises.m; sourceTree = "<group>"; };
 		652A08511F577F7500813D73 /* chapter4Examples.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chapter4Examples.m; sourceTree = "<group>"; };
 		652A08531F58C8B800813D73 /* chapter4Exercises.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chapter4Exercises.m; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				6598B48F1F60887400F0E269 /* FractionClass.m */,
 				6598B4911F60CD3700F0E269 /* chapter6Exercises.m */,
 				65E26B201F62030C00345166 /* ClassA.m */,
+				65092E2F1F677C5B00393F51 /* chapter8Exercises.m */,
 			);
 			path = prog1;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				6598B4901F60887400F0E269 /* FractionClass.m in Sources */,
 				652A08501F5724C200813D73 /* chapter3Exercises.m in Sources */,
 				6598B4921F60CD3700F0E269 /* chapter6Exercises.m in Sources */,
+				65092E301F677C5B00393F51 /* chapter8Exercises.m in Sources */,
 				652A08561F58DBA700813D73 /* chapter5Examples.m in Sources */,
 				65796D5F1F5507180080D529 /* main.m in Sources */,
 				65FA1B431F5A0F1D0017C99F /* chapter5Exercises.m in Sources */,
