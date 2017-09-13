@@ -66,26 +66,26 @@
 
 
 ////Exercise 1
-int main (int argc, char * argv[])
-{
-    @autoreleasepool {
-        
-        ClassA *myClassA = [[ClassA alloc] init];
-        ClassB *myClassB = [[ClassB alloc] init];
-        ClassC *myClassC = [[ClassC alloc] init];
-        
-        [myClassA initVar];
-        [myClassA printVar];
-        
-        [myClassB initVar];
-        [myClassB printVar];
-        
-        [myClassC initVar];
-        [myClassC printVar];
-        
-    }
-    return 0;
-}
+//int main (int argc, char * argv[])
+//{
+//    @autoreleasepool {
+//        
+//        ClassA *myClassA = [[ClassA alloc] init];
+//        ClassB *myClassB = [[ClassB alloc] init];
+//        ClassC *myClassC = [[ClassC alloc] init];
+//        
+//        [myClassA initVar];
+//        [myClassA printVar];
+//        
+//        [myClassB initVar];
+//        [myClassB printVar];
+//        
+//        [myClassC initVar];
+//        [myClassC printVar];
+//        
+//    }
+//    return 0;
+//}
 
 
 

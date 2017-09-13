@@ -6,8 +6,41 @@
 //  Copyright © 2017 com.example. All rights reserved.
 //
 
-#ifndef Complex_h
-#define Complex_h
+@interface Complex : NSObject
+
+@property double real, imaginary;
+
+-(void) print;
+-(void) setReal: (double) r setImaginary: (double) i;
+-(Complex *) add: (Complex *) f;
+
+@end
 
 
-#endif /* Complex_h */
+@implementation Complex
+
+@synthesize real, imaginary;
+
+-(void) print
+{
+    NSLog(@"%f, %f", real, imaginary);
+}
+
+-(void) setReal:(double)r setImaginary:(double)i
+{
+    real = r;
+    imaginary = i;
+}
+
+-(Complex *) add:(Complex *) f
+{
+    Complex *result = [[Complex alloc] init];
+    
+    result.real = real + f.real;
+    result.imaginary = imaginary + f.imaginary;
+    
+    return result;
+    
+}
+
+@end
