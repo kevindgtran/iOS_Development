@@ -7,15 +7,22 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Fraction.h"
+#import "Complex.h"
 
 int main (int argc, char * argv[])
 {
     @autoreleasepool {
         
+        Fraction *f1 = [[Fraction alloc] init];
+        Fraction *f2 = [[Fraction alloc] init];
         
+        Fraction *fractionResult;
         
+        Complex *c1 = [[Complex alloc] init];
+        Complex *c2 = [[Complex alloc] init];
         
-        
+        Complex *compResult;
         
     }
     return 0;
