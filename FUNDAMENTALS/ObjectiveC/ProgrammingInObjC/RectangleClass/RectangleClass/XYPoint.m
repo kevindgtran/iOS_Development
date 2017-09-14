@@ -45,29 +45,29 @@
 //}
 
 //program 8.5
-int main (int argc, char * argv[])
-{
-    @autoreleasepool {
-        Rectangle *myRect = [[Rectangle alloc] init];
-        XYPoint *myPoint = [[XYPoint alloc] init];
-        
-        [myPoint setX:100 setY:200]; //set myPoint's X & Y location
-        [myRect setWidth:5 setHeight:8]; //set myRect's width and height
-        
-        myRect.origin = myPoint; //set myRect's origin to myPoint's X and Y's location
-        
-        //print myRect's origin
-        NSLog(@"myRect's origin is located at X: %f, Y: %f", myRect.origin.x, myRect.origin.y);
-        
-        //update the myPoint's origin X and Y
-        [myPoint setX:50 setY:50];
-        
-        //print the points new location
-        NSLog(@"The Points new location is X: %f, Y: %f", myPoint.x, myPoint.y);
-        
-    }
-    return 0;
-}
+//int main (int argc, char * argv[])
+//{
+//    @autoreleasepool {
+//        Rectangle *myRect = [[Rectangle alloc] init];
+//        XYPoint *myPoint = [[XYPoint alloc] init];
+//        
+//        [myPoint setX:100 setY:200]; //set myPoint's X & Y location
+//        [myRect setWidth:5 setHeight:8]; //set myRect's width and height
+//        
+//        myRect.origin = myPoint; //set myRect's origin to myPoint's X and Y's location
+//        
+//        //print myRect's origin
+//        NSLog(@"myRect's origin is located at X: %f, Y: %f", myRect.origin.x, myRect.origin.y);
+//        
+//        //update the myPoint's origin X and Y
+//        [myPoint setX:50 setY:50];
+//        
+//        //print the points new location
+//        NSLog(@"The Points new location is X: %f, Y: %f", myPoint.x, myPoint.y);
+//        
+//    }
+//    return 0;
+//}
 
 
 
