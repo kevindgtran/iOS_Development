@@ -26,10 +26,36 @@ int main (int argc, char * argv[])
         if ( [mySquare isKindOfClass:[Rectangle class]] == 1 )
             NSLog(@"mySquare is also the kind of Rectangle class");
         
-        if ( [mySquare isKindOfClass:[NSObject class]] == YES )
-            NSLog(@"mySquare is also also the kind of NSObject class");
+        //example of possible incorrect kind of class exception
+        @try {
+            if ( [mySquare isKindOfClass:[NSObject class]] == YES )
+                NSLog(@"mySquare is also also the kind of NSObject class");
+        } @catch (NSException *exception) {
+            NSLog(@"ERROR");
+        } @finally {
+        }
+        
+        //example of possible array out of bounds exception
+        NSArray *myArray = [[NSArray alloc] init];
+        @try {
+            [myArray objectAtIndex:2];
+        } @catch (NSException *exception) {
+            NSLog(@"Exception Name: %@", exception.name);
+            NSLog(@"Exception Reason: %@", exception.reason);
+        } @finally {
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
     }
+    
     
     return 0;
 }
