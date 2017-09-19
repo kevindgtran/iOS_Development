@@ -13,6 +13,8 @@
 @implementation Rectangle
 {
     XYPoint *origin;
+    float width;    //declaring instance variables - not necessary as @synthesize does this for us
+    float height;
 }
 
 @synthesize width, height;
@@ -44,4 +46,19 @@
 }
 
 @end
+
+//int main (int argc, char * argv[])
+//{
+//    @autoreleasepool {
+//        
+//        Rectangle *myRect = [[Rectangle alloc] init];
+//        
+//        [myRect setWidth:4 setHeight:4];
+//        [myRect setHeight:20];
+//        
+//        NSLog(@"Width: %f Height: %f", myRect.width, myRect.height);
+//        
+//    }
+//    return 0;
+//}
 
