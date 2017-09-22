@@ -8,22 +8,20 @@
 //
 //#import <Foundation/Foundation.h>
 //
+////interface section
 //@interface Calculator : NSObject
 //
-////accumulator methods
-//-(void) setAccumulator: (double) value;
-//-(void) clear;
 //-(double) accumulator;
-//
-////arithmatic methods
+//-(void) setAccumulator: (double) value;
 //-(void) add: (double) value;
 //-(void) subtract: (double) value;
 //-(void) multiply: (double) value;
 //-(void) divide: (double) value;
+//-(void) clear;
 //
 //@end
 //
-//
+////implementation section
 //@implementation Calculator
 //{
 //    double accumulator;
@@ -74,12 +72,10 @@
 //        double value1, value2;
 //        char operator;
 //        
-//        Calculator *MyCalculator;
-//        MyCalculator = [[Calculator alloc] init];
+//        Calculator *MyCalculator = [[Calculator alloc] init];
 //        
 //        NSLog(@"type in your expression");
 //        scanf("%lf %c %lf", &value1, &operator, &value2);
-//        
 //        [MyCalculator setAccumulator: value1];
 //        
 //        switch (operator) {
@@ -106,8 +102,3 @@
 //    }
 //    return 0;
 //}
-//
-//
-//
-//
-//

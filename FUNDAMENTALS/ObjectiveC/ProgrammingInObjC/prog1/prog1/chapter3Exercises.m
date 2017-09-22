@@ -13,8 +13,8 @@
 //
 //-(int) xValue;
 //-(int) yValue;
-//-(void) setXValue;
-//-(void) setYValue;
+//-(void) setXValue: (int) x;
+//-(void) setYValue: (int) y;
 //-(void) print;
 //
 //@end
@@ -26,16 +26,6 @@
 //    int yValue;
 //}
 //
-//-(void) setXValue: (int) x
-//{
-//    xValue = x;
-//}
-//
-//-(void) setYValue: (int) y
-//{
-//    yValue = y;
-//}
-//
 //-(int) xValue
 //{
 //    return xValue;
@@ -44,6 +34,16 @@
 //-(int) yValue
 //{
 //    return yValue;
+//}
+//
+//-(void) setXValue: (int) x
+//{
+//    xValue = x;
+//}
+//
+//-(void) setYValue: (int) y
+//{
+//    yValue = y;
 //}
 //
 //-(void) print
@@ -58,15 +58,16 @@
 //{
 //    @autoreleasepool {
 //        
-//        //create class instance
+//        //declare an object of the XYPoint class, allocate memory and initialize with a value
 //        XYPoint *MyCurrentPoint = [[XYPoint alloc] init];
 //        
+//        //set the instances X & Y values
 //        [MyCurrentPoint setYValue: 4];
 //        [MyCurrentPoint setXValue: 5];
 //        
+//        //print its values
 //        [MyCurrentPoint print];
 //        
 //    }
-//    
 //    return 0;
 //}

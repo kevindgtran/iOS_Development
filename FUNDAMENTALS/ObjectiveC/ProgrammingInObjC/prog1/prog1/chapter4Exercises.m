@@ -8,18 +8,18 @@
 //
 //#import <Foundation/Foundation.h>
 //
-////declare a class
+////declare a class - interface section
 //@interface Complex : NSObject
 //
 //-(void) setReal: (double) a;
 //-(void) setImaginary: (double) b;
-//-(void) print; //display as a + bi
+//-(void) print;
 //-(double) real;
 //-(double) imaginary;
 //
 //@end
 //
-////define its methods
+////define all properties and methods - implementation section
 //@implementation Complex
 //{
 //    double real;
@@ -52,19 +52,16 @@
 //
 //@end
 //
-////test it in a program
+////program section
 //int main (int argc, char * argv[])
 //{
 //    @autoreleasepool {
 //        Complex *myComplexNo;
 //        myComplexNo = [Complex alloc];
 //        myComplexNo = [myComplexNo init];
-//        
 //        [myComplexNo setReal: 3];
 //        [myComplexNo setImaginary: 15];
-//        
 //        [myComplexNo print];
-//     
 //    }
 //    return 0;
 //}
