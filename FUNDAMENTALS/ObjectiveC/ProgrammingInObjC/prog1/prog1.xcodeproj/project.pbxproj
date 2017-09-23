@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		65092E301F677C5B00393F51 /* chapter8Exercises.m in Sources */ = {isa = PBXBuildFile; fileRef = 65092E2F1F677C5B00393F51 /* chapter8Exercises.m */; };
-		651E50D91F74A5DD006C9B90 /* chapter13Examples.m in Sources */ = {isa = PBXBuildFile; fileRef = 651E50D81F74A5DD006C9B90 /* chapter13Examples.m */; };
+		651E50D91F74A5DD006C9B90 /* chapter13Arrays.m in Sources */ = {isa = PBXBuildFile; fileRef = 651E50D81F74A5DD006C9B90 /* chapter13Arrays.m */; };
 		652A08501F5724C200813D73 /* chapter3Exercises.m in Sources */ = {isa = PBXBuildFile; fileRef = 652A084F1F5724C200813D73 /* chapter3Exercises.m */; };
 		652A08521F577F7500813D73 /* chapter4Examples.m in Sources */ = {isa = PBXBuildFile; fileRef = 652A08511F577F7500813D73 /* chapter4Examples.m */; };
 		652A08541F58C8B800813D73 /* chapter4Exercises.m in Sources */ = {isa = PBXBuildFile; fileRef = 652A08531F58C8B800813D73 /* chapter4Exercises.m */; };
@@ -20,6 +20,7 @@
 		6598B48E1F60842400F0E269 /* chapter6Examples.m in Sources */ = {isa = PBXBuildFile; fileRef = 6598B48D1F60842400F0E269 /* chapter6Examples.m */; };
 		6598B4901F60887400F0E269 /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 6598B48F1F60887400F0E269 /* Fraction.m */; };
 		6598B4921F60CD3700F0E269 /* chapter6Exercises.m in Sources */ = {isa = PBXBuildFile; fileRef = 6598B4911F60CD3700F0E269 /* chapter6Exercises.m */; };
+		65C4125E1F75ADE900DF38DC /* chapter13Functions.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C4125D1F75ADE900DF38DC /* chapter13Functions.m */; };
 		65E26B211F62030C00345166 /* ClassA.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E26B201F62030C00345166 /* ClassA.m */; };
 		65FA1B431F5A0F1D0017C99F /* chapter5Exercises.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FA1B421F5A0F1D0017C99F /* chapter5Exercises.m */; };
 /* End PBXBuildFile section */
@@ -38,7 +39,7 @@
 
 /* Begin PBXFileReference section */
 		65092E2F1F677C5B00393F51 /* chapter8Exercises.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chapter8Exercises.m; sourceTree = "<group>"; };
-		651E50D81F74A5DD006C9B90 /* chapter13Examples.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chapter13Examples.m; sourceTree = "<group>"; };
+		651E50D81F74A5DD006C9B90 /* chapter13Arrays.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chapter13Arrays.m; sourceTree = "<group>"; };
 		652A084F1F5724C200813D73 /* chapter3Exercises.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chapter3Exercises.m; sourceTree = "<group>"; };
 		652A08511F577F7500813D73 /* chapter4Examples.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chapter4Examples.m; sourceTree = "<group>"; };
 		652A08531F58C8B800813D73 /* chapter4Exercises.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chapter4Exercises.m; sourceTree = "<group>"; };
@@ -53,6 +54,7 @@
 		6598B48D1F60842400F0E269 /* chapter6Examples.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chapter6Examples.m; sourceTree = "<group>"; };
 		6598B48F1F60887400F0E269 /* Fraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fraction.m; sourceTree = "<group>"; };
 		6598B4911F60CD3700F0E269 /* chapter6Exercises.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chapter6Exercises.m; sourceTree = "<group>"; };
+		65C4125D1F75ADE900DF38DC /* chapter13Functions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chapter13Functions.m; sourceTree = "<group>"; };
 		65E26B201F62030C00345166 /* ClassA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassA.m; sourceTree = "<group>"; };
 		65FA1B421F5A0F1D0017C99F /* chapter5Exercises.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chapter5Exercises.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,7 +105,8 @@
 				658A0EB51F69F331003C1903 /* Complex.h */,
 				658A0EB61F69F358003C1903 /* Complex.m */,
 				657DA2FE1F7065CF003A01EB /* chapter10Examples.m */,
-				651E50D81F74A5DD006C9B90 /* chapter13Examples.m */,
+				651E50D81F74A5DD006C9B90 /* chapter13Arrays.m */,
+				65C4125D1F75ADE900DF38DC /* chapter13Functions.m */,
 			);
 			path = prog1;
 			sourceTree = "<group>";
@@ -167,8 +170,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				658A0EB71F69F358003C1903 /* Complex.m in Sources */,
-				651E50D91F74A5DD006C9B90 /* chapter13Examples.m in Sources */,
+				651E50D91F74A5DD006C9B90 /* chapter13Arrays.m in Sources */,
 				65E26B211F62030C00345166 /* ClassA.m in Sources */,
+				65C4125E1F75ADE900DF38DC /* chapter13Functions.m in Sources */,
 				657D2B011F5F75C70032F807 /* CalculatorClass.m in Sources */,
 				6598B48E1F60842400F0E269 /* chapter6Examples.m in Sources */,
 				652A08541F58C8B800813D73 /* chapter4Exercises.m in Sources */,
