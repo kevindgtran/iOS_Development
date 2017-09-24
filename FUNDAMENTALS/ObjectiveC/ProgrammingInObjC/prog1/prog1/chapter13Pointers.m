@@ -8,12 +8,21 @@
 
 #import <Foundation/Foundation.h>
 
+void exchange (int *pint1, int *pint2)
+{
+    int temp;
+    
+    temp = *pint1;
+    *pint1 = *pint2;  //Always declare pointers with their operators (indirect or address)
+    *pint2 = temp;
+    
+}
+
 int main (int argc, char * argv[])
 {
     @autoreleasepool {
         
         //declare 3 variables assigning each the reference pointer of the previous and print the values
-        
         int count = 10, x;
         int *intPnt;         //intPnt declared to be of type "pointer to int"
         intPnt = &count;     //intPnt variable set to the address operator of count, which is 10. Address operator points to that variables value
@@ -59,9 +68,24 @@ int main (int argc, char * argv[])
         thanksGiving->year = 2017;
         NSLog(@"This year Thanksgiving will on %i/%i/%i", holiday.month, (*thanksGiving).day, thanksGiving->year % 100);
         
+        //Program 13.14
+        int i1 = -5, i2 = 66, *p1 = &i1, *p2 = &i2;
+        NSLog(@"i1 = %i, i2 = %i, *p1 = %i, *p2 = %i", i1, i2, *p1, *p2);
         
+        exchange(p1, p2);
+        NSLog(@"i1 = %i, i2 = %i", i1, i2);
+        //temp = *p1 = -5;
+        //*p1 = *p2 = 66;
+        //*p2 = temp = -5;
+        //"i1 = 66, i2 = -5";
         
-        
+        exchange(&i1, &i2);
+        NSLog(@"i1 = %i, i2 = %i", i1, i2);
+        //i1 = 66, i2 = -5, *p1 = &i1, *p2 = &i2  //updated values
+        //temp = *p1 = 66;
+        //*p1 = *p2 = -5;
+        //*p2 = temp = 66;
+        //"i1 = -5, i2 = 66";
         
         
     }
