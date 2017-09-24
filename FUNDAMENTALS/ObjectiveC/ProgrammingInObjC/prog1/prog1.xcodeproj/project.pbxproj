@@ -23,6 +23,7 @@
 		65C4125E1F75ADE900DF38DC /* chapter13Functions.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C4125D1F75ADE900DF38DC /* chapter13Functions.m */; };
 		65C412601F75E34E00DF38DC /* chapter13Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C4125F1F75E34E00DF38DC /* chapter13Blocks.m */; };
 		65C412621F7614F300DF38DC /* chapter13Structures.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C412611F7614F300DF38DC /* chapter13Structures.m */; };
+		65C412641F770BBE00DF38DC /* chapter13Pointers.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C412631F770BBE00DF38DC /* chapter13Pointers.m */; };
 		65E26B211F62030C00345166 /* ClassA.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E26B201F62030C00345166 /* ClassA.m */; };
 		65FA1B431F5A0F1D0017C99F /* chapter5Exercises.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FA1B421F5A0F1D0017C99F /* chapter5Exercises.m */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		65C4125D1F75ADE900DF38DC /* chapter13Functions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chapter13Functions.m; sourceTree = "<group>"; };
 		65C4125F1F75E34E00DF38DC /* chapter13Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chapter13Blocks.m; sourceTree = "<group>"; };
 		65C412611F7614F300DF38DC /* chapter13Structures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chapter13Structures.m; sourceTree = "<group>"; };
+		65C412631F770BBE00DF38DC /* chapter13Pointers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chapter13Pointers.m; sourceTree = "<group>"; };
 		65E26B201F62030C00345166 /* ClassA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassA.m; sourceTree = "<group>"; };
 		65FA1B421F5A0F1D0017C99F /* chapter5Exercises.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chapter5Exercises.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +115,7 @@
 				65C4125D1F75ADE900DF38DC /* chapter13Functions.m */,
 				65C4125F1F75E34E00DF38DC /* chapter13Blocks.m */,
 				65C412611F7614F300DF38DC /* chapter13Structures.m */,
+				65C412631F770BBE00DF38DC /* chapter13Pointers.m */,
 			);
 			path = prog1;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				658A0EB71F69F358003C1903 /* Complex.m in Sources */,
+				65C412641F770BBE00DF38DC /* chapter13Pointers.m in Sources */,
 				65C412621F7614F300DF38DC /* chapter13Structures.m in Sources */,
 				651E50D91F74A5DD006C9B90 /* chapter13Arrays.m in Sources */,
 				65E26B211F62030C00345166 /* ClassA.m in Sources */,
