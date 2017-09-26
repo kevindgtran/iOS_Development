@@ -20,6 +20,7 @@
 		6598B48E1F60842400F0E269 /* chapter6Examples.m in Sources */ = {isa = PBXBuildFile; fileRef = 6598B48D1F60842400F0E269 /* chapter6Examples.m */; };
 		6598B4901F60887400F0E269 /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 6598B48F1F60887400F0E269 /* Fraction.m */; };
 		6598B4921F60CD3700F0E269 /* chapter6Exercises.m in Sources */ = {isa = PBXBuildFile; fileRef = 6598B4911F60CD3700F0E269 /* chapter6Exercises.m */; };
+		65A5019D1F7AD0D600F5621E /* chapter15Exercises.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A5019C1F7AD0D600F5621E /* chapter15Exercises.m */; };
 		65C4125E1F75ADE900DF38DC /* chapter13Functions.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C4125D1F75ADE900DF38DC /* chapter13Functions.m */; };
 		65C412601F75E34E00DF38DC /* chapter13Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C4125F1F75E34E00DF38DC /* chapter13Blocks.m */; };
 		65C412621F7614F300DF38DC /* chapter13Structures.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C412611F7614F300DF38DC /* chapter13Structures.m */; };
@@ -57,6 +58,7 @@
 		6598B48D1F60842400F0E269 /* chapter6Examples.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chapter6Examples.m; sourceTree = "<group>"; };
 		6598B48F1F60887400F0E269 /* Fraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fraction.m; sourceTree = "<group>"; };
 		6598B4911F60CD3700F0E269 /* chapter6Exercises.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chapter6Exercises.m; sourceTree = "<group>"; };
+		65A5019C1F7AD0D600F5621E /* chapter15Exercises.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = chapter15Exercises.m; sourceTree = "<group>"; };
 		65C4125D1F75ADE900DF38DC /* chapter13Functions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chapter13Functions.m; sourceTree = "<group>"; };
 		65C4125F1F75E34E00DF38DC /* chapter13Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chapter13Blocks.m; sourceTree = "<group>"; };
 		65C412611F7614F300DF38DC /* chapter13Structures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chapter13Structures.m; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				65C4125F1F75E34E00DF38DC /* chapter13Blocks.m */,
 				65C412611F7614F300DF38DC /* chapter13Structures.m */,
 				65C412631F770BBE00DF38DC /* chapter13Pointers.m */,
+				65A5019C1F7AD0D600F5621E /* chapter15Exercises.m */,
 			);
 			path = prog1;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				652A08501F5724C200813D73 /* chapter3Exercises.m in Sources */,
 				65C412601F75E34E00DF38DC /* chapter13Blocks.m in Sources */,
 				6598B4921F60CD3700F0E269 /* chapter6Exercises.m in Sources */,
+				65A5019D1F7AD0D600F5621E /* chapter15Exercises.m in Sources */,
 				65092E301F677C5B00393F51 /* chapter8Exercises.m in Sources */,
 				652A08561F58DBA700813D73 /* chapter5Examples.m in Sources */,
 				65796D5F1F5507180080D529 /* main.m in Sources */,
