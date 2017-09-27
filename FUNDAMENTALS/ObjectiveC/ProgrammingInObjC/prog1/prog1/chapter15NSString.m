@@ -91,12 +91,9 @@ int main (int argc, char * argv[])
         mutableString = [NSMutableString stringWithString:someString1];
         NSLog(@"%@", mutableString);
         
-        
-        
-        
-        
-        
-        
+        //insert characters
+        [mutableString insertString:@" changed!/ mutable" atIndex:7];
+        NSLog(@"%@", mutableString);
         
     }
     return 0;
