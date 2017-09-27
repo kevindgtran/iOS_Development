@@ -12,6 +12,8 @@ int main (int argc, char * argv[])
 {
     @autoreleasepool {
         
+        //NSString has over 100 methods to work with it!
+        
         //Initialize a new NSString
         NSString *stringOne = @"We're programming up a storm!"; //the constant character string, using the expression notation is assigned to the stringOne object which is a pointer to the NSString class
         NSLog(@"%@", stringOne); //printing the value (constant character string) in stringOne, using the format character "%@" for strings and other objects.
@@ -80,21 +82,51 @@ int main (int argc, char * argv[])
         NSLog(@"The substring is: %@", newRes); //print the substring in an NSLog routine using the format character "%@"
         //more string subscripting on page 324
         
-        //immutable strings
         
+        
+        //immutable strings
         NSString *someString1 = @"This is string A";
-        NSString *someSearch, *someReplace;
-        NSMutableString *mutableString;
-        NSRange someSubString;
+        NSMutableString *mutableString;   //declares a mutable string called mutableString - (contents can change during execution of the program)
         
         //create mutable string from nonmutable
-        mutableString = [NSMutableString stringWithString:someString1];
+        mutableString = [NSMutableString stringWithString:someString1]; //will make a copy of string passed in and return copy, we then assign it to the mutable string
         NSLog(@"%@", mutableString);
         
         //insert characters
-        [mutableString insertString:@" changed!/ mutable" atIndex:7];
+        [mutableString insertString:@" changed!/ mutable" atIndex:7]; //we can change the mutable string by inserting a constant character string into any index location with the insertString method
         NSLog(@"%@", mutableString);
         
+        //concatenation of strings with (if insert at end)
+        [mutableString insertString:@" and another string B" atIndex:[mutableString length]]; //use the insertString, pass in a constant character string, then pass in the string length to insert at the end.
+        NSLog(@"%@", mutableString);
+        
+        //concatenate using the append directly, successful becuase mutableString is an NSMutableString object
+        [mutableString appendString:@" and string C!"]; //we can use the appendString instance method to append a string directly
+        NSLog(@"%@", mutableString);
+        
+        //delete characters in a range
+        [mutableString deleteCharactersInRange:NSMakeRange(16, 9)]; //we can delete characters in a range, using the deleteCharactersInRange, then pass in NSMakeRange as an argument. The range is (indexToStart, numberOfCharactersToDelete)!
+        NSLog(@"%@!!!", mutableString);
+        
+        //set the mutable string directly - MUST USE A METHOD TO CREATE A "NEW" NSSTRING OBJECT
+        [mutableString setString:@"This is the new string A"];
+        NSLog(@"%@", mutableString);
+        
+        //find and replace characters in a range
+        [mutableString replaceCharactersInRange:NSMakeRange(12, 0) withString:@"BOOM! "]; //just like the deleteCharactersInRange method, the range argument is in this format (characterIndexToStart, numberOfCharactersToReplace)
+        NSLog(@"%@", mutableString);
+        
+        //create an empty string
+        NSMutableString *emptyString;
+        emptyString = [NSMutableString string];
+        NSLog(@"%@", emptyString);
+        NSLog(@"%lu", [emptyString length]);
+        [emptyString setString:@"Hello World"];
+        NSLog(@"%@", emptyString);
+        if ([emptyString hasPrefix:@"Hello"] == 1)
+        {
+            NSLog(@"Starts with Hello");
+        }
     }
     return 0;
 }
