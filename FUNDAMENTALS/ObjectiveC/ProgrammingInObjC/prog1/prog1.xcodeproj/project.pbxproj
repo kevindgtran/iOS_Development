@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		65092E301F677C5B00393F51 /* chapter8Exercises.m in Sources */ = {isa = PBXBuildFile; fileRef = 65092E2F1F677C5B00393F51 /* chapter8Exercises.m */; };
+		650EC75D1F7C184C006228E9 /* chapter15NSArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 650EC75C1F7C184C006228E9 /* chapter15NSArray.m */; };
 		651E50D91F74A5DD006C9B90 /* chapter13Arrays.m in Sources */ = {isa = PBXBuildFile; fileRef = 651E50D81F74A5DD006C9B90 /* chapter13Arrays.m */; };
 		652A08501F5724C200813D73 /* chapter3Exercises.m in Sources */ = {isa = PBXBuildFile; fileRef = 652A084F1F5724C200813D73 /* chapter3Exercises.m */; };
 		652A08521F577F7500813D73 /* chapter4Examples.m in Sources */ = {isa = PBXBuildFile; fileRef = 652A08511F577F7500813D73 /* chapter4Examples.m */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		65092E2F1F677C5B00393F51 /* chapter8Exercises.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chapter8Exercises.m; sourceTree = "<group>"; };
+		650EC75C1F7C184C006228E9 /* chapter15NSArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = chapter15NSArray.m; sourceTree = "<group>"; };
 		651E50D81F74A5DD006C9B90 /* chapter13Arrays.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chapter13Arrays.m; sourceTree = "<group>"; };
 		652A084F1F5724C200813D73 /* chapter3Exercises.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chapter3Exercises.m; sourceTree = "<group>"; };
 		652A08511F577F7500813D73 /* chapter4Examples.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chapter4Examples.m; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				65C412631F770BBE00DF38DC /* chapter13Pointers.m */,
 				65A5019C1F7AD0D600F5621E /* chapter15NSNumber.m */,
 				65A5019E1F7AEF9900F5621E /* chapter15NSString.m */,
+				650EC75C1F7C184C006228E9 /* chapter15NSArray.m */,
 			);
 			path = prog1;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				652A08521F577F7500813D73 /* chapter4Examples.m in Sources */,
 				6598B4901F60887400F0E269 /* Fraction.m in Sources */,
 				652A08501F5724C200813D73 /* chapter3Exercises.m in Sources */,
+				650EC75D1F7C184C006228E9 /* chapter15NSArray.m in Sources */,
 				65C412601F75E34E00DF38DC /* chapter13Blocks.m in Sources */,
 				6598B4921F60CD3700F0E269 /* chapter6Exercises.m in Sources */,
 				65A5019D1F7AD0D600F5621E /* chapter15NSNumber.m in Sources */,
