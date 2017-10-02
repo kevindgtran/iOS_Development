@@ -11,9 +11,7 @@
 //int main (int argc, char * argv[])
 //{
 //    @autoreleasepool{
-//
 //        //There are over 50 methods for NSArray, this NSMutableArray
-//
 //        //create an array named monthNames containing all the months of the year
 //        NSArray *monthNames = [NSArray arrayWithObjects:@"January", @"February", @"March", @"April", @"May", @"June", @"July", @"Auguest", @"September", @"October", @"November", @"December", nil]; //we create an array using the NSArray class, then call the class method - arrayWithObjects passing in constant character strings and nil - to marke the end of the list
 //
