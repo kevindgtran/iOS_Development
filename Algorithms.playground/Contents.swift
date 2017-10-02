@@ -2,8 +2,6 @@
 
 import UIKit
 
-
-
 //PRIME - print all primes up to n
 //iterate each number from 1 to 20
 //set each number to true
@@ -24,7 +22,6 @@ import UIKit
 //    }
 //}
 
-
 //HARMONIC series formula
 //var sum = 1.0
 //for harmonic in 2...20 {
@@ -32,7 +29,6 @@ import UIKit
 //    sum += math
 //}
 //print(sum)
-
 
 //ADD UP THE SUM AND ADD A VALUE WITH EACH ITERATION
 //Use a loop to multiply two numbers 234 and 3643 using only addition.
@@ -47,7 +43,6 @@ import UIKit
 //}
 //print(sumValue)
 
-
 //FIZZBUZZ
 //for fbNumbers in 1...100 {
 //    if (fbNumbers % 3 == 0 && fbNumbers % 5 == 0) {
@@ -61,7 +56,6 @@ import UIKit
 //    }
 //}
 
-
 //FACTORIAL
 //var factorialSum = 1
 //var n = 15
@@ -70,7 +64,6 @@ import UIKit
 //    n -= 1
 //}
 //print(factorialSum)
-
 
 //CHECKERED BOARD
 //for box in 1...110 {
@@ -83,14 +76,12 @@ import UIKit
 //    }
 //}
 
-
 //AIRPLANE SEATING arrangement (1a through 1h) for 26 rows of seats
 //iterate through x to 26
 //print the seating arrangement for each row, iterpolating in x
 //for seat in 1...26 {
 //    print("\(seat)a \(seat)b \(seat)c \(seat)d \(seat)e \(seat)f \(seat)g \(seat)h")
 //}
-
 
 //STOCKMARKET - find the greatest value (difference), but can't "sell before you buy"
 //let stock_prices_yesterday: [Float] = [10,7,5,8,11,9]
@@ -113,7 +104,6 @@ import UIKit
 //    return maxProfit
 //}
 //get_max_profit(stock_prices_yesterday)
-
 
 //PALINDROME
 //First - remove white space
@@ -138,7 +128,6 @@ import UIKit
 //isPalindrome("Was it Eliots toilet I saw?")
 //isPalindrome("Never Odd or even")
 //isPalindrome("Murder for a jar of red rum")
-
 
 //http://adriann.github.io/programming_problems.html
 //no# 19
@@ -168,7 +157,6 @@ import UIKit
 //    print(asteriskRow)
 //}
 //printListInRectangle(testArrayOne)
-
 
 //DNA SEQUENCING
 //func repeatDNASequence(s: String) ->String{
@@ -202,12 +190,10 @@ import UIKit
 //    return sortedRepeatedSubstrings
 //}
 
-
 //ANAGRAM
 //var word1 = "name"
 //var word2 = "Mean"
 //word1.lowercased().characters.sorted() == word2.lowercased().characters.sorted() ? "yup, is an anagram" : "nope, not an anagram"
-
 
 //SORT ARRAY
 //var array = [5, 10, 1, 3, 8, 7, 16]
@@ -224,7 +210,6 @@ import UIKit
 //}
 //sortInPlace(&array)
 
-
 //REVERSE STRING
 //func reverseWord (_ word: String) -> String {
 //    var reversedWord = ""
@@ -236,7 +221,6 @@ import UIKit
 //
 //reverseWord("Kevin")
 //reverseWord("hello world")
-
 
 //reverse vowels algorithm
 //func reverseVowels(_ word: String) -> String {
@@ -284,7 +268,6 @@ import UIKit
 //let newArray = array1.map { $0 % 2 == 0 }
 //print(newArray)
 
-
 //Problem: given a string print the EVEN INDECES then space then odd indices
 //given a string
 //create empty string
@@ -305,7 +288,6 @@ import UIKit
 //}
 //var finalWord = "\(exampleEvenWord) \(exampleOddWord)"
 //print(finalWord)
-
 
 //hackerrank - print the fraction of the number of Ints in the are: Positive, Negative, Zero
 //let array = [-4,3,-9,0,4,1]
@@ -333,8 +315,6 @@ import UIKit
 //    print("Zero: \(totalZero/arrayCount)")
 //    print("Negative: \(totalNegative/arrayCount)")
 //}
-
-
 
 //SORT ARRAY
 //var array1 = [2,4,1,3,5]
