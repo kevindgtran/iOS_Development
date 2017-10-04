@@ -760,6 +760,52 @@ import UIKit
 
 
 
+/////////////////////////////HACKERRANK
+//let n = Int(readLine()!)!
+//recursion
+//func factorial(N: Int) -> Int {
+//    if (N == 1){
+//        return 1
+//    }
+//    return N * factorial(N: (N - 1))
+//}
+//factorial(N: 3) //DONT FORGET TO PRINT THE VALUE
+
+//converting binary numbers to decimals,
+//ex. 5 == 101, max consecutive # of 1's is 1
+//ex. 13 == 1101, max consecutuve # of 1's is 2
+
+
+
+
+//func binaryConverter(N: Int) -> Int {
+//    //continuously divide N by 2 till N == 1, each division if remainder greater than 0, then add one to maxOnes variable
+//    var maxOnes: Int = 0
+//    var sum: Int = 0
+//    var num: Int = N
+//
+//    while (num > 0) {
+//        if (num % 2 >= 1) {
+//            sum += 1
+//            if (sum > maxOnes) {
+//                maxOnes = sum
+//            }
+//        } else {
+//            sum = 0
+//        }
+//        num /= 2
+//    }
+//    return maxOnes
+//}
+//binaryConverter(N: 5)
+
+
+let route = [[0,2,10],
+             [3,5,0],
+             [9,20,6],
+             [10,12,15],
+             [10,10,8]]
+
 
 
 
