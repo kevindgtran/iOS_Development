@@ -85,14 +85,32 @@ import UIKit
 //print(aListOfStuff.first!)
 
 //Dictionaries
-let emptyDict: [String: String] = [:]
-let anotherEmptyDict = [String: String]()
-let dict = ["name": "Bobby",
-            "age": "twenty-two",
-            "favFood": "Pizza"
-            ]
-let dict2: [String: Int] = ["address": 123,
-                            "phone": 5551234,
-                            "health": 100]
+//var emptyDict: [String: String] = [:]
+//emptyDict["hot dog and "] = "bun"
+//print(emptyDict)
+//let anotherEmptyDict = [String: String]()
+//let dict = ["name": "Bobby",
+//            "age": "twenty-two",
+//            "favFood": "Pizza"
+//            ]
+//var dict2: [String: Int] = ["address": 123,
+//                            "phone": 5551234,
+//                            "health": 100]
+//print("There are \(dict2.count) key value pairs in dict2")
+//dict2["weight"] = 165
+//dict2.count
+//dict2["weight"] = 155
+//if let newWeight = dict2["weight"] {
+//    print("he now weighs \(newWeight)")
+//}
+//dict2["address"] = nil
+//dict2.count
+//for (pumpkin,latte) in dict2 {
+//    print(pumpkin, latte)
+//}
+//let dict2Array = [Int](dict2.values)
+
+//control flow
+
 
 
