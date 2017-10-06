@@ -267,9 +267,75 @@ import UIKit
 //}
 //print(climateGreeting(name: "Sandy", location: "Hawaii"))
 
+//create an algorithm that takes an array and returns the smallest and largest values in a tuple
+//let anArray: [Int] = []
+//func smallestANDBiggest(list: [Int]) -> (smallest: Int, largest: Int)? {
+//    //loop through each element in array, check each number, if number is less than smallestValue, then set smallestValue to number.
+//    //else if number is greater than largestValue then set largestValue to number
+//    //return (smallestValue, largestValue)
+//    if (list.isEmpty) {
+//        print("empty array")
+//        return nil
+//    } else {
+//        var smallestValue = list[0]
+//        var largestValue = list[0]
+//        for number in list {
+//            if (number < smallestValue) {
+//                smallestValue = number
+//            } else if (number > largestValue) {
+//               largestValue = number
+//            }
+//        }
+//    return (smallestValue, largestValue)
+//    }
+//}
+//if let answer = smallestANDBiggest(list: anArray) {
+//print("The smallest value is \(answer.smallest), and the largest value is \(answer.largest)")
+//}
 
+//build an algorithm that takes in an array of doubles and returns the average
+//func average(_ numbers: Double...) -> Double? {
+//    //if numbers is 0, return 0
+//    //if numbers is empty return nil, make out return an optional
+//    //declare an answer variable
+//    //loop through numbers and add to answer variable
+//    //update answer with the answer divided by its count
+//    //return answer
+//    if (numbers.isEmpty) {
+//        print("empty list of numbers")
+//        return nil
+//    } else {
+//        var answer = Double()
+//        var numbersCount = Double()
+//        for n in numbers {
+//            answer += n
+//            numbersCount += 1
+//        }
+//        answer = answer/numbersCount
+//        return answer
+//    }
+//}
+//average(3,6,9,12,15,18)
 
+//build an algorithm that takes in 2 arguments and swaps them
+//func swapper(_ firstValue: inout Int, _ secondValue: inout Int) -> (Int, Int) {
+//    let tempFirstValue = firstValue
+//    firstValue = secondValue
+//    secondValue = tempFirstValue
+//    return (firstValue, secondValue)
+//}
+//var someVar = 3
+//var anotherVar = 10
+//var newValues = swapper(&someVar, &anotherVar)
+//print("The new value for someVar:\(newValues.0) and anotherVar: \(newValues.1)")
 
+//setting a variable to a functions type
+//func sum(_ num1: Int, _ num2: Int) -> Int {
+//    return num1 + num2
+//}
+//var addingNumbers: (Int, Int) -> Int = sum(_:_:)
+//addingNumbers(2, 5)
+//print(addingNumbers(3, 1))
 
 
 
