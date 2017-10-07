@@ -337,6 +337,88 @@ import UIKit
 //addingNumbers(2, 5)
 //print(addingNumbers(3, 1))
 
+//func add(_ num1: Int, _ num2: Int) -> Int {
+//    return num1 + num2
+//}
+//var someMath: (Int, Int) -> Int = add(_:_:)
+////print("3 + 5 is \(someMath(3, 5))")
+//
+//func printMath(_ someSomeMath: (Int, Int) -> Int, _ a: Int, _ b: Int) {
+//    print("\(someSomeMath(a, b))")
+//}
+//printMath(someMath, 5, 5)
+
+//func stepForward(_ input: Int) -> Int {
+//    return input + 1
+//}
+//
+//func stepBackward(_ input: Int) -> Int {
+//    return input - 1
+//}
+//
+////build a function that returns a another function value
+//func nextStep(_ steppingForward: Bool) -> (Int) -> Int {
+//    return steppingForward ? stepForward : stepBackward
+//}
+
+//print numbers from 3 to 0 with a while loop & recursion
+//func countDown(_ startPoint: Int) {
+//    var startPoint = startPoint
+//    while (startPoint != 0) {
+//        print("\(startPoint)...")
+//        startPoint -= 1
+//    }
+//    print("zero!")
+//}
+//countDown(3)
+
+//func countDown(_ num: Int) {
+//    print("\(num)...") //prints it as each function is pushed on the stack
+//    3,2,1 == 3,2,1
+//    if (num == 0) {
+//        print("zero...")
+//    } else {
+//        countDown(num - 1)
+//    }
+//}
+//countDown(3)
+
+//func countUp(_ num: Int) {
+//    if (num == 0) {
+//        print("zero...")
+//    } else {
+//        countUp(num - 1)
+//    }
+//    print("\(num)...") //prints each as their popped off the stack
+//    //3,2,1 == 1,2,3
+//}
+//countUp(3)
+
+//fibonacci algorithm with recursion
+//Fibonacci sequence is a sequence of numbers where the next number is the sum of the previous 2 numbers, ie 0,1,1,2,3,5,8,13...
+//F(0) = 0
+//F(1) = 1
+//F(2) = F(1) + F(0) = 1
+//F(3) = F(2) + F(1) = 2
+//F(4) = F(3) + F(2) = 3
+//F(5) = F(4) + F(3) = 5
+//func fib(_ num: Int) -> Int {
+//    //base case
+//    if (num <= 2) {
+//        return 1
+//    } else {
+//        return fib(num - 1) + fib(num - 2)
+//    }
+//}
+//fib(6)
+
+
+
+
+
+
+
+
 
 
 
