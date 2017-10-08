@@ -412,20 +412,6 @@ import UIKit
 //}
 //fib(6)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-//recursion
 //print all the numbers from 1 - N with recursion
 //func printNums(N: Int) {
 //    var num = 1
@@ -442,31 +428,59 @@ import UIKit
 //}
 //printFirstNums(3)
 
+//Factorial with recursion
+//Factorial N! is the product of all the consecutive positive numbers up to N
+//5! = 1 * 2 * 3 * 4 * 5 = 120
+//3! = 1 * 2 * 3 = 6
+//base case, if N is <= 1, return 1
+//recursion case, else return Factorial(N) * Factorial(N - 1)
 
-
-
-
-////factorial with recursion
-//func factorial(number: Int) -> Int {
-//    var answer: Int = 1
-//    if number == 1 {
+//func fact(_ num: Int) -> Int {
+//    if (num == 1) {
 //        return 1
-//    } else if (number < 1) {
-//        print("Only positive numbers")
-//        return 0
 //    } else {
-//        answer = number * factorial(number: number - 1)
+//        return num * fact(num - 1)
 //    }
-//    return answer
 //}
-//factorial(number: 4)
+//fact(3)
+
+//build an algorithm that takes in a number and recursively returns an array with each digit of that number
+//example 123 = [1,2,3]
+//example 0 = [0]
+//example 54321 = [5,4,3,2,1]
+
+//base case - when N is less than 10, return N
+//recursive case - recursively divide N by 10 to get the first digit, also get the last digit with %, then combine all the first digits with the last digit
+//func digits(_ N: Int) -> [Int] {
+//    if (N >= 10) {
+//        let firstDigits = digits(N / 10)
+//        //54321
+//        //5432
+//        //543
+//        //54
+//        //5
+//        let lastDigit = N % 10
+//        //1
+//        //2
+//        //3
+//        //4
+//        return firstDigits + [lastDigit]
+//        //[5], [4], [3], [2], [1]
+//    } else {
+//        return [N]
+//    }
+//}
+//digits(54321)
 
 
 
 
+//power algorithm
 
+//Euclid algorithm
 
+//binary search algorithm
 
-
+//towers of hanoi algorithm
 
 
