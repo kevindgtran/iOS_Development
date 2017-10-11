@@ -828,20 +828,20 @@ import UIKit
 //recurseSum(someArray[0] + someArray[1...end])
 //if someArray.isEmpty {
 
-func sum(_ arr: [Int]) -> Int? {
-    //base cases
-    if (arr.isEmpty) {
-        return nil
-    } else if (arr.count == 1) {
-        return arr[0]
-    } else {
-        //resursion
-        return arr[0] + sum(arr[++1])
-    }
-    return 0
-}
-var someArray = [Int]()
-someArray = [1,2,3]
+//func sum(_ arr: [Int]) -> Int? {
+//    //base cases
+//    if (arr.isEmpty) {
+//        return nil
+//    } else if (arr.count == 1) {
+//        return arr[0]
+//    } else {
+//        //resursion
+//        return arr[0] + sum(arr[++1])
+//    }
+//    return 0
+//}
+//var someArray = [Int]()
+//someArray = [1,2,3]
 //sum(someArray)
 
 

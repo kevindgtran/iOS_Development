@@ -472,6 +472,68 @@ import UIKit
 //}
 //digits(54321)
 
+//closures
+//let charactersList = ["a", "h", "f", "d", "b"]
+//charactersList.sorted()
+//let names = ["sally", "tony", "mary", "bob"]
+//func backward(_ s1: String, _ s2: String) -> Bool {
+//    //a to z
+//    return s1 < s2
+//    //z to a
+//    //return s1 > s2
+//}
+////var reversedNames = names.sorted(by: backward)
+////written with a closure
+//var reversedNames = names.sorted(by: {(s1, s2) -> Bool in
+//    return s1 < s2
+//})
+
+//build an algorithm that sorts
+//func sorts(_ arr: [Int]) -> [Int] {
+//    var finalArr = [Int]()
+//    for n in arr {
+//        if (arr[n] < arr[n + 1]) {
+//            finalArr.insert(arr[n], at: 0)
+//        } else {
+//            finalArr.insert(arr[n], at: 1)
+//        }
+//    }
+//    return finalArr
+//}
+//
+//let nums = [2,6,12,3,5]
+//sorts(nums)
+
+//build an algorithm that takes an array of int values and returns their string values. Intput: [16,...] Output: "OneSix"
+//let digitNames = [
+//    0: "Zero", 1: "One", 2: "two", 3: "three", 4: "Four",
+//    5: "Five", 6: "Six", 7: "Seven", 8: "Eight", 9: "Nine"
+//]
+//let number = [16, 58, 510]
+//let strings = number.map { (number) -> String in
+//    var number = number
+//    var output = ""
+//    repeat {
+//        output = digitNames[number % 10]! + output
+//        number /= 10
+//    } while number > 0
+//    return output
+//}
+
+//build an algorith that has a nested function inside
+//func makeIncrementer(forIncrement amount: Int) -> () -> Int {
+//    var runningTotal = 0
+//    func incrementer() -> Int {
+//        runningTotal += amount
+//        return runningTotal
+//    }
+//    return incrementer
+//}
+//let incrementByTen = makeIncrementer(forIncrement: 10)
+//incrementByTen
+
+
+
 
 
 
