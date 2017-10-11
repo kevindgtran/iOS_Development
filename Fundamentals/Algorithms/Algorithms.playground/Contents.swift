@@ -800,11 +800,49 @@ import UIKit
 //binaryConverter(N: 5)
 
 
-let route = [[0,2,10],
-             [3,5,0],
-             [9,20,6],
-             [10,12,15],
-             [10,10,8]]
+//build an algorithm that returns the sum of an integer array
+//func sum(_ arr: [Int]) -> Int? {
+//    if (arr.isEmpty) {
+//        return nil
+//    } else {
+//        var total = 0
+//        for n in arr {
+//            total += arr[n - 1]
+//        }
+//        return total
+//    }
+//}
+//var someArray = [Int]()
+//someArray = [1,2,3,4]
+//sum(someArray)
+
+
+
+
+
+
+//recursively
+//base case = emtpy array, or 1 array item
+//recursive case = subscript the array + 1 on each recursion
+
+//recurseSum(someArray[0] + someArray[1...end])
+//if someArray.isEmpty {
+
+func sum(_ arr: [Int]) -> Int? {
+    //base cases
+    if (arr.isEmpty) {
+        return nil
+    } else if (arr.count == 1) {
+        return arr[0]
+    } else {
+        //resursion
+        return arr[0] + sum(arr[++1])
+    }
+    return 0
+}
+var someArray = [Int]()
+someArray = [1,2,3]
+//sum(someArray)
 
 
 
