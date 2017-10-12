@@ -532,6 +532,64 @@ import UIKit
 //let incrementByTen = makeIncrementer(forIncrement: 10)
 //incrementByTen
 
+//let emtpyString = String()
+//let character: Character = "o"
+//switch character {
+//case "a":
+//    print("is a")
+//case "b", "c":
+//    print("b or c")
+//default:
+//    print("unable to determine character")
+//}
+
+//print hello 5 times
+//for _ in 1...5 {
+//    print("hello")
+//}
+
+//return the sum of all the numbers up to 5
+//var sum = Int()
+//for n in 1...5 {
+//    sum += n
+//}
+//print(sum)
+
+//sum up all the multiples of 3 from 0 - 10
+//var sum = Int()
+//for n in 0...10 {
+//    if n % 3 == 0 {
+//        sum += n
+//    }
+//}
+//print(sum)
+
+//print hello 10 times using a while loop
+//var counter = 1
+//while (counter < 11) {
+//    print("hello")
+//    counter = counter + 1
+//}
+
+//write an algorithm that repeats hello 10 times using a decrementing while loop
+//var counter = 10
+//while (counter > 0) { //base case
+//    print("hello")
+//    counter -= 1
+//}
+
+//print hello 10 times with the repeat while loop
+//var counter = 10
+//repeat {
+//    print("hello")
+//    counter -= 1
+//} while (counter > 0)
+
+//func add(_ num1: Int, _ num2 : Int) -> Int {
+//    return num1 + num2
+//}
+//add(1, 2)
+//benefits of functions == lets us reuse code, rather than write that same code over and over. Note - we can declare new variables/ constants in new functions as each variable exists within the functions scope
 
 
 
