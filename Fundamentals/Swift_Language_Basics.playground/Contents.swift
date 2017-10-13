@@ -591,6 +591,100 @@ import UIKit
 //add(1, 2)
 //benefits of functions == lets us reuse code, rather than write that same code over and over. Note - we can declare new variables/ constants in new functions as each variable exists within the functions scope
 
+//Declare a new class named BlogPost with 3 properties, then create a new instance of BlogPost (object)
+//class BlogPost {
+//    var title = String()
+//    var body = String()
+//    var author = String()
+//    var numberOfComments = Int()
+//
+//    func addComment() {
+//        numberOfComments += 1
+//    }
+//
+//}
+//
+//let myPost = BlogPost()
+//myPost.title = "Programming rules!"
+//myPost.body = "reviewing and learning new things!"
+//myPost.author = "Plays with Squirrels"
+//
+//let secondPost = BlogPost()
+//secondPost.title = "Masters review"
+//secondPost.body = "reviewing material, is great to learn new tips and tricks. Plus it helps to solidify the material"
+//secondPost.author = "Plays with Squirrels"
+//secondPost.addComment()
+//print(secondPost.numberOfComments)
+
+//classes allow us to create a blueprint of information that can then be replicated into different instances (objects). This cuts down on having to rewrite tons of code over and over. Each class (blueprint) is like a template with different properties (variables) and functions (characteristics) that we can customize for each new instance (object)
+
+//create a class, then another class inheriting from the first class. Within the subclass call the super and override a function as well. Then create objects for each class instance.
+
+//class Car {
+//    var topSpeed = 150
+//
+//    func drive() {
+//        print("Driving at \(topSpeed) miles an hour")
+//    }
+//}
+//
+//class ElectricCar: Car {
+//    var color = String()
+//
+//    override func drive() {
+//        print("Cruising silently at \(topSpeed) miles an hour")
+//    }
+//}
+//
+//let myCRV = Car()
+//myCRV.topSpeed
+//myCRV.topSpeed = 180
+//myCRV.drive()
+//
+//let myTeslaX = ElectricCar()
+//myTeslaX.color = "Grey"
+//myTeslaX.topSpeed = 130
+//myTeslaX.drive()
+//with inheritance we can inherit variables and functionality from one class to another. We can then override the base classes functions with the "override" keyword or call the original function with the "super" keyword
+
+//class with a custom init method that takes in 3 parameters for the properties, without the param name, use the same property and param name to use the self
+//class Person {
+//    var name = ""
+//    var age = 0
+//}
+//
+//let bob = Person() //initializing a Person class to a constant named bob
+//bob.age //default values
+//bob.name //default values
+//
+//class Employee: Person {
+//    var title = String()
+//    var ratePerHour = Double()
+//    init(_ title: String, _ ratePerHour: Double) {
+//        self.title = title
+//        self.ratePerHour = ratePerHour
+//    }
+//}
+//let peter = Employee("Supervisor", 43.50)
+//peter.name = "Peter"
+//peter.age = 30
+//peter.ratePerHour
+//peter.title
+//print("The new \(peter.title) is \(peter.name)!")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
