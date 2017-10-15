@@ -672,13 +672,75 @@ import UIKit
 //peter.title
 //print("The new \(peter.title) is \(peter.name)!")
 
+//create a book class with optional properties, then create a book object assign values and use the values (unwrap the mystery gift)
+//class Book {
+//    var title:String?
+//    var numPages:Int?
+//}
+//let currentBook = Book()
+//currentBook.title = "CTCI"
+//currentBook.numPages = 190
+//if let title = currentBook.title, let pages = currentBook.numPages {
+//    print("Currently reading \(title), its short with only \(pages) pages")
+//}
 
+//Declare Book class with one property title and an optional property nyBestSeller
+//class Book {
+//    var title = String()
+//    var nyBestSeller: Bool?
+//
+//    init() {
+//    }
+//
+//    //create custom initializer function to pass in property values into object instances
+//    init(_ title: String, _ nyBestSeller: Bool? ) {
+//        self.title = title
+//        self.nyBestSeller = nyBestSeller
+//    }
+//}
+//
+////create Book object, assign a title value and print if optional value is present
+//let book1 = Book()
+//book1.title = "Book1"
+//if let bestSeller = book1.nyBestSeller {
+//    print("\(book1.title) is a best seller")
+//} else {
+//    print("\(book1.title) is a good book")
+//}
+//
+//let book2 = Book("Book2", true)
+//if let nyBestSeller = book2.nyBestSeller {
+//    print("\(book2.title) is a New York Times BestSeller!")
+//} else {
+//    print("Book 2 is good")
+//}
 
-
-
-
-
-
+//create 2 classes, and a property that refers to one of the classes. Then create a computed property and display the results
+//class Person {
+//    var name = String()
+//}
+//
+//class Book {
+//    var title: String?
+//    var author: Person?
+//
+//    //computed propety
+//    var description: String {
+//        if let title = title, let author = author?.name {
+//            return "\(title) by \(author)"
+//        } else {
+//            return "no title or author"
+//        }
+//    }
+//}
+//
+//let person1 = Person()
+//person1.name = "Bob"
+//
+//let book1 = Book()
+//book1.title = "Book 1"
+//book1.author = person1
+//book1.description
 
 
 
