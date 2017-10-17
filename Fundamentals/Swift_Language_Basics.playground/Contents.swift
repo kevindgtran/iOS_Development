@@ -742,13 +742,108 @@ import UIKit
 //book1.author = person1
 //book1.description
 
+//designated and convenience initializers
+//class Person {
+//    var name = String()
+//}
+//
+//class Book {
+//    var title = String() //declare and initialize
+//    var author: Person //declare and using designated initializer
+//    var description: String? //declare and optional initializer - optional variables creates safety checks in order to access the value. This is because optionals can be nil/ have a value
+//    var numPages: Int //declare and use designated initlizer
+//
+//    init() {
+//        self.author = Person()
+//        self.numPages = Int()
+//    }
+//
+//    init(author: Person, description: String?, numPages: Int) {
+//        self.author = Person()
+//        self.description = description
+//        self.numPages = numPages
+//    }
+//
+//    convenience init(customTitle: String) {
+//        self.init()
+//        self.title = customTitle
+//    }
+//}
+//
+////Designated Initializer
+////var person = Person()
+////person.name = "person"
+////var someBook = Book()
+////someBook.title = "SomeBookTitle"
+////someBook.author = person
+////someBook.description = "description"
+////someBook.numPages = 12
+//
+////Designated Initializer passing in values
+//var me = Person()
+//me.name = "Me"
+//print(me.name)
+//
+////designated initializer
+//var myCurrentBook = Book(author: me, description: "Halloween", numPages: 1)
+//print(myCurrentBook.author.name)
+//if let description = myCurrentBook.description {
+//    print(description)
+//}
+//print(myCurrentBook.numPages)
+//
+////convenience initializer
+//var customeBook = Book(customTitle: "Custome Title")
+//print(customeBook.title)
 
+var list = ["dog", "cat", "bird"]
 
+//for counter in 0...2 {
+//    print("My " + list[counter])
+//}
 
+//for animal in list {
+//    print("my " + animal)
+//}
 
+//list += ["mouse", "horse"]
+//list[2] = "pony"
+//list
 
-
-
+//dictionaries - unordered key value pairs of data
+//var drinkSizes = [String: String]()
+//
+////adding key/value pairs into dictionary
+//drinkSizes["sml"] = "small"
+//drinkSizes["med"] = "medium"
+//drinkSizes["lrg"] = "large"
+//
+////retrieving values
+//drinkSizes["sml"]
+//drinkSizes["lrg"]
+//func retrieveValue(_ dict: [String: String], _ key: String) {
+//    if let value = dict[key] {
+//        print(value)
+//    }
+//}
+//retrieveValue(drinkSizes, "smlllll")
+//retrieveValue(drinkSizes, "med")
+//
+////updating value in dictionary
+//drinkSizes["med"] = "grande"
+//drinkSizes["lrg"] = "venti"
+//drinkSizes["sml"] = "tall"
+//drinkSizes
+//
+////remove values
+////drinkSizes["sml"] = nil
+////drinkSizes["med"] = nil
+////drinkSizes
+//
+////iterate through
+//for (key, value) in drinkSizes {
+//    print("A \(key) is a \(value)")
+//}
 
 
 //power algorithm
