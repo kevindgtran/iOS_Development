@@ -877,8 +877,21 @@ func binarySearch(target: Int) -> String {
     }
     return "error"
 }
+//binarySearch(target: 67)
 
-binarySearch(target: 67)
-
-
+//Exponential function using recursion
+var result = 1
+func expoRecursion (base: Int, exponent: Int) -> String {
+    if exponent < 0 {  //negative exponents
+        return "Please enter positive exponent"
+    }
+    if exponent == 0 { //base case
+        return "Base \(base), exponent \(exponent) is 1"
+    } else { //recursive case
+        expoRecursion(base: base, exponent: exponent - 1)
+        result *= base
+        return "Base \(base), exponent \(exponent) is \(result)"
+    }
+}
+//expoRecursion(base: 3, exponent: 3)
 
