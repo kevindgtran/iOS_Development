@@ -895,3 +895,51 @@ func expoRecursion (base: Int, exponent: Int) -> String {
 }
 //expoRecursion(base: 3, exponent: 3)
 
+
+//create a function that squares each value of an array using recursion
+let arr = [0,2,-3,4,5,6,-7,8,9]
+let endIndex = arr.count - 1
+var newArr = [Int]()
+var squared = Int()
+
+private func squares (array: [Int], index: Int) -> [Int] {
+    if index == 0 {
+        squareAndAppend(array: array, index: index)
+    } else {
+        squares(array: arr, index: index - 1)
+        squareAndAppend(array: array, index: index)
+    }
+    return newArr
+}
+
+private func squareAndAppend(array: [Int], index: Int) {
+    squared = array[index] * array[index]
+    newArr.append(squared)
+}
+//squares(array: arr, index: endIndex)
+
+
+//create an algorithm that returns the min and max of an unsorted array, without using the sorted method, using recursion
+let someArr = [87,45,2,0,-4,23,-55,10,7]
+var minimum = someArr[0]
+var maximum = someArr[0]
+let count = someArr.count
+var index = 0
+
+private func theMinAndMax (array: [Int], index: Int) -> (min: Int, max: Int) {
+    if index == count {
+    } else {
+        theMinAndMax(array: array, index: index + 1)
+        
+        if array[index] < minimum {
+            minimum = array[index]
+        }
+        
+        if array[index] > maximum {
+            maximum = array[index]
+        }
+    }
+    return (minimum, maximum)
+}
+//theMinAndMax(array: someArr, index: index)
+
