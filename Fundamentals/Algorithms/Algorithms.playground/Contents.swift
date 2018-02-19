@@ -845,39 +845,44 @@ import UIKit
 //sum(someArray)
 
 var primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
-func binarySearch(target: Int) -> String {
-    var min = 0 //index 0
-    var max = primes.count - 1 //index max
-    var guess: Int = (min + max) / 2 //index middle
+
+let sortedArr:[Int] = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+
+func binarySearch (arr: [Int], target: Int) -> Int {
+    var min: Int = 0
+    var max: Int = arr.count - 1
+    var guess: Int = (min + max) / 2
     
-    if target == primes[guess] {
-        return "\(target) is prime!"
+    if arr[guess] == target {
+        print("found!")
+        return target
     }
     
-    while target != primes[guess] {
+    while min < max {
         
-        if max < min {
-            return "\(target) is not prime"
+        if arr[guess] < target {
+            min = guess + 1
         }
         
-        guess = (min + max) / 2 //recalculate guess
-        
-        if target == primes[guess] {
-            return "\(target) is prime!"
+        if arr[guess] > target {
+            max = guess - 1
         }
         
-        if target > primes[guess] {
-            min = guess + 1 //set min == guess + 1
-        }
+        guess = (min + max) / 2
         
-        if target < primes[guess] {
-            max = guess - 1 //set max guess - 1
+        if arr[guess] == target {
+            print("later found!")
+            return target
         }
         
     }
-    return "error"
+    
+    print("\(target) not in array")
+    return -1
+    
 }
-//binarySearch(target: 67)
+
+//binarySearch(arr: sortedArr, target: 6)
 
 //Exponential function using recursion
 var result = 1
